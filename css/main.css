@@ -1,0 +1,27 @@
+body{
+	background-color: #ececec;
+}
+
+#Title{
+	text-align: center;
+}
+
+a:link{
+	color:#e5ddbc;
+	text-decoration: none;
+}
+
+a:visited{
+	color:#8a6346;
+
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: none;
+	color:#b4c8c6;
+}
+
+
+/* Navigation Bar CSS */
+c

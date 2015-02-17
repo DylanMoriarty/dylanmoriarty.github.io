@@ -1,0 +1,154 @@
+/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+
+ Navigation Bar CSS 
+
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
+body{
+  background-color: #ececec;
+  font-family: Crimson Text;
+  font-size: 18px;
+}
+
+#main{
+  max-width:1080px;
+  position: relative;
+  margin: auto;
+}
+
+#title{
+  position:relative;
+  top:60px;
+	text-align: center;
+  line-height: 80%;
+  font-size:24px;
+}
+
+a:link{
+	text-decoration: none;
+  color: #959595;
+}
+
+a:visited{
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: none;
+  color: #448ccb;
+}
+
+/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+
+ Navigation Bar CSS 
+
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
+
+#info-container{
+  top:40px;
+  text-align:center;
+  display: table;
+  width: 100%;
+  height: 10px;
+  position: relative;
+}
+
+#info-container img{
+}
+
+.title, .navbar{
+  margin-left: 1.858736%;
+  margin-right: 1.858736%;
+}
+
+.title{
+  font-size: 30px;
+  font-style:italic;
+  float: left;
+  width: 34.167%;
+}
+
+.navbar{
+  float: right;
+  padding-top:30px;
+  width: 44.6667%;
+}
+
+.navbar a{
+  padding-left: 14;
+  padding-right: 14;
+}
+
+
+/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+
+      Front Page
+
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
+
+#intro{
+  position:relative;
+  text-align: center;
+  top:70px;
+  padding-left:10%;
+  padding-right:10%;
+  line-height: 80%;
+  font-size:24px;
+}
+
+#intro h1{
+    font-size:24px;
+}
+
+#front-content{
+  padding-top:90px;
+  padding-left:3%;
+  padding-right:3%;
+}
+
+#front-content p{
+  margin: 0;
+  padding-bottom: 16px;
+  line-height: 18px;
+
+}
+
+#front-content h2{
+  font-size:18px;
+}
+
+#front-content img{
+  vertical-align:bottom;
+  border: solid;
+  border-color: #959595;
+  border-width: 1px;
+}
+
+/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+
+    Functional Bits
+
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
+/*
+COLORS 
+
+Link Grey -- #959595
+*/
+
+/* TEST SIZES
+ border: solid;
+  border-width: 1px;*/
+
+/* RESIZING
+#front-content img{
+  max-width:95%;
+  height:auto;
+}
+*/
+
+.footer{
+  margin-top:100px;
+  height:100px;
+  width:100%;
+  background-color:959595;
+  text-align: center;
+}

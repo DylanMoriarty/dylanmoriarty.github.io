@@ -124,6 +124,12 @@ a:hover{
   border-width: 1px;
 }
 
+.Back{
+  font-size:24px;
+  padding-top: 50px;
+  font-style:italic;
+
+} 
 /* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
     Functional Bits
@@ -147,7 +153,7 @@ Link Grey -- #959595
 */
 
 .footer{
-  margin-top:160px;
+  margin-top:100px;
   height:100px;
   width:100%;
   background-color:#bee0c2;
@@ -166,8 +172,8 @@ Link Grey -- #959595
 }
 
 .footer p{
+  line-height: 0.2;
 }
 
 .footer-content{
-    padding-top: 10px;
 }

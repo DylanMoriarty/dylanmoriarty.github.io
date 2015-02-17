@@ -147,9 +147,18 @@ Link Grey -- #959595
 */
 
 .footer{
-  margin-top:100px;
+  margin-top:160px;
   height:100px;
   width:100%;
-  background-color:959595;
+  background-color:#bee0c2;
   text-align: center;
+  border: solid;
+  border-width:20px;
+  border-color: #bee0c2;
+  margin-left:-20px;
+  position: absolute;
+}
+
+.footer p{
+  padding-top: 40px;
 }

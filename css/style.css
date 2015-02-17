@@ -5,7 +5,7 @@
 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
 body{
   background-color: #ececec;
-  font-family: Crimson Text;
+  font-family: "Crimson Text", serif;
   font-size: 18px;
 }
 
@@ -67,16 +67,17 @@ a:hover{
   width: 34.167%;
 }
 
+.navbar a{
+  padding-left: 14;
+  padding-right: 14;
+}
+
 .navbar{
   float: right;
   padding-top:30px;
   width: 44.6667%;
 }
 
-.navbar a{
-  padding-left: 14;
-  padding-right: 14;
-}
 
 
 /* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 

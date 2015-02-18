@@ -162,14 +162,81 @@ a:hover{
 }
 
 #maps-content{
-  padding-top:90px;
+  padding-top:100px;
   padding-left:3%;
   padding-right:3%;
 }
 
+#maps-content img{
+  padding-top: 2%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
 #static-container{
   text-align: center;
+  font-size:12px;
 }
+
+.linebreak{
+  margin: auto;
+  margin-top: 50px;
+  width: 75%;
+  height: 1px;
+  background: #959595;
+}
+
+.centered-title{
+  text-align: center;
+  padding-right:14%;
+  font-size: 24px;
+}
+
+#infoboxs{
+  color: #FFF;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #1a1a1a;
+  margin-top: 20px;
+  padding: 10px 10px 10px 10px;
+  width: 700px;
+  height: 150px;
+  color: #666666;
+  font-family:"Georgia", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  border: 4px solid #121212;
+  border-radius: 10px;
+}
+
+.infothumb{
+  float: left;
+  margin: auto;
+}
+
+.infowords{
+    padding-left: 160px;
+    margin-top: -17px;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+.infowords h2{
+    font-family: "Optima", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  letter-spacing: 0.05em;
+  color: #909090;
+  line-height:80% ;
+}
+
+.infowords p{
+  color: #666666;
+  font-family:"Georgia", Helvetica, Arial, sans-serif;
+  font-size: 14px; 
+  line-height: 140%;
+}
+
 
 
 /* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 

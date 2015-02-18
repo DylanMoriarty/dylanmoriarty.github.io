@@ -125,11 +125,36 @@ a:hover{
 }
 
 .Back{
-  font-size:24px;
   padding-top: 50px;
   font-style:italic;
-
 } 
+
+/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+
+    Maps
+
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
+#page-title-container{
+  border: solid;
+  border-width: 1px;
+  position:relative;
+  top:70px;
+  padding-left:10%;
+  padding-right:10%;
+  line-height: 80%;
+  height:50px;
+  text-align: center;
+}
+
+.page-root{
+  float: left;
+  font-size:12px;
+}
+
+.page-root-center{
+  padding-top:14px;
+  padding-right:30%;
+}
 /* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
     Functional Bits
@@ -155,7 +180,7 @@ Link Grey -- #959595
 .footer{
   margin-top:100px;
   height:100px;
-  width:100%;
+  width:110%;
   background-color:#bee0c2;
   text-align: center;
   border: solid;
@@ -166,10 +191,6 @@ Link Grey -- #959595
   display: table;
 }
 
-.footer i{
-  padding-left: 14;
-  padding-right: 14;
-}
 
 .footer p{
   line-height: 0.2;

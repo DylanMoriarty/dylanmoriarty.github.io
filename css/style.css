@@ -9,6 +9,12 @@ body{
   font-size: 18px;
 }
 
+#header{
+  max-width:1080px;
+  position: relative;
+  margin: auto;
+}
+
 #main{
   max-width:1080px;
   position: relative;
@@ -110,7 +116,6 @@ a:hover{
   margin: 0;
   padding-bottom: 16px;
   line-height: 18px;
-
 }
 
 #front-content h2{
@@ -155,6 +160,18 @@ a:hover{
   padding-top:14px;
   padding-right:30%;
 }
+
+#maps-content{
+  padding-top:90px;
+  padding-left:3%;
+  padding-right:3%;
+}
+
+#static-container{
+  text-align: center;
+}
+
+
 /* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
     Functional Bits

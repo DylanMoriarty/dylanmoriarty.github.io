@@ -132,6 +132,7 @@ a:hover{
 .Back{
   padding-top: 50px;
   font-style:italic;
+  float:left;
 } 
 
 /* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -242,17 +243,30 @@ a:hover{
 
 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
 
+.illus-linebreak{
+  margin: auto;
+  margin-bottom: 20px;
+  width: 75%;
+  height: 1px;
+  background: #a1a1a1;
+}
+
 #illus-content{
   padding-top:120px;
   padding-left:3%;
   padding-right:3%;
+  text-align: center;
+
 }
 
 #illus-content img{
+  margin-left: auto;
+  margin-right: auto;
   max-width:100%;
   height:auto;
-  text-align: center;
 }
+
+
 /* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
     Functional Bits
@@ -278,7 +292,7 @@ Back Grey -- #e5e5e5
 */
 
 .footer{
-  margin-top:100px;
+  margin-top:160px;
   height:100px;
   width:110%;
   background-color:#bee0c2;
@@ -296,5 +310,15 @@ Back Grey -- #e5e5e5
   line-height: 0.2;
 }
 
-.footer-content{
+.footer-content i{
+  margin-left:1%;
+  margin-right:1%;
+}
+
+.footer-content a:link{
+  color: black;
+}
+
+.footer-content a:hover{
+  color: #34e0ca;
 }

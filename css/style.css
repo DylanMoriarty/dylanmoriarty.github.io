@@ -84,8 +84,6 @@ a:hover{
   width: 44.6667%;
 }
 
-
-
 /* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
       Front Page
@@ -256,7 +254,6 @@ a:hover{
   padding-left:3%;
   padding-right:3%;
   text-align: center;
-
 }
 
 #illus-content img{
@@ -304,6 +301,38 @@ a:hover{
   color: #a1a1a1;
 }
 
+
+/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+
+ About CSS 
+
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
+
+
+#about-container{
+  margin-top:120px;
+  padding-left:3%;
+  padding-right:3%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width:100%;
+  height:800px;  
+}
+
+.about-main-text{
+  float: left;
+  padding-left:12%;
+  width: 40%;
+}
+
+.about-main-info{
+  float: right;
+  width: 30%;
+  padding-right:15%;
+  text-align:right;
+}
+
+
 /* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
     Functional Bits
@@ -327,17 +356,26 @@ Back Grey -- #e5e5e5
   height:auto;
 }
 */
+#footer {
+  background:#ffab62;
+  width:100%;
+  height:100px;
+  position:absolute;
+  bottom:0;
+  left:0;
+}
+
 
 .footer{
   margin-top:160px;
   height:100px;
-  width:110%;
+  width:100%;
   background-color:#bee0c2;
   text-align: center;
   border: solid;
   border-width:20px;
   border-color: #bee0c2;
-  margin-left:-20px;
+  left:0;
   position: absolute;
   display: table;
 }
@@ -345,6 +383,10 @@ Back Grey -- #e5e5e5
 
 .footer p{
   line-height: 0.2;
+}
+
+.footer-content{
+  margin-left: -20px;
 }
 
 .footer-content i{

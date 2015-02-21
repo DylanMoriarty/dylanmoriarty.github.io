@@ -316,7 +316,11 @@ a:hover{
   margin-left: auto;
   margin-right: auto;
   max-width:100%;
-  height:800px;  
+  display:block;
+  overflow: hidden;
+/*  border: solid;
+  border-width: 1px;
+  border-color: black;*/
 }
 
 .about-main-text{
@@ -330,7 +334,31 @@ a:hover{
   width: 30%;
   padding-right:15%;
   text-align:right;
+  line-height: 16px;
 }
+
+.about-linebreak{
+  margin-left: 75px;
+  margin-bottom: 20px;
+  width: 75%;
+  height: 1px;
+  background: #a1a1a1;
+}
+
+.about-main-text h1{
+  font-size:24px;
+  margin-left:-10px;
+}
+
+.about-main-text li{
+  font-size: 16px;
+}
+
+.about-main-info h2{
+  font-size: 24px;
+  font-style: italic;
+}
+
 
 
 /* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 

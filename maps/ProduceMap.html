@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<Title>Produce Map</Title>
+<head>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montserrat">
+    <link rel = "stylesheet" href = "css/style.css"/>
+</head>
+<body>
+
+<!--libraries-->
+<script src="lib/d3.v3.js"></script>
+<script src="lib/topojson.v1.min.js">
+
+var keyArray = ["Null", "Almonds", "Apples","Bananas","Blue Berries","Carrots", "Cherries", "Grapes", "Lemons", "Potatoes", "Spinach", "Sugar Cane"];
+
+
+</script>
+<script src="lib/queue.js"></script>
+<div id = "title">
+<img src = "img/Title.jpg">
+<p>Click on a food to begin!
+</div>
+
+<div id = "icondugout">
+</div>
+  <div id = "foodboxcontainerbox">
+    <svg width= "900" height= "100">
+    <image x="19" y ="19" width= "60" height="60" xlink:href= "img/FruitBox/almond.svg"/>
+    <circle cy="50" r="30" id="almonds"></circle>
+    <image x="89" y ="19" width= "60" height="60" xlink:href= "img/FruitBox/apple.svg"/>
+    <circle cy="50" r="30" id="apples"></circle>
+    <image x="159" y ="19" width= "60" height="60" xlink:href= "img/FruitBox/banana.svg"/>
+    <circle cy="50" r="30" id="bananas"></circle>
+    <image x="229" y ="19" width= "60" height="60" xlink:href= "img/FruitBox/BlueBerries.svg"/>
+    <circle cy="50" r="30" id="blueberry" ></circle>
+    <image x="299" y ="19" width= "60" height="60" xlink:href= "img/FruitBox/carrots.svg"/>
+    <circle cy="50" r="30" id="carrots"></circle>
+    <image x="369" y ="19" width= "60" height="60" xlink:href= "img/FruitBox/cherries.svg"/>
+    <circle cy="50" r="30" id="cherries"></circle>
+    <image x="439" y ="19" width= "60" height="60" xlink:href= "img/FruitBox/grapes.svg"/>
+    <circle cy="50" r="30" id="grapes"></circle>
+    <image x="509" y ="19" width= "60" height="60" xlink:href= "img/FruitBox/lemon.svg"/>
+    <circle cy="50" r="30" id="lemons"></circle>
+    <image x="579" y ="19" width= "60" height="60" xlink:href= "img/FruitBox/onion.svg"/>
+    <circle cy="50" r="30" id="onions"></circle>
+    <image x="649" y ="19" width= "60" height="60" xlink:href= "img/FruitBox/potato.svg"/>
+    <circle cy="50" r="30" id="potatoes"></circle>
+     <image x="719" y ="19" width= "60" height="60" xlink:href= "img/FruitBox/spinach.svg"/>
+   <circle cy="50" r="30" id="spinach"></circle>
+    <image x="789" y ="19" width= "60" height="60" xlink:href= "img/FruitBox/sugarcane.svg"/>
+    <circle cy="50" r="30" id="sugarcane"></circle>
+    </svg>
+  </div>
+<div id = "mapbox">
+  <script src = "js/main.js"></script>
+</div>
+<div id = "chartdescr">
+  <img src = "img/Bottom.jpg">
+</div>
+<div id = "meta">
+  <p>Project by <a href="http://www.eatincake.com">Dylan Moriarty</a>.
+  <p>Data on food production was obtained from <a href="http://faostat.fao.org/">FAOSTAT</a>, the Food and Agriculture Organization of the United Nations Statistcs Divison, and <a href= "http://www.wikipedia.org/">Wikipedia</a>.
+  <p>Data was drawn, projected, and presented through <a href ="http://d3js.org/">D3</a>, JavaScript and the usual HTML/CSS. Map Projection used is Equirectangular.
+  <p>This project produced for the UW-Madison course GEOG:575, with guidance from Robert Roth and Carl Sack.
+  <p>The Font used for this page is <a href= "http://www.fontsquirrel.com/fonts/montserrat">Montserrat</a> by Julieta Ulanovsky, which is provided here through Google Fonts. 
+</div>
+
+</div>
+</body>

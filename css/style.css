@@ -84,6 +84,26 @@ a:hover{
   width: 44.6667%;
 }
 
+h3{
+  padding: 0;
+  margin: 0;
+  display: inline;
+}
+
+h3 a:link{
+  color: black;
+  font-size: 18px;
+  font-weight: normal;
+  size: 10px;
+}
+
+h3 a:hover{
+  color: #34e0ca;
+}
+
+h3 a:visited{
+  color: black;
+}
 /* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
       Front Page
@@ -258,20 +278,12 @@ a:hover{
   font-family: "Crimson Text", serif;
   font-size: 18px;
 }
-}
+
 /* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
   Illustrations!
 
 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
-
-.illus-linebreak{
-  margin: auto;
-  margin-bottom: 20px;
-  width: 75%;
-  height: 1px;
-  background: #a1a1a1;
-}
 
 #illus-content{
   padding-top:120px;
@@ -287,6 +299,13 @@ a:hover{
   height:auto;
 }
 
+.illus-linebreak{
+  margin: auto;
+  margin-bottom: 20px;
+  width: 75%;
+  height: 1px;
+  background: #a1a1a1;
+}
 
 /* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
@@ -438,7 +457,6 @@ a:hover{
   margin:0px;
 }
 
-
 /* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
     Functional Bits
@@ -462,6 +480,13 @@ Back Grey -- #e5e5e5
   height:auto;
 }
 */
+
+/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+
+    Footer, edit at own peril
+
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
+
 #footer {
   background:#ffab62;
   width:100%;

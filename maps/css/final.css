@@ -1,3 +1,20 @@
+body{
+	background-color: #262626;
+}
+	#bottomtext{
+		color: #736357;
+		text-align: center;
+	}
+
+	#bottomtext a{
+		text-decoration: none
+	}
+
+a:link {color:#736357;}     
+a:visited {color:#596e77;} 
+a:hover {color:#7999a7;}  
+a:active {color:#596e77;} 
+
 	#image-zoom-wrapper {
 		position: relative;
 		text-align: left;

@@ -8,11 +8,12 @@
 		margin: 10px auto;
 		border: 1px solid #000;
 		border-color:  #b7b7b7;
-		background: #e5e5e5 url("./loader.gif") no-repeat 50% 50%;
+		background: #e5e5e5 url("./img/loader.gif") no-repeat 50% 50%;
 		-moz-user-select: none;
 		-khtml-user-select: none;
 		-webkit-user-select: none;
 		user-select: none;
+	
 	}
 
 	#image-zoom-wrapper.js-active {
@@ -37,14 +38,14 @@
 
 	#image-zoom-wrapper div.zoom-in,
 	#image-zoom-wrapper div.zoom-out {
-		background: url("./zoom-in.png") no-repeat 0 0;
+		background: url("./img/zoom-in.png") no-repeat 0 0;
 		position: absolute;
 		left: 10px;
 		top: 10px;
 	}
 
 	#image-zoom-wrapper div.zoom-out {
-		background-image: url("./zoom-out.png");
+		background-image: url("./img/zoom-out.png");
 		top: 46px;
 	}
 
@@ -60,13 +61,13 @@
 
 		#image-zoom-wrapper div.zoom-in,
 		#image-zoom-wrapper div.zoom-out {
-			background-image: url("./zoom-in-104.png");
+			background-image: url("./img/zoom-in-104.png");
 			width: 104px;
 			height: 104px;
 		}
 
 		#image-zoom-wrapper div.zoom-out {
-			background-image: url("./zoom-out-104.png");
+			background-image: url("./img/zoom-out-104.png");
 			left: auto;
 			right: 10px;
 			top: 10px;

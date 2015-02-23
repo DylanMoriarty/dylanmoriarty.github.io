@@ -416,6 +416,10 @@ h3 a:visited{
   font-style: italic;
 }
 
+.about-main-info i{
+  margin-left: 3%;
+  margin-right: 3%;
+}
 /* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
     Blog Bits

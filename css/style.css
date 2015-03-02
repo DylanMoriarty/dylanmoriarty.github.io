@@ -99,12 +99,15 @@ h3 a:link{
 }
 
 h3 a:hover{
-  color: #34e0ca;
+    color: #34e0ca;
+
 }
+
 
 h3 a:visited{
   color: black;
 }
+
 /* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
       Front Page

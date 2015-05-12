@@ -511,12 +511,11 @@ Back Grey -- #e5e5e5
   width:100%;
   background-color:#bee0c2;
   text-align: center;
-  border: solid;
-  border-width:20px;
-  border-color: #bee0c2;
   left:0;
   position: absolute;
   display: table;
+  padding-top: 12px;
+  padding-bottom: 35px;
 }
 
 

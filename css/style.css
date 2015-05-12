@@ -288,11 +288,27 @@ h3 a:visited{
   Illustrations!
 
 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
+.illus-bar a{
+  padding-left:3%;
+  padding-right:3%;
+}
+
+.illus-bar{
+  position: relative;
+  top: 78px;
+  float: right;
+  padding-right: 2%;
+  width: 44.6667%;
+}
+
+#illus-content p{
+  text-align: left;
+  padding-left: 12%;
+  padding-right: 24%;
+}
 
 #illus-content{
   padding-top:120px;
-  padding-left:3%;
-  padding-right:3%;
   text-align: center;
 }
 
@@ -304,6 +320,7 @@ h3 a:visited{
 }
 
 .illus-linebreak{
+  position: relative;
   margin: auto;
   margin-bottom: 20px;
   width: 75%;

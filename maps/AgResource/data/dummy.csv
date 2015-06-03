@@ -1,0 +1,4 @@
+id,Supplier,farm,latitude,longitude,img_1,date_1,Img_2,Date_2
+1,AgR,Paul's Farm,42.90816,-91.582031,f1/img1.jpg,03/19/15,f1/img2.jpg,03/22/15
+2,AgR,Tyler's Farm,43.675818,-88.769531,f2/img1.jpg,03/19/15,f2/img2.jpg,03/22/15
+3,Pub,Example Farm,42.90816,-83.144531,f3/img1.jpg,03/19/15,f3/img2.jpg,03/22/15

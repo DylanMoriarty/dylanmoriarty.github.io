@@ -55,30 +55,8 @@ L.geoJson(geojsonFeature, {
       case 'A': return{AgStyle};
       case 'P': return{PubStyle};
     }
-  },
-  onEachFeature: function(feature, layer){
-    layer.on('click', function (e){
-      var selectedfarm = feature.properties.farm;
-      console.log(selectedfarm);
-
-      //D3 Script to build timeline
-      var newdiv = document.createElement('div');
-      var scr = document.createElement('script');
-        scr.src = "js/d3.js";
-        scr.type = 'text/javascript';
-        newdiv.appendChild(scr);
-      document.body.appendChild(newdiv);
-
-      document.getElementById("info").innerHTML = 
-      "words" + feature.properties.farm;
-        $("#feature_infos").stop();
-        $("#feature_infos").fadeIn("fast");
-
-    })
   }
 }).addTo(map);
-
-
 
 new L.Control.Zoom({ position: 'topright'}).addTo(map);
 

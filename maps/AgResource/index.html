@@ -5,7 +5,9 @@
 	<link href="Style.css" rel="stylesheet" type="text/css" />
   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'/>
 
-<link rel="stylesheet" href="lib/leaflet.css" />
+<link rel="stylesheet" href="lib/leaflet.css"/>
+<script src = "jquery-2.1.0.min.js"></script>
+<link rel="points" type="application/json" href="data/farm_points.geojson">
 <!--[if lte IE 8]>
 <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
 <![endif]-->
@@ -17,6 +19,24 @@
         border-style: solid;
         border-width: 4px;
       }
+
+    #feature_infos {
+      width:200px;
+      height: 500px;
+      background: rgba(255, 255, 255, 0.7);
+      position: absolute;
+      top:0px;
+      left:0px;
+      padding:5px;
+      border:1px solid grey;
+      display:none;
+    }
+    
+    #info {
+        font-weight:bold;
+        color:red;
+    } 
+
   </style>
 </head>
 
@@ -24,6 +44,10 @@
 <body>
   <div class = "container">
 	   <div id = "map"></div>
+     <div id="feature_infos"> <span id="heading">Look At Me I'm a Box: </span>
+     <span id="info"></span>
+
+</div>     
   </div>
 
 <!-- Libraries -->

@@ -14,52 +14,137 @@
   <style>
     #map { width:1000px; height:600px; }
 
-    .states{
-        border-color: #1a7b28;
-        border-style: solid;
-        border-width: 4px;
-      }
-
     #feature_infos {
-      width:200px;
-      height: 500px;
+      width:400px;
+      height: 400px;
       background: rgba(255, 255, 255, 0.7);
       position: absolute;
-      top:0px;
-      left:0px;
+      top:20px;
+      left:20px;
       padding:5px;
-      border:1px solid grey;
+      border:2px solid black;
       display:none;
+      border-radius: 10px;
+      box-shadow: 1px 1px 4px black;
     }
-    
-    #info {
-        font-weight:bold;
-        color:red;
-    } 
 
+    #farmphoto img{
+      border:1px solid #999;
+    }
+
+    .welcomeinfobox{
+      background: rgba(0, 0, 0, 1);
+      width: 300px;
+      height:300px;
+    }
+
+    .infolinebreak{
+      width:95%;
+      height:2px;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      background: rgba(0,0,0,0.3);
+      margin-top:4px;
+      margin-bottom: 8px;
+    }
+
+    .bottominfolinebreak{
+      width:95%;
+      height:2px;
+      margin-left: auto;
+      margin-right: auto;
+      background: rgba(0,0,0,0.3);
+      margin-top:40px;
+      margin-bottom: 8px;
+    }
+
+    #info h1{
+      font-size: 24px;
+      margin: 2px;
+    }
+
+    #info h2{
+      font-weight: normal;
+      font-size: 24px;
+      margin: 2px;
+      display: table-cell;
+    }
+
+    .buttons{
+      margin-top:4px;
+      text-align: right;
+    }   
+
+    .time-reset{
+      position: relative;
+      float: right;
+      cursor:pointer;
+    }
+    .time-prev{
+      position: relative;
+      float: right;
+      margin-left:6px;
+      cursor:pointer;
+    }
+    .time-next{
+      position: relative;
+      float: right;
+      margin-right:6px;      
+      cursor:pointer;
+    }
+    .time-end{
+      position: relative;
+      float: right;
+      margin-right:2px;
+      cursor:pointer;
+    }      
+
+    .datecontainer{
+      position: relative;
+      float: left;
+    }
   </style>
-</head>
+</head> 
 
 
 <body>
-  <div class = "container">
+<div class = "container">
 	   <div id = "map"></div>
-     <div id="feature_infos"> <span id="heading">Look At Me I'm a Box: </span>
-     <span id="info"></span>
+     <div id="feature_infos"> <span id="heading"></span>
+     <div id="info">
 
-</div>     
-  </div>
+     </div>
+  </div>     
+</div>
+
+<!--   <div class="sequence-buttons">
+      <div class="button">
+          <button type="button" class="stepBackward">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="play">
+              <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="pause">
+             <span class="glyphicon glyphicon-pause" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="stepForward">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          </button>
+      </div>
+  </div> -->
 
 <!-- Libraries -->
   <script src="lib/d3.min.js"></script>
   <script src="lib/queue.js"></script>
   <script src="lib/topojson.v1.min.js"></script>
   <script src="lib/jquery-2.1.1.min.js"></script>
-  <script src="lib/jquery.timer.js"></script>
   <script src="lib/leaflet.js"></script>
 
 <!-- Map Script-->  
   <script src = "js/main.js"></script>
+
 </body>
 </html>
 

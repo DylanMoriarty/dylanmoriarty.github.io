@@ -3,17 +3,14 @@ var currenttime = 1;
 var numberofimages = 0;
 var dategrabber = "date_"
 
-//Building a Welcome Box, WIP
+// Building a Welcome Box, WIP
 // window.onload = welcomeinfobox();
 
 // function welcomeinfobox(){
-//     d3.select('#map')
-//       .append('div')
-//       .attr("width", 300)
-//       .attr("height", 300)    
-//       .attr("class", "welcomeinfobox")
+//     d3.select('.introductionblock')
 //       .on("click", function(){
-//         d3.select(".welcomeinfobox").remove();
+//         d3.selectAll(".introductionblock").remove();
+//         d3.selectAll(".introductionblockfront").remove();
 //     })
 // };
 
@@ -63,6 +60,8 @@ L.geoJson(geojsonFeature, {
   onEachFeature: function(feature, layer){
   //Interaction
     layer.on('click', function (e){
+      d3.selectAll(".introductionblockfront").remove();
+      
       //Grab how many images the selected farm has
       numberofimages = parseInt(feature.properties.photos_no);
 
@@ -165,5 +164,3 @@ function PhotoTimeline(farm){
 
   // console.log(farm)
 };
-
-

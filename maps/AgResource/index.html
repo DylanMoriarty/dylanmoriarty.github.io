@@ -17,7 +17,7 @@
     #feature_infos {
       width:400px;
       height: 400px;
-      background: rgba(255, 255, 255, 0.7);
+      background: rgba(255, 255, 255, 0.8);
       position: absolute;
       top:20px;
       left:20px;
@@ -32,11 +32,38 @@
       border:1px solid #999;
     }
 
-    .welcomeinfobox{
-      background: rgba(0, 0, 0, 1);
-      width: 300px;
-      height:300px;
+    .introductionblockfront{
+      position: absolute;
+      background: rgba(255, 255, 255, 0.8);
+      margin:20px 100px 350px 20px;
+      width: 400px;
+      height:320px;
+      z-index:1;
+      padding:5px;
+      border:2px solid black;
+      border-radius: 10px;
+      box-shadow: 1px 1px 4px black;      
     }
+
+    .introductionblockfront h2{
+      margin: 4px 0px 8px 0px;
+      text-align:center;
+    }
+
+    .introductionblockfront p{
+      margin-left: 25px;
+      margin-right: 25px;
+    }
+
+ /*   .introductionblock{
+      margin: 20px;
+      position: absolute;
+      background: rgba(0, 0, 0, 0.4);
+      width: 956px;
+      height:550px;
+      z-index:2;
+      border-radius: 10px;      
+    }*/
 
     .infolinebreak{
       width:95%;
@@ -110,11 +137,24 @@
 
 <body>
 <div class = "container">
-	   <div id = "map"></div>
-     <div id="feature_infos"> <span id="heading"></span>
-     <div id="info">
+      <div class ="introductionblockfront">
+        <h2>Cereals Tour Map</h2>
+        <div class = "infolinebreak"></div>
 
-     </div>
+        <p>Throughout the 2015 growing season, AgResource will be going to locations around the American Midwest to monitor crop growth, and sharing our findings with you. But that's not all. We are 
+        opening up Cereals Tour 2015 to the world.
+        <p>As the season progresses, send us pictures of your crop and location. We will compile the images so 
+        everyone can watch as North America grows.
+        <p><i>Select a farm to begin!</i>
+        <div class = "bottominfolinebreak"></div>
+      </div>
+
+	 <div id = "map"></div>
+
+    <div id="feature_infos"> <span id="heading"></span>
+    <div id="info">
+
+    </div>
   </div>     
 </div>
 

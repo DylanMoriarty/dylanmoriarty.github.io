@@ -53,16 +53,6 @@
       margin-right: 25px;
     }
 
- /*   .introductionblock{
-      margin: 20px;
-      position: absolute;
-      background: rgba(0, 0, 0, 0.4);
-      width: 956px;
-      height:550px;
-      z-index:2;
-      border-radius: 10px;      
-    }*/
-
     .infolinebreak{
       width:95%;
       height:2px;
@@ -129,6 +119,28 @@
       position: relative;
       float: left;
     }
+
+    #legend{      
+      position: absolute;
+      background: rgba(255, 255, 255, 0.8);
+      margin:460px 100px 10px 20px;
+      width: 160px;
+      height:110px;
+      z-index:1;
+      padding:5px;
+      border:2px solid black;
+      border-radius: 10px;
+      box-shadow: 1px 1px 4px black;      
+    }
+
+    .legendtitle{
+     text-align: center;
+    }
+
+    #legend p{
+     padding:2px;
+     margin:2px;
+    }
   </style>
 </head> 
 
@@ -146,14 +158,14 @@
     <p><i>Select a farm to begin!</i>
       <div class = "bottominfolinebreak"></div>
   </div>
-
+  <div id="legend"><div class="legendtitle">Photo Provided by... </div><div class = "infolinebreak"></div><p>
+<img src="img/A.png" style="vertical-align: middle;"></img> <span style='vertical-align: middle;'>  AgResource</span><p><img src="img/P.png" style='vertical-align: middle;'></img><span style="vertical-align: middle;">  Public</span></div>
 	<div id = "map"></div>
 
   <div id="feature_infos"> <span id="heading"></span>
     <div id="info">
     </div>
-  </div>
-  <div id="legend"><img src="img/A.png"></img><img src="img/P.png"></img></div>
+  </div>  
 </div>
 
 <!--   <div class="sequence-buttons">

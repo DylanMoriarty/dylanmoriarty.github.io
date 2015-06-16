@@ -2,11 +2,9 @@
 <html>
 	<head>
     	<title>AgResource</title>
-	<link href="Style.css" rel="stylesheet" type="text/css" />
   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'/>
 
 <link rel="stylesheet" href="lib/leaflet.css"/>
-<script src = "jquery-2.1.0.min.js"></script>
 <link rel="points" type="application/json" href="data/farm_points.geojson">
 <!--[if lte IE 8]>
 <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
@@ -137,25 +135,25 @@
 
 <body>
 <div class = "container">
-      <div class ="introductionblockfront">
-        <h2>Cereals Tour Map</h2>
-        <div class = "infolinebreak"></div>
+  <div class ="introductionblockfront">
+    <h2>Cereals Tour Map</h2>
+      <div class = "infolinebreak"></div>
 
-        <p>Throughout the 2015 growing season, AgResource will be going to locations around the American Midwest to monitor crop growth, and sharing our findings with you. But that's not all. We are 
-        opening up Cereals Tour 2015 to the world.
-        <p>As the season progresses, send us pictures of your crop and location. We will compile the images so 
-        everyone can watch as North America grows.
-        <p><i>Select a farm to begin!</i>
-        <div class = "bottominfolinebreak"></div>
-      </div>
+    <p>Throughout the 2015 growing season, AgResource will be going to locations around the American Midwest to monitor crop growth, and sharing our findings with you. But that's not all. We are 
+    opening up Cereals Tour 2015 to the world.
+    <p>As the season progresses, send us pictures of your crop and location. We will compile the images so 
+    everyone can watch as North America grows.
+    <p><i>Select a farm to begin!</i>
+      <div class = "bottominfolinebreak"></div>
+  </div>
 
-	 <div id = "map"></div>
+	<div id = "map"></div>
 
-    <div id="feature_infos"> <span id="heading"></span>
+  <div id="feature_infos"> <span id="heading"></span>
     <div id="info">
-
     </div>
-  </div>     
+  </div>
+  <div id="legend"><img src="img/A.png"></img><img src="img/P.png"></img></div>
 </div>
 
 <!--   <div class="sequence-buttons">

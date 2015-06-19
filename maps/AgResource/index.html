@@ -120,10 +120,29 @@
       float: left;
     }
 
-    #legend{      
+    #SelectaCrop{
       position: absolute;
       background: rgba(255, 255, 255, 0.8);
       margin:460px 100px 10px 20px;
+      width: 100px;
+      height:110px;
+      z-index:1;
+      padding:5px;
+      border:2px solid black;
+      border-radius: 10px;
+      box-shadow: 1px 1px 4px black;
+      text-align: center;
+    }
+
+    #SelectaCrop p{
+      padding: 0;
+      margin: 0;
+    }
+
+    #legend{      
+      position: absolute;
+      background: rgba(255, 255, 255, 0.8);
+      margin:460px 100px 10px 140px;
       width: 160px;
       height:110px;
       z-index:1;
@@ -143,24 +162,20 @@
     }
 
     .trigger1{
-      width:100px;
-      height:30px;
-      background-color: red;
-      display: table-cell;      
+      width:90px;
     }
     .trigger2{
-      width:100px;
-      height:30px;
-      background-color: blue;
-      display: table-cell;
+      width:90px;
+    }    
 
+    .trigger3{
+      width:90px;
     }    
   </style>
 </head> 
 
 
 <body>
-<div class = "trigger1"></div><div class = "trigger2"></div>
 <div class = "container">
   <div class ="introductionblockfront">
     <h2>Cereals Tour Map</h2>
@@ -175,7 +190,13 @@
   </div>
   <div id="legend"><div class="legendtitle">Photo Provided by... </div><div class = "infolinebreak"></div><p>
 <img src="img/A.png" style="vertical-align: middle;"></img> <span style='vertical-align: middle;'> - AgResource</span><p><img src="img/P.png" style='vertical-align: middle;'></img><span style="vertical-align: middle;"> - Public</span></div>
+  <div id="SelectaCrop"><span style="text-align: center">Change Crop</span><div class = "infolinebreak"></div>
+    <button type="button" class="trigger1">Corn</button><p>
+    <button type="button" class="trigger2">Soy </button><p>
+    <button type="button" class="trigger3">Wheat</button><p>
+  </div>
 	<div id = "map"></div>
+
 
   <div id="feature_infos"> <span id="heading"></span>
     <div id="info">

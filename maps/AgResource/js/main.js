@@ -127,7 +127,7 @@ function makeJson(geojsonFeature){
 
           //Create VCR control, add Info block 
           document.getElementById("info").innerHTML = 
-          "<h1>"+feature.properties.farm+"</h1><div class ='infolinebreak'></div><div id=farmphoto></div><div class='buttons'><img src='img/time-end.png' class='time-end'><img src='img/time-next.png' class='time-next'><img src='img/time-prev.png' class='time-prev'><img src='img/time-reset.png' class='time-reset'><div class = datecontainer></div></div><div class ='bottominfolinebreak'></div>";
+          "<div class='infoboxheader'><h1>"+feature.properties.farm+"</h1><img src='img/x.png' class = 'closeme'></img></div><div class ='infolinebreak'></div><div id=farmphoto></div><div class='buttons'><img src='img/time-end.png' class='time-end'><img src='img/time-next.png' class='time-next'><img src='img/time-prev.png' class='time-prev'><img src='img/time-reset.png' class='time-reset'><div class = datecontainer></div></div><div class ='bottominfolinebreak'></div>";
             $("#feature_infos").stop();
             $("#feature_infos").fadeIn("fast");
 
@@ -177,6 +177,9 @@ function makeJson(geojsonFeature){
               PhotoTimeline(selectedfarm)
             });
 
+            d3.select(".closeme").on("click", function(){
+              $("#feature_infos").fadeOut("fast");
+            });
         })
       }
     }).addTo(map);
@@ -204,3 +207,4 @@ function PhotoTimeline(farm){
   document.getElementById("farmphoto").innerHTML =
   "<img src='"+currentimage+"'></img>";
 };
+

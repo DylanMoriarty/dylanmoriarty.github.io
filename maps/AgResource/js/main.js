@@ -1,25 +1,16 @@
 //Setting up both the current time (When in the time series of images the user is) and Number of Images (How many images there are at a given location) for use later.
-var currenttime = 1;
+var currenttime = 20;
 var numberofimages = 0;
 var dategrabber = "date_"
-
-// Building a Welcome Box, WIP
-// window.onload = welcomeinfobox();
-
-// function welcomeinfobox(){
-//     d3.select('.introductionblock')
-//       .on("click", function(){
-//         d3.selectAll(".introductionblock").remove();
-//         d3.selectAll(".introductionblockfront").remove();
-//     })
-// };
+var highlight = null;
+var croptype = null;
 
 //Leaflet Map Properties
 var map = L.map('map',{
   maxZoom: 10,
-  minZoom: 6,
+  minZoom: 7,
   zoomControl: false
-}).setView([39.381018,-89.318848],6)
+}).setView([39.381018,-89.318848],7)
 // Set Bounds to the map by a Top-Left and Bottom-Right coordinates
 // .setMaxBounds([ [48.011975, -100.942383],[30.552800, -68.291016] ])
 ;
@@ -30,137 +21,186 @@ L.tileLayer(
   attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
   }).addTo(map);
 
+var corn = {"type":"FeatureCollection","features":[{"type":"Feature","properties":{"id":"1","source":"A","farm":"","photos_no":"1","latitude":"40.825505","longitude":"-87.978425","date_1":"06/10/15","date_2":"06/16/15","date_3":"","date_4":""},"geometry":{"type":"Point","coordinates":[-87.978425,40.825505]}},{"type":"Feature","properties":{"id":"2","source":"A","farm":"","photos_no":"1","latitude":"40.561246","longitude":"-88.028661","date_1":"06/10/15","date_2":"06/16/15","date_3":"","date_4":""},"geometry":{"type":"Point","coordinates":[-88.028661,40.561246]}},{"type":"Feature","properties":{"id":"3","source":"A","farm":"","photos_no":"1","latitude":"40.414997","longitude":"-88.064453","date_1":"06/10/15","date_2":"06/16/15","date_3":"","date_4":""},"geometry":{"type":"Point","coordinates":[-88.064453,40.414997]}},{"type":"Feature","properties":{"id":"4","source":"P","farm":"","photos_no":"1","latitude":"40.205254","longitude":"-88.240197","date_1":"06/10/15","date_2":"06/16/15","date_3":"","date_4":""},"geometry":{"type":"Point","coordinates":[-88.240197,40.205254]}},{"type":"Feature","properties":{"id":"5","source":"P","farm":"","photos_no":"1","latitude":"39.846498","longitude":"-88.292335","date_1":"06/10/15","date_2":"06/16/15","date_3":"","date_4":""},"geometry":{"type":"Point","coordinates":[-88.292335,39.846498]}},{"type":"Feature","properties":{"id":"6","source":"A","farm":"","photos_no":"1","latitude":"39.857392","longitude":"-88.500862","date_1":"06/10/15","date_2":"06/16/15","date_3":"","date_4":""},"geometry":{"type":"Point","coordinates":[-88.500862,39.857392]}}]}
+
+var soy = {"type":"FeatureCollection","features":[{"type":"Feature","properties":{"id":"1","source":"P","farm":"","photos_no":"1","latitude":"40.825505","longitude":"-87.978425","date_1":"06/10/15","date_2":"06/16/15","date_3":"","date_4":""},"geometry":{"type":"Point","coordinates":[-87.978425,40.825505]}},{"type":"Feature","properties":{"id":"2","source":"P","farm":"","photos_no":"1","latitude":"40.561246","longitude":"-88.028661","date_1":"06/10/15","date_2":"06/16/15","date_3":"","date_4":""},"geometry":{"type":"Point","coordinates":[-88.028661,40.561246]}},{"type":"Feature","properties":{"id":"3","source":"P","farm":"","photos_no":"1","latitude":"42.414997","longitude":"-80.064453","date_1":"06/10/15","date_2":"06/16/15","date_3":"","date_4":""},"geometry":{"type":"Point","coordinates":[-88.064453,40.414997]}},{"type":"Feature","properties":{"id":"4","source":"P","farm":"","photos_no":"1","latitude":"40.205254","longitude":"-88.240197","date_1":"06/10/15","date_2":"06/16/15","date_3":"","date_4":""},"geometry":{"type":"Point","coordinates":[-88.240197,40.205254]}},{"type":"Feature","properties":{"id":"5","source":"A","farm":"","photos_no":"1","latitude":"39.846498","longitude":"-88.292335","date_1":"06/10/15","date_2":"06/16/15","date_3":"","date_4":""},"geometry":{"type":"Point","coordinates":[-88.292335,39.846498]}}]}
 
 //CSV Data in GeoJson form
-var geojsonFeature = 
-{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"id":"1","source":"A","farm":"Farm 1","photos_no":"3","latitude":"40.928199","longitude":"-87.867406","date_1":"","date_2":"06/26/15","date_3":"07/26/15","date_4":"08/26/15"},"geometry":{"type":"Point","coordinates":[-87.867406,40.928199]}},{"type":"Feature","properties":{"id":"2","source":"A","farm":"Farm 2","photos_no":"3","latitude":"40.60932","longitude":"-88.061843","date_1":"04/14/15","date_2":"06/25/15","date_3":"07/26/15","date_4":"08/26/15"},"geometry":{"type":"Point","coordinates":[-88.061843,40.60932]}},{"type":"Feature","properties":{"id":"3","source":"A","farm":"Farm 3","photos_no":"4","latitude":"40.310633","longitude":"-88.231411","date_1":"04/11/15","date_2":"06/24/15","date_3":"07/26/15","date_4":"08/26/15"},"geometry":{"type":"Point","coordinates":[-88.231411,40.310633]}},{"type":"Feature","properties":{"id":"4","source":"A","farm":"Farm 4","photos_no":"3","latitude":"40.017931","longitude":"-88.331318","date_1":"03/20/15","date_2":"06/23/15","date_3":"07/26/15","date_4":"08/26/15"},"geometry":{"type":"Point","coordinates":[-88.331318,40.017931]}},{"type":"Feature","properties":{"id":"5","source":"P","farm":"Farm 5","photos_no":"4","latitude":"39.835404","longitude":"-88.53597","date_1":"05/19/15","date_2":"06/22/15","date_3":"07/26/15","date_4":"08/26/15"},"geometry":{"type":"Point","coordinates":[-88.53597,39.835404]}}]}
+var geojsonFeature = corn;
 
-//Load Geojson Data
-L.geoJson(geojsonFeature, {
-  style: function(feature){
-  //CSS Styling of Points Here
-  },
-  pointToLayer: function(feature, latlng){
-  //Creating Markers- thissource grabs which source the photo is from, A for AgResource, or P for Public
-    var thissource = feature.properties.source
+//For Switching between Geojsons...
+d3.select(".trigger1").on("click", function(){
+  var geojsonFeature = soy;
+  $('.leaflet-control-zoom').remove();
+  $('.leaflet-marker-icon').remove();
+  $("#feature_infos").fadeOut("fast");
+  makeJson(geojsonFeature);
+});
 
-  //This stores the Icon styling. Icon Anchor is where the point is anchored to relative to the image file.    
-    var sourceIcon = L.icon({
-      iconUrl: 'img/'+thissource+'.png',
-      iconSize: [32, 32],
-      iconAnchor: [16, 16]
+d3.select(".trigger2").on("click", function(){
+  var geojsonFeature = corn;
+  $('.leaflet-control-zoom').remove();
+  $('.leaflet-marker-icon').remove();
+  $("#feature_infos").fadeOut("fast");
+  makeJson(geojsonFeature);
+});
+
+function getJson(simp){  //Removed unneeded arguments here
+    var url = 'file' + simp + '.json';
+    map.removeLayer(geojsonLayer);
+    //geojsonLayer.clearLayers();  I don't believe this needed.
+    $.getJSON(url, function(data){
+        geojsonLayer = L.geoJson(data, {
+            style: defaultStyle,
+            onEachFeature: onEachFeature
+        });
+        geojsonLayer.addTo(map);
     });
+}
 
-  //...and now we add it.
-  return new L.marker(latlng, {icon: sourceIcon});
+window.onload = makeJson(geojsonFeature);
 
-  // V-- Alternative way to just draw flat circles. Useful for testing.
-  // return new L.CircleMarker(latlng, {radius: 10, fillOpacity: 0.5})
-  },
-  onEachFeature: function(feature, layer){
-  //Interaction
-    layer.on('click', function (e){
-      d3.selectAll(".introductionblockfront").remove();
-      
-      //Grab how many images the selected farm has
-      numberofimages = parseInt(feature.properties.photos_no);
 
-      // If Current Time is greater than the number of images, reduce it to the final image. Otherwise, everythings good.
-      if(currenttime > numberofimages){
-        currenttime = numberofimages;
-      }else{
-        console.log("cool.")
-      };
+function makeJson(geojsonFeature){
+  //Load Geojson Data
+  L.geoJson(geojsonFeature, {
+    pointToLayer: function(feature, latlng){
+      //Creating Markers- thissource grabs which source the photo is from, A for AgResource, or P for Public.
+      var thissource = feature.properties.source
+      var thisid = String(feature.properties.source)
 
-      //Grab the id of whichever point is selected
-      var selectedfarm = feature.properties.id;
+      //Setup icon properties. Size is the size of the icon, and Anchor is which pixel will be on the Lat/Lng
+      var IconRoot = L.Icon.extend({
+        options:{
+          iconSize: [32, 32],
+          iconAnchor: [16, 16],
+          className: thisid,
+        }
+      })
 
-      //Variables to help grab the current date from selected point & current time
-      var dategrabberequation = dategrabber+currenttime;
-      var currentimagedate = feature.properties[dategrabberequation];
+      //Declare the image source...
+      var sourceIcon = new IconRoot({iconUrl: 'img/'+thissource+'.png'})
 
-// feature.properties[curdate]
+      //...and now we add the markers to the map.
+      return L.marker(latlng, {icon: sourceIcon});
+      },
+      onEachFeature: function(feature, layer){
+      //Interaction
+        layer.on('click', function (e){
+          //Remove Introduction block
+          d3.selectAll(".introductionblockfront").remove();
 
-      //Create VCR control, add Info block 
-      document.getElementById("info").innerHTML = 
-      "<h1>"+feature.properties.farm+"</h1><div class ='infolinebreak'></div><div id=farmphoto></div><div class='buttons'><img src='img/time-end.png' class='time-end'><img src='img/time-next.png' class='time-next'><img src='img/time-prev.png' class='time-prev'><img src='img/time-reset.png' class='time-reset'><div class = datecontainer></div></div><div class ='bottominfolinebreak'></div>";
-        $("#feature_infos").stop();
-        $("#feature_infos").fadeIn("fast");
-
-      //Functions that will build both the Photo & Date
-      PhotoTimeline(selectedfarm)
-      UpdateDate(currentimagedate);
-
-      //VCR Button Interactions- Change CurrentTime, date, and re-run the photo-addin' function to accomodate the new value
-        d3.select(".time-reset").on("click", function(){
-          currenttime = 1;
-          dategrabberequation = dategrabber+currenttime;
-          currentimagedate = feature.properties[dategrabberequation];
-          UpdateDate(currentimagedate);
-          PhotoTimeline(selectedfarm);
-        });
-
-        d3.select(".time-prev").on("click", function(){
-          if(currenttime>1){
-          currenttime--;
-          }else{
-          currenttime=1;
+          //Determine which croptype is currently selected
+          if(geojsonFeature == corn){
+            croptype = "corn";
+          }else if(geojsonFeature == soy){
+            croptype = "soy";
           };
-          dategrabberequation = dategrabber+currenttime;
-          currentimagedate = feature.properties[dategrabberequation];
-          UpdateDate(currentimagedate);                    
-          PhotoTimeline(selectedfarm);
-        });
 
-        d3.select(".time-next").on("click", function(){
-          if(currenttime < numberofimages){
-            currenttime++;
-          }else{
+          //Need to re-declare this variable...
+          thissource = feature.properties.source
+
+          //Reset all icons back to the non-highlighted 
+          $('.A').attr("src", 'img/A.png');
+          $('.P').attr("src", 'img/P.png');
+          //Change THIS icon to the highlighted version
+          $(layer._icon).attr("src", 'img/h'+thissource+'.png')
+
+
+          //Grab how many images the selected farm has
+          numberofimages = parseInt(feature.properties.photos_no);
+
+          // Sets Current Time to the final image.
+          // currenttime = numberofimages;
+
+          // If Current Time is greater than the number of images, reduce it to the final image. Otherwise, everythings good.
+          if(currenttime > numberofimages){
             currenttime = numberofimages;
           };
-          console.log(currenttime);
-          dategrabberequation = dategrabber+currenttime;
-          currentimagedate = feature.properties[dategrabberequation];
-          UpdateDate(currentimagedate);
-          PhotoTimeline(selectedfarm);        
-        });
 
-        d3.select(".time-end").on("click", function(){
-          currenttime = numberofimages;
-          dategrabberequation = dategrabber+currenttime;
-          currentimagedate = feature.properties[dategrabberequation];
-          UpdateDate(currentimagedate);
+          //Grab the id of whichever point is selected
+          var selectedfarm = feature.properties.id;
+
+          //Variables to help grab the current date from selected point & current time
+          var dategrabberequation = dategrabber+currenttime;
+          var currentimagedate = feature.properties[dategrabberequation];
+
+          //Create VCR control, add Info block 
+          document.getElementById("info").innerHTML = 
+          "<h1>"+feature.properties.farm+"</h1><div class ='infolinebreak'></div><div id=farmphoto></div><div class='buttons'><img src='img/time-end.png' class='time-end'><img src='img/time-next.png' class='time-next'><img src='img/time-prev.png' class='time-prev'><img src='img/time-reset.png' class='time-reset'><div class = datecontainer></div></div><div class ='bottominfolinebreak'></div>";
+            $("#feature_infos").stop();
+            $("#feature_infos").fadeIn("fast");
+
+          //Functions that will build both the Photo & Date
           PhotoTimeline(selectedfarm)
-        });
+          UpdateDate(currentimagedate);
 
-    })
-  }
-}).addTo(map);
+          //VCR Button Interactions- Change CurrentTime, date, and re-run the photo-addin' function to accomodate the new value
+            d3.select(".time-reset").on("click", function(){
+              currenttime = 1;
+              dategrabberequation = dategrabber+currenttime;
+              currentimagedate = feature.properties[dategrabberequation];
+              UpdateDate(currentimagedate);
+              PhotoTimeline(selectedfarm);
+            });
 
-//Put Leaflet Zoom controls in the top right corner (default is top left)
-new L.Control.Zoom({ position: 'topright'}).addTo(map);
+            d3.select(".time-prev").on("click", function(){
+              if(currenttime>1){
+              currenttime--;
+              }else{
+              currenttime=1;
+              };
+              dategrabberequation = dategrabber+currenttime;
+              currentimagedate = feature.properties[dategrabberequation];
+              UpdateDate(currentimagedate);                    
+              PhotoTimeline(selectedfarm);
+            });
 
-//Adds the images date to the info box
-function UpdateDate(curdate){
-  //Erases previous date
-  $(".datecontainer").html("");
+            d3.select(".time-next").on("click", function(){
+              if(currenttime < numberofimages){
+                currenttime++;
+              }else{
+                currenttime = numberofimages;
+              };
+              console.log(currenttime);
+              dategrabberequation = dategrabber+currenttime;
+              currentimagedate = feature.properties[dategrabberequation];
+              UpdateDate(currentimagedate);
+              PhotoTimeline(selectedfarm);        
+            });
 
-  //Inserts new date
-  d3.select(".datecontainer")
-    .append("div")
-    .attr("width", 100)
-    .attr("height", 50)
-    .text(curdate);
+            d3.select(".time-end").on("click", function(){
+              currenttime = numberofimages;
+              dategrabberequation = dategrabber+currenttime;
+              currentimagedate = feature.properties[dategrabberequation];
+              UpdateDate(currentimagedate);
+              PhotoTimeline(selectedfarm)
+            });
+
+        })
+      }
+    }).addTo(map);
+
+  //Put Leaflet Zoom controls in the top right corner (default is top left)
+  new L.Control.Zoom({ position: 'topright'}).addTo(map);
+
+  //Adds the images date to the info box
+  function UpdateDate(curdate){
+    //Erases previous date
+    $(".datecontainer").html("");
+
+    //Inserts new date
+    d3.select(".datecontainer")
+      .append("div")
+      .attr("width", 100)
+      .attr("height", 50)
+      .text(curdate);
+  };
 };
-
 //Function that Adds the new photo
 function PhotoTimeline(farm){
-  var currentimage = "img/"+farm+"/"+currenttime+".jpg";
-
-  // console.log(currentimage);
+  var currentimage = "img/"+croptype+"/"+farm+"/"+currenttime+".jpg";
 
   document.getElementById("farmphoto").innerHTML =
   "<img src='"+currentimage+"'></img>";
-
-  // console.log(farm)
 };

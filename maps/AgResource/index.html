@@ -141,11 +141,26 @@
      padding:2px;
      margin:2px;
     }
+
+    .trigger1{
+      width:100px;
+      height:30px;
+      background-color: red;
+      display: table-cell;      
+    }
+    .trigger2{
+      width:100px;
+      height:30px;
+      background-color: blue;
+      display: table-cell;
+
+    }    
   </style>
 </head> 
 
 
 <body>
+<div class = "trigger1"></div><div class = "trigger2"></div>
 <div class = "container">
   <div class ="introductionblockfront">
     <h2>Cereals Tour Map</h2>
@@ -159,7 +174,7 @@
       <div class = "bottominfolinebreak"></div>
   </div>
   <div id="legend"><div class="legendtitle">Photo Provided by... </div><div class = "infolinebreak"></div><p>
-<img src="img/A.png" style="vertical-align: middle;"></img> <span style='vertical-align: middle;'>  AgResource</span><p><img src="img/P.png" style='vertical-align: middle;'></img><span style="vertical-align: middle;">  Public</span></div>
+<img src="img/A.png" style="vertical-align: middle;"></img> <span style='vertical-align: middle;'> - AgResource</span><p><img src="img/P.png" style='vertical-align: middle;'></img><span style="vertical-align: middle;"> - Public</span></div>
 	<div id = "map"></div>
 
   <div id="feature_infos"> <span id="heading"></span>
@@ -167,23 +182,6 @@
     </div>
   </div>  
 </div>
-
-<!--   <div class="sequence-buttons">
-      <div class="button">
-          <button type="button" class="stepBackward">
-              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          </button>
-          <button type="button" class="play">
-              <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
-          </button>
-          <button type="button" class="pause">
-             <span class="glyphicon glyphicon-pause" aria-hidden="true"></span>
-          </button>
-          <button type="button" class="stepForward">
-              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          </button>
-      </div>
-  </div> -->
 
 <!-- Libraries -->
   <script src="lib/d3.min.js"></script>

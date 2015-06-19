@@ -1,0 +1,246 @@
+var geojson =
+
+
+{
+    "type": "FeatureCollection",
+    "totalFeatures": 14,
+    "features": [{
+        "type": "Feature",
+        "id": "placenames_large.305700699",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-124.99999998259965, 54.99999999471976]
+        },
+        "geometry_name": "way",
+        "properties": {
+            "place": "state",
+            "name": "British Columbia",
+            "ref": "BC",
+            "bbox": [-124.99999998259965, 54.99999999471976, -124.99999998259965, 54.99999999471976]
+        }
+    }, {
+        "type": "Feature",
+        "id": "placenames_large.305700703",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-114.99999988399192, 54.99999999471976]
+        },
+        "geometry_name": "way",
+        "properties": {
+            "place": "state",
+            "name": "Alberta",
+            "ref": "AB",
+            "bbox": [-114.99999988399192, 54.99999999471976, -114.99999988399192, 54.99999999471976]
+        }
+    }, {
+        "type": "Feature",
+        "id": "placenames_large.305700705",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-97.00000008649755, 55.000000094719795]
+        },
+        "geometry_name": "way",
+        "properties": {
+            "place": "state",
+            "name": "Manitoba",
+            "ref": "MB",
+            "bbox": [-97.00000008649755, 55.000000094719795, -97.00000008649755, 55.000000094719795]
+        }
+    }, {
+        "type": "Feature",
+        "id": "placenames_large.305700708",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-66.7500002907083, 46.50000029495521]
+        },
+        "geometry_name": "way",
+        "properties": {
+            "place": "state",
+            "name": "New Brunswick",
+            "ref": "NB",
+            "bbox": [-66.7500002907083, 46.50000029495521, -66.7500002907083, 46.50000029495521]
+        }
+    }, {
+        "type": "Feature",
+        "id": "placenames_large.305700706",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-56.00000009220471, 52.000000194764844]
+        },
+        "geometry_name": "way",
+        "properties": {
+            "place": "state",
+            "name": "Newfoundland and Labrador",
+            "ref": "NL",
+            "bbox": [-56.00000009220471, 52.000000194764844, -56.00000009220471, 52.000000194764844]
+        }
+    }, {
+        "type": "Feature",
+        "id": "placenames_large.305700696",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-117.99999998357448, 65.0000003949223]
+        },
+        "geometry_name": "way",
+        "properties": {
+            "place": "state",
+            "name": "Northwest Territories",
+            "ref": "NT",
+            "bbox": [-117.99999998357448, 65.0000003949223, -117.99999998357448, 65.0000003949223]
+        }
+    }, {
+        "type": "Feature",
+        "id": "placenames_large.424313760",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-107.99170708496717, 61.06669219477241]
+        },
+        "geometry_name": "way",
+        "properties": {
+            "place": "country",
+            "name": "Canada",
+            "ref": null,
+            "bbox": [-107.99170708496717, 61.06669219477241, -107.99170708496717, 61.06669219477241]
+        }
+    }, {
+        "type": "Feature",
+        "id": "placenames_large.305700704",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-62.999999891230324, 45.000000195029365]
+        },
+        "geometry_name": "way",
+        "properties": {
+            "place": "state",
+            "name": "Nova Scotia",
+            "ref": "NS",
+            "bbox": [-62.999999891230324, 45.000000195029365, -62.999999891230324, 45.000000195029365]
+        }
+    }, {
+        "type": "Feature",
+        "id": "placenames_large.305700700",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-89.99999998747191, 70.00000729526616]
+        },
+        "geometry_name": "way",
+        "properties": {
+            "place": "state",
+            "name": "Nunavut",
+            "ref": "NU",
+            "bbox": [-89.99999998747191, 70.00000729526616, -89.99999998747191, 70.00000729526616]
+        }
+    }, {
+        "type": "Feature",
+        "id": "placenames_large.305700702",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-86.00000008802873, 50.000000194818604]
+        },
+        "geometry_name": "way",
+        "properties": {
+            "place": "state",
+            "name": "Ontario",
+            "ref": "ON",
+            "bbox": [-86.00000008802873, 50.000000194818604, -86.00000008802873, 50.000000194818604]
+        }
+    }, {
+        "type": "Feature",
+        "id": "placenames_large.1756225709",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-63.45940999116639, 46.320206694963616]
+        },
+        "geometry_name": "way",
+        "properties": {
+            "place": "state",
+            "name": "Prince Edward Island",
+            "ref": "PE",
+            "bbox": [-63.45940999116639, 46.320206694963616, -63.45940999116639, 46.320206694963616]
+        }
+    }, {
+        "type": "Feature",
+        "id": "placenames_large.305700701",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-71.99999998997752, 53.999999994729876]
+        },
+        "geometry_name": "way",
+        "properties": {
+            "place": "state",
+            "name": "Quebec",
+            "ref": "QC",
+            "bbox": [-71.99999998997752, 53.999999994729876, -71.99999998997752, 53.999999994729876]
+        }
+    }, {
+        "type": "Feature",
+        "id": "placenames_large.305700698",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-105.99999998524429, 53.999999994729876]
+        },
+        "geometry_name": "way",
+        "properties": {
+            "place": "state",
+            "name": "Saskatchewan",
+            "ref": "SK",
+            "bbox": [-105.99999998524429, 53.999999994729876, -105.99999998524429, 53.999999994729876]
+        }
+    }, {
+        "type": "Feature",
+        "id": "placenames_large.305700707",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-136.0000000810684, 63.00000009483376]
+        },
+        "geometry_name": "way",
+        "properties": {
+            "place": "state",
+            "name": "Yukon",
+            "ref": "YT",
+            "bbox": [-136.0000000810684, 63.00000009483376, -136.0000000810684, 63.00000009483376]
+        }
+    }],
+    "crs": {
+        "type": "name",
+        "properties": {
+            "name": "urn:ogc:def:crs:EPSG::4326"
+        }
+    },
+    "bbox": [-136.0000000810684, 45.000000195029365, -56.00000009220471, 70.00000729526616]
+};
+
+var map = L.map('map').setView([56.863177, -108.584921], 4);
+
+L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {}).addTo(map);
+
+geojsonLayer = L.geoJson(geojson, {
+    style: function (feature) {
+        return {
+            color: "red"
+        };
+    },
+    pointToLayer: function (feature, latlng) {
+        return new L.CircleMarker(latlng, {
+            radius: 5,
+            fillOpacity: 0.85
+        });
+    },
+    onEachFeature: function (feature, layer) {
+        //layer.bindPopup(feature.properties.GPSUserName);
+
+        layer.on('click', function (e) {
+            document.getElementById("info").innerHTML = feature.properties.name;
+            $("#feature_infos").stop();
+            $("#feature_infos").fadeIn("fast");
+
+            console.log(feature.properties.name);
+            $("#feature_infos").fadeOut(5000);
+            // This is your click handler. 
+            // Your feature is available here as e.target, and the 
+            //featureInfo object we added is available as e.target.featureInfo 
+        });
+    }
+});
+
+map.addLayer(geojsonLayer);

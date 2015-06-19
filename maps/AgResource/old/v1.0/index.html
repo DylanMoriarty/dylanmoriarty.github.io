@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<title>AgResource</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'/>
+
+<link rel="stylesheet" href="lib/leaflet.css"/>
+<link rel="points" type="application/json" href="data/farm_points.geojson">
+<!--[if lte IE 8]>
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
+<![endif]-->
+  <style>
+    #map { width:1000px; height:600px; }
+
+    #feature_infos {
+      width:400px;
+      height: 400px;
+      background: rgba(255, 255, 255, 0.8);
+      position: absolute;
+      top:20px;
+      left:20px;
+      padding:5px;
+      border:2px solid black;
+      display:none;
+      border-radius: 10px;
+      box-shadow: 1px 1px 4px black;
+    }
+
+    #farmphoto img{
+      border:1px solid #999;
+    }
+
+    .introductionblockfront{
+      position: absolute;
+      background: rgba(255, 255, 255, 0.8);
+      margin:20px 100px 350px 20px;
+      width: 400px;
+      height:320px;
+      z-index:1;
+      padding:5px;
+      border:2px solid black;
+      border-radius: 10px;
+      box-shadow: 1px 1px 4px black;      
+    }
+
+    .introductionblockfront h2{
+      margin: 4px 0px 8px 0px;
+      text-align:center;
+    }
+
+    .introductionblockfront p{
+      margin-left: 25px;
+      margin-right: 25px;
+    }
+
+    .infolinebreak{
+      width:95%;
+      height:2px;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      background: rgba(0,0,0,0.3);
+      margin-top:4px;
+      margin-bottom: 8px;
+    }
+
+    .bottominfolinebreak{
+      width:95%;
+      height:2px;
+      margin-left: auto;
+      margin-right: auto;
+      background: rgba(0,0,0,0.3);
+      margin-top:40px;
+      margin-bottom: 8px;
+    }
+
+    #info h1{
+      font-size: 24px;
+      margin: 2px;
+    }
+
+    #info h2{
+      font-weight: normal;
+      font-size: 24px;
+      margin: 2px;
+      display: table-cell;
+    }
+
+    .buttons{
+      margin-top:4px;
+      text-align: right;
+    }   
+
+    .time-reset{
+      position: relative;
+      float: right;
+      cursor:pointer;
+    }
+    .time-prev{
+      position: relative;
+      float: right;
+      margin-left:6px;
+      cursor:pointer;
+    }
+    .time-next{
+      position: relative;
+      float: right;
+      margin-right:6px;      
+      cursor:pointer;
+    }
+    .time-end{
+      position: relative;
+      float: right;
+      margin-right:2px;
+      cursor:pointer;
+    }      
+
+    .datecontainer{
+      position: relative;
+      float: left;
+    }
+
+    #legend{      
+      position: absolute;
+      background: rgba(255, 255, 255, 0.8);
+      margin:460px 100px 10px 20px;
+      width: 160px;
+      height:110px;
+      z-index:1;
+      padding:5px;
+      border:2px solid black;
+      border-radius: 10px;
+      box-shadow: 1px 1px 4px black;      
+    }
+
+    .legendtitle{
+     text-align: center;
+    }
+
+    #legend p{
+     padding:2px;
+     margin:2px;
+    }
+  </style>
+</head> 
+
+
+<body>
+<div class = "container">
+  <div class ="introductionblockfront">
+    <h2>Cereals Tour Map</h2>
+      <div class = "infolinebreak"></div>
+
+    <p>Throughout the 2015 growing season, AgResource will be going to locations around the American Midwest to monitor crop growth, and sharing our findings with you. But that's not all. We are 
+    opening up Cereals Tour 2015 to the world.
+    <p>As the season progresses, send us pictures of your crop and location. We will compile the images so 
+    everyone can watch as North America grows.
+    <p><i>Select a farm to begin!</i>
+      <div class = "bottominfolinebreak"></div>
+  </div>
+  <div id="legend"><div class="legendtitle">Photo Provided by... </div><div class = "infolinebreak"></div><p>
+<img src="img/A.png" style="vertical-align: middle;"></img> <span style='vertical-align: middle;'>  AgResource</span><p><img src="img/P.png" style='vertical-align: middle;'></img><span style="vertical-align: middle;">  Public</span></div>
+	<div id = "map"></div>
+
+  <div id="feature_infos"> <span id="heading"></span>
+    <div id="info">
+    </div>
+  </div>  
+</div>
+
+<!--   <div class="sequence-buttons">
+      <div class="button">
+          <button type="button" class="stepBackward">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="play">
+              <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="pause">
+             <span class="glyphicon glyphicon-pause" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="stepForward">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          </button>
+      </div>
+  </div> -->
+
+<!-- Libraries -->
+  <script src="lib/d3.min.js"></script>
+  <script src="lib/queue.js"></script>
+  <script src="lib/topojson.v1.min.js"></script>
+  <script src="lib/jquery-2.1.1.min.js"></script>
+  <script src="lib/leaflet.js"></script>
+
+<!-- Map Script-->  
+  <script src = "js/main.js"></script>
+
+</body>
+</html>
+
+
+
+    

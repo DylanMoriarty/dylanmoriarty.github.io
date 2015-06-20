@@ -14,7 +14,7 @@
 
     #feature_infos {
       width:400px;
-      height: 400px;
+      height: 375px;
       background: rgba(255, 255, 255, 0.8);
       position: absolute;
       top:20px;
@@ -70,12 +70,24 @@
       margin-left: auto;
       margin-right: auto;
       background: rgba(0,0,0,0.3);
-      margin-top:40px;
+      margin-top:31px;
       margin-bottom: 8px;
     }
 
+    .infoboxheader{
+     height:18px;
+     padding-bottom:2px;
+     width:100%;
+    }
+
+    .closeme{
+      float: right;
+      cursor:pointer;
+    }
+
     #info h1{
-      font-size: 24px;
+      float:left;
+      font-size: 16px;
       margin: 2px;
     }
 
@@ -171,17 +183,6 @@
     .trigger3{
       width:90px;
     }    
-
-    .infoboxheader{
-     height:16px;
-     width:100%;
-    }
-
-    .closeme{
-      float: right;
-      cursor:pointer;
-    }
-
   </style>
 </head> 
 
@@ -191,16 +192,20 @@
   <div class ="introductionblockfront">
     <h2>Cereals Tour Map</h2>
       <div class = "infolinebreak"></div>
-
-    <p>Throughout the 2015 growing season, AgResource will be going to locations around the American Midwest to monitor crop growth, and sharing our findings with you. But that's not all. We are 
-    opening up Cereals Tour 2015 to the world.
-    <p>As the season progresses, send us pictures of your crop and location. We will compile the images so 
-    everyone can watch as North America grows.
-    <p><i>Select a farm to begin!</i>
+        <p>Throughout the 2015 growing season, AgResource will be going to locations around the American Midwest to monitor crop growth, and sharing our findings with you. But that's not all. We are 
+        opening up Cereals Tour 2015 to the world.
+        <p>As the season progresses, send us pictures of your crop and location. We will compile the images so 
+        everyone can watch as North America grows.
+        <p><i>Select a farm to begin!</i>
       <div class = "bottominfolinebreak"></div>
   </div>
-  <div id="legend"><div class="legendtitle">Photo Provided by... </div><div class = "infolinebreak"></div><p>
-<img src="img/A.png" style="vertical-align: middle;"></img> <span style='vertical-align: middle;'> - AgResource</span><p><img src="img/P.png" style='vertical-align: middle;'></img><span style="vertical-align: middle;"> - Public</span></div>
+  <div id="legend">
+    <div class="legendtitle">Photo Provided by... </div>
+    <div class = "infolinebreak"></div><p>
+      <img src="img/A.png" style="vertical-align: middle;"></img> 
+      <span style='vertical-align: middle;'> - AgResource</span><p>
+      <img src="img/P.png" style='vertical-align: middle;'></img>
+      <span style="vertical-align: middle;"> - Public</span></div>
   <div id="SelectaCrop"><span style="text-align: center">Change Crop</span><div class = "infolinebreak"></div>
     <button type="button" class="trigger1">Corn</button><p>
     <button type="button" class="trigger2">Soy </button><p>

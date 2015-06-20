@@ -143,7 +143,7 @@ function makeJson(geojsonFeature){
 
           //Functions that will build both the Photo & Date
           PhotoTimeline(selectedfarm)
-          UpdateDate(currentimagedate);
+          UpdateDate(currentimagedate, currenttime, numberofimages);
           updateVCRcontrols();
 
           //VCR Button Interactions- Change CurrentTime, date, and re-run the photo-addin' function to accomodate the new value
@@ -179,7 +179,7 @@ function makeJson(geojsonFeature){
             function timeclickfunctions(){
               dategrabberequation = dategrabber+currenttime;
               currentimagedate = feature.properties[dategrabberequation];
-              UpdateDate(currentimagedate);
+              UpdateDate(currentimagedate, currenttime, numberofimages);
               PhotoTimeline(selectedfarm);
               updateVCRcontrols();
             }
@@ -195,17 +195,24 @@ function makeJson(geojsonFeature){
   new L.Control.Zoom({ position: 'topright'}).addTo(map);
 
   //Adds the image's date to the info box
-  function UpdateDate(curdate){
+  function UpdateDate(curdate, currenttime, numberofimages){
     //Erases previous date
     $(".datecontainer").html("");
-
-    //Inserts new date
+    //Test to see if there is a date, and if so tag it onto the end of the image numbers...
+    if(Boolean(curdate) == true){
     d3.select(".datecontainer")
       .append("div")
       .attr("width", 100)
       .attr("height", 50)
-      .text(curdate);
-  };
+      .text("Image "+currenttime+" of "+numberofimages +" taken on "+curdate);
+      }else{
+      d3.select(".datecontainer")
+      .append("div")
+      .attr("width", 100)
+      .attr("height", 50)
+      .text("Image "+currenttime+" of "+numberofimages);
+      };      
+   };
 };
 
 //Setup a style for the states to follow...

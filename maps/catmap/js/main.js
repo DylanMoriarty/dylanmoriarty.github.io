@@ -5,6 +5,9 @@ var whatlon = Math.floor(Math.random()*(360)-180);
 
 d3.select("#introbox").on("click", function(){
   $("#introbox").fadeOut("fast");
+  amendGeojson();      
+  d3.select(".itsacat").remove();
+  makeJson(geojsonFeature);
 });
 
 //Leaflet Map Properties
@@ -46,7 +49,6 @@ function makeJson(geojsonFeature){
           amendGeojson();
           d3.select(".itsacat").remove();
           makeJson(geojsonFeature);
-          drawMeow(feature)
         });
     }
   }).addTo(map);

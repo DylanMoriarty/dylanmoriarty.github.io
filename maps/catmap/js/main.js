@@ -46,6 +46,7 @@ function makeJson(geojsonFeature){
       },
       onEachFeature: function(feature, layer){
         layer.on('click', function (e){
+          $(".itsacat").remove();
           amendGeojson();
           d3.select(".itsacat").remove();
           makeJson(geojsonFeature);

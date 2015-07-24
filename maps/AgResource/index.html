@@ -46,13 +46,25 @@
     }
 
     .introductionblockfront h2{
-      margin: 4px 0px 8px 0px;
+      margin: 4px 90px 8px 110px;
+      position: absolute;
       text-align:center;
     }
 
     .introductionblockfront p{
       margin-left: 25px;
       margin-right: 25px;
+    }
+
+    .linebreak{
+      width:95%;
+      height:2px;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      background: rgba(0,0,0,0.3);
+      margin-top:4px;
+      margin-bottom: 8px;
     }
 
     .infolinebreak{
@@ -62,7 +74,7 @@
       margin-left: auto;
       margin-right: auto;
       background: rgba(0,0,0,0.3);
-      margin-top:4px;
+      margin-top:14px;
       margin-bottom: 8px;
     }
 
@@ -85,6 +97,17 @@
     .closeme{
       float: right;
       cursor:pointer;
+    }
+
+    .introcloseme{
+      float: right;
+      cursor:pointer;
+    }
+
+    .introboxheader{
+     height:18px;
+     padding-bottom:2px;
+     width:100%;
     }
 
     #info h1{
@@ -193,7 +216,7 @@
 <body>
 <div class = "container">
   <div class ="introductionblockfront">
-    <h2>Cereals Tour Map</h2>
+    <div class = "introboxheader"><h2>Cereals Tour Map</h2><img src='img/x.png' class = 'introcloseme'></img></div>
       <div class = "infolinebreak"></div>
         <p>Throughout the 2015 growing season, AgResource will be going to locations around the American Midwest to monitor crop growth, and sharing our findings with you. But that's not all. We are 
         opening up Cereals Tour 2015 to the world.

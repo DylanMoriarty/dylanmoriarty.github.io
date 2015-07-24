@@ -8,7 +8,6 @@ var corn = null;
 var soy = null;
 var wheat = null;
 
-
 //Leaflet Map Properties
 var map = L.map('map',{
   maxZoom: 8,
@@ -33,6 +32,11 @@ $.getJSON("data/corn.geojson", function (data) {
 
 //CSV Data in GeoJson form
 var geojsonFeature = corn;
+
+//For 'X' on introblock
+d3.select(".introcloseme").on("click", function(){
+  $(".introductionblockfront").fadeOut("fast");
+});
 
 //For Switching between Geojsons...
 d3.select(".trigger1").on("click", function(){
@@ -137,7 +141,7 @@ function makeJson(geojsonFeature){
 
           //Create VCR control, add Info block 
           document.getElementById("info").innerHTML = 
-          "<div class='infoboxheader'><h1>"+feature.properties.farm+"</h1><img src='img/x.png' class = 'closeme'></img></div><div class ='infolinebreak'></div><div id=farmphoto></div><div class='buttons'><img src='img/time-end.png' class='time-end'><img src='img/time-next.png' class='time-next'><img src='img/time-prev.png' class='time-prev'><img src='img/time-reset.png' class='time-reset'><div class = datecontainer></div></div><div class ='bottominfolinebreak'></div>";
+          "<div class='infoboxheader'><h1>"+feature.properties.farm+"</h1><img src='img/x.png' class = 'closeme'></img></div><div class ='linebreak'></div><div id=farmphoto></div><div class='buttons'><img src='img/time-end.png' class='time-end'><img src='img/time-next.png' class='time-next'><img src='img/time-prev.png' class='time-prev'><img src='img/time-reset.png' class='time-reset'><div class = datecontainer></div></div><div class ='bottominfolinebreak'></div>";
             $("#feature_infos").stop();
             $("#feature_infos").fadeIn("fast");
 
@@ -224,7 +228,7 @@ var stateStyle = {
 };
 
 //Grab the geoJson externally an slap it on the map.
-$.getJSON("data/usa.geojson", function (data) {
+$.getJSON("data/northamerica.geojson", function (data) {
   L.geoJson(data, {
       style: function(feature){
         return stateStyle

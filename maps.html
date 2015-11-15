@@ -10,8 +10,6 @@ var everlasting = 1;
 
 $( document ).ready(function(){
 
-$(".mapblock").css("height","600");
-
 $(".maproll-item").find(".maproll-item-large").find("img").css("display", "none");
 $(".maproll-item").find(".maproll-item-description").css("display", "none");
 
@@ -21,9 +19,6 @@ $( "li" ).each(function() {
     $("#map-description").empty();
     $(this).find(".maproll-item-large").clone().appendTo("#map-graphic").css("width","100%").find("img").css("display","block");
     $(this).find(".maproll-item-description").clone().appendTo("#map-description").css("display", "block");
-
-  var curimg = $(this);
-  image_resize_fix(curimg)
 
   everlasting = $(this).prevAll().length+1;  
   })

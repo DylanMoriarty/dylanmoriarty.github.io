@@ -706,6 +706,10 @@ header {
     Music Box
 
 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
+.musicbox-img {
+  text-align: center;
+  padding-bottom: 20px; }
+
 /*
 COLORS 
 
@@ -811,7 +815,8 @@ Back Grey -- #e5e5e5
   max-height: 240px;
   position: absolute;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  overflow: hidden; }
 
 .tothetop {
   bottom: -1px;
@@ -840,7 +845,8 @@ Back Grey -- #e5e5e5
 .welcomemat-center {
   position: absolute;
   bottom: 0px;
-  max-width: 100%;
+  width: 100%;
+  min-width: 600px;
   height: auto;
   z-index: -10; }
 

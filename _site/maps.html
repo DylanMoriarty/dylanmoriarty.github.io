@@ -25,7 +25,7 @@
 		<div class = "site-entire">
 	<header class ="nav-down">
 		<div class ="nav-container">
-			<a href= "http://127.0.0.1:4000/"><i class="fa fa-home"></i> <h1>Home</h1></a>
+			<a href= "../index.html"><i class="fa fa-home"></i> <h1>Home</h1></a>
 			<a href="../maps.html"><i class="fa fa-globe"></i> <h1>Work</h1></a> 
 			<a href="../cake.html"><i class="fa fa-paint-brush"></i> <h1>Toons</h1></a>
 			<a href="../tunes.html"><i class="fa fa-music"></i> <h1>Tunes</h1>
@@ -64,8 +64,6 @@ var everlasting = 1;
 
 $( document ).ready(function(){
 
-$(".mapblock").css("height","600");
-
 $(".maproll-item").find(".maproll-item-large").find("img").css("display", "none");
 $(".maproll-item").find(".maproll-item-description").css("display", "none");
 
@@ -75,9 +73,6 @@ $( "li" ).each(function() {
     $("#map-description").empty();
     $(this).find(".maproll-item-large").clone().appendTo("#map-graphic").css("width","100%").find("img").css("display","block");
     $(this).find(".maproll-item-description").clone().appendTo("#map-description").css("display", "block");
-
-  var curimg = $(this);
-  image_resize_fix(curimg)
 
   everlasting = $(this).prevAll().length+1;  
   })

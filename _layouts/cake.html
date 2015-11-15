@@ -1,0 +1,40 @@
+---
+layout: default
+---
+<style>
+.welcomeplate h1{
+	color: rgba(0,0,0,0);
+}
+</style>
+
+<div class="cake-title"><img src="../graphics/cake/ComicHead.png"></img></div>
+
+<div class="cake-line"></div>
+
+<div class="cake-comic-title">{{ page.name }}</div>
+
+<div id = "comic-content">
+    <div id="comic">
+      <img src = "../graphics/cake/comics/{{ page.comic }}" alt= "{{ page.hovertext }}"> 
+    </div>
+
+
+<div id="comicnav">
+{% if page.prev == null %}
+  <img src="../graphics/cake/comics/previousi.png"></img>
+{% else %}
+  <a href = "./{{ page.prev }}.html"><img src = "../graphics/cake/comics/previous.png" onmouseover="this.src='../graphics/cake/comics/previousc.png'" onmouseout="this.src='../graphics/cake/comics/previous.png'"></a> 
+{% endif %}
+ <a href = "../cake.html"><img src = "../graphics/cake/comics/archieve.png" onmouseover="this.src='../graphics/cake/comics/archievec.png'" onmouseout="this.src='../graphics/cake/comics/archieve.png'"></a>
+{% if page.next == null %}
+ <img src="../graphics/cake/comics/nexti.png"></imgs>
+{% else %}
+  <a href = "./{{ page.next }}.html"><img src = "../graphics/cake/comics/next.png" onmouseover="this.src='../graphics/cake/comics/nextc.png'" onmouseout="this.src='../graphics/cake/comics/next.png'"></a> 
+{% endif %}
+ </div>
+
+<div class= "comic-words">
+	{{ content }}
+</div>
+
+</div>

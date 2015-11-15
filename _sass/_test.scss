@@ -1,0 +1,86 @@
+#welcomeback{
+}
+
+.welcomemat{
+	width:100%;
+	height: 240px;
+}
+
+.welcomeimagebox{
+	display: block;
+	max-height: 240px;
+	position: absolute;
+	width:100%;
+	height:100%;
+}
+
+.tothetop{
+	bottom:-1px;
+	width:100%;
+	z-index: -2;
+	pointer-events: none;
+	position: absolute;
+}
+
+.welcomemat-left{
+	position: absolute;
+	bottom:0px;
+	left:0px;
+	height: auto;
+	max-width: 50%;
+	min-width: 600px;
+	z-index: -7;
+}
+
+.welcomemat-right{
+	position: absolute;
+	bottom:0px;
+	right:0px;
+	max-width: 50%;
+	height: auto;
+	z-index: -10;
+}
+
+.welcomemat-center{
+	position: absolute;
+	bottom:0px;
+	max-width: 100%;
+	height: auto;
+	z-index: -10;
+}
+
+.welcomecover{
+	position: relative;
+	height:100%;
+	top: -10px;
+}
+
+.welcomecarto{
+
+}
+
+.welcomeplate{
+	position: relative;
+	text-align: center;
+	width: 50%;
+	height: 100%;
+	left: 50%;
+	h1{
+		position: relative;
+		left: -50%;
+		margin-bottom: 0;
+	}
+}
+
+
+.welcomeiconbox{
+	position: relative;
+	left: -50%;
+	a{
+		margin: 0 15px 0 15px;
+	}
+}
+
+.welcomeillus{
+
+}

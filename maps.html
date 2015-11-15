@@ -1,0 +1,254 @@
+---
+layout: default
+title:  Work
+bannersplit: true
+links:
+---
+
+<script>
+var everlasting = 1;
+
+$( document ).ready(function(){
+
+$(".mapblock").css("height","600");
+
+$(".maproll-item").find(".maproll-item-large").find("img").css("display", "none");
+$(".maproll-item").find(".maproll-item-description").css("display", "none");
+
+$( "li" ).each(function() {
+  $(this).click(function(){
+    $("#map-graphic").empty();
+    $("#map-description").empty();
+    $(this).find(".maproll-item-large").clone().appendTo("#map-graphic").css("width","100%").find("img").css("display","block");
+    $(this).find(".maproll-item-description").clone().appendTo("#map-description").css("display", "block");
+
+  var curimg = $(this);
+  image_resize_fix(curimg)
+
+  everlasting = $(this).prevAll().length+1;  
+  })
+});
+
+  $("li:nth-child(1) div.maproll-item-large").clone().appendTo("#map-graphic").css("width","100%").find("img").css("display","block");
+  $("li:nth-child(1) div.maproll-item-description").clone().appendTo("#map-description").css("display", "block");
+
+  var firstthings = $("li:nth-child(1)");
+  image_resize_fix(firstthings);
+
+  map_resize_check();
+
+  $('#maproll-move-right').click(function () {
+      var leftPos = $('.maproll').scrollLeft();
+      console.log(leftPos);    
+      $(".maproll").animate({
+          scrollLeft: leftPos - 250
+      }, 400);
+  });
+
+  $('#maproll-move-left').click(function () {
+      var leftPos = $('.maproll').scrollLeft();
+      console.log(leftPos); 
+      $(".maproll").animate({
+          scrollLeft: leftPos + 250
+      }, 400);
+  });  
+});
+
+$(window).resize(function() {
+    var locate = "li:nth-child("+everlasting+")";
+    map_resize_check()
+        console.log(everlasting)
+
+    image_resize_fix(locate)
+});
+
+function map_resize_check(){
+  if ($(this).width() < 850) {
+      $("#map-description").appendTo(".small-window-home")
+      .css({
+        "min-height":"12%",
+        "max-height":"30%",
+        "bottom":"0px",
+        "width": "100%",
+        "max-width": "100%",
+        "box-shadow": "none",
+        "border-bottom-left-radius":"0px",
+        "overflow":"scroll"
+      });
+      if ($(this).width() < 550) {
+      $("#map-description").css({"height":"42%"});
+      };
+    } else {
+      $("#map-description").appendTo(".map-container")
+      .css({
+        "height":"auto",
+        "max-height":"",
+        "bottom":"",
+        "width": "400px",
+        "max-width": "40%",
+        "box-shadow": "4px 4px 5px rgba(0,0,0,0.4)",
+        "border-bottom-left-radius":"14px",
+        "overflow":""
+      });
+    };
+};
+
+function image_resize_fix(curimg){
+  var imgrab = $(curimg).find(".maproll-item").find(".maproll-item-large").find("img");
+  var h = Number(imgrab.height());
+
+  var h2 = h + 126;
+  $(".mapblock").css("height",h2);
+};
+</script>
+
+<div id= "front-content">
+  <div class="maproll-outline"></div>
+  <div class="maproll-container">
+    <div class="maproll">
+      <div id="maproll-move-right"><img src = "/graphics/maps/left.png"></img></div>
+      <ul id = "maproll">
+        {% include maproll.html %}
+      </ul>
+      <div id="maproll-move-left"><img src = "/graphics/maps/right.png"></img></div>
+    </div>
+  </div>
+  <div class="map-container">
+    <div id="map-graphic">
+    </div>
+    <div id="map-description">
+    </div>
+  </div>
+</div>
+<div class="small-window-home"></div>
+<div class = "mapblock"></div>
+
+
+<style>
+.maproll-container{
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 186px;
+  background-color: black;
+}
+
+.map-container{
+  position: absolute;
+  left: 0px;
+  top: 186px;
+  width: 100%;
+  height: auto;
+  background-color: yellow;
+}
+
+#map-graphic{
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  width: 100%;
+  background-color: grey;
+  pointer-events: none;
+  overflow: hidden; 
+}
+
+
+.maproll{
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space:nowrap;
+}
+
+.maproll li{
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+.maproll-item{
+  width:160px;
+  height:160px;
+  margin: 0px 20px 0px 20px;
+  display: inline-block;
+  cursor: pointer
+}
+
+.maproll-item-thumb img{
+  margin-top:14px;
+}
+
+.maproll-item-large img{
+  width:100%;
+}
+
+#map-description{
+  right: 0px;
+  position: absolute;
+  width: 400px;
+  max-width: 40%;
+  background-color: rgba(0,0,0,0.8);
+  border: solid black 2px;
+  color: white;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  box-shadow: 4px 4px 5px rgba(0,0,0,0.4);
+  border-bottom-left-radius: 14px;
+}
+
+.mapblock{
+  width:100%;
+  height:660px;
+}
+
+.maproll-item-description h2{
+  font-size: 1.2em;
+  margin: 18px 0px 2px 0px;
+  text-align: center;
+}
+
+.maproll-icon-box{
+  margin-top:10px;
+  margin-bottom: 20px;
+}
+
+.maproll-inner-text{
+  font-size: 0.8em;
+  margin: 10px 20px 0px 20px;
+}
+
+.maproll-icon-box a{
+  margin: 0 10px 0 10px;
+}
+
+.maproll-line{
+  width: 80%;
+  height: 1px;
+  background-color: rgba(255,255,255,0.6);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.small-window-home{
+  width: 100%;
+}
+
+.maproll-outline{
+  position: absolute;
+  width:100%;
+  height:1.5px;
+  background-color:black;
+  top: -4px;
+  right:0px;
+}
+
+#maproll-move-right{
+  position: absolute;
+  left: 20px;
+  top:38px;
+}
+
+#maproll-move-left{
+  position: absolute;
+  right: 20px;
+  top:38px;
+}
+</style>

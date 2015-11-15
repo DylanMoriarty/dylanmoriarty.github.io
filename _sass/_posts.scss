@@ -1,0 +1,44 @@
+.Chapterbox{
+	font-family: Quicksand;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	color: #8f8f8f;
+	h1{
+		position: relative;
+		font-weight: 100;
+		margin: 0;
+		font-size: 0.9em;
+		display: inline-block;
+		height: 4px;
+		width: 40px;
+	}
+}
+
+.ChapterboxHeader{
+	margin-bottom: 3px;
+}
+
+.ChapterboxTitle{
+	bottom:3px;
+	font-size: 1.3em;
+	letter-spacing: 4px;
+	position: relative;
+}
+
+.ChapterboxHeaderLine{
+	width: 100px;
+	height:1px;
+	background-color: #8f8f8f;
+	display: inline-block;
+	position: relative;
+	margin-bottom: 5px;
+}
+
+.ChapterboxFooterLine{
+	width: 250px;
+	height:1px;
+	background-color: #8f8f8f;
+	margin: auto;
+	margin-top: 6px;
+}

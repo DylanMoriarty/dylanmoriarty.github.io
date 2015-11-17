@@ -74,15 +74,18 @@ $( "li" ).each(function() {
     $(this).find(".maproll-item-large").clone().appendTo("#map-graphic").css("width","100%").find("img").css("display","block");
     $(this).find(".maproll-item-description").clone().appendTo("#map-description").css("display", "block");
 
-  everlasting = $(this).prevAll().length+1;  
+  image_resize_fix(this);
+
+  everlasting = $(this).prevAll().length+1;
   })
 });
 
   $("li:nth-child(1) div.maproll-item-large").clone().appendTo("#map-graphic").css("width","100%").find("img").css("display","block");
   $("li:nth-child(1) div.maproll-item-description").clone().appendTo("#map-description").css("display", "block");
 
-  var firstthings = $("li:nth-child(1)");
-  image_resize_fix(firstthings);
+  // var firstthings = "li:nth-child("+0+")";
+  // console.log(firstthings)
+  // image_resize_fix(firstthings);
 
   map_resize_check();
 
@@ -108,6 +111,11 @@ $(window).resize(function() {
     map_resize_check()
         console.log(everlasting)
 
+    image_resize_fix(locate)
+});
+
+$(window).scroll(function(event){
+    var locate = "li:nth-child("+everlasting+")";
     image_resize_fix(locate)
 });
 
@@ -143,6 +151,8 @@ function map_resize_check(){
 };
 
 function image_resize_fix(curimg){
+  console.log(curimg);
+
   var imgrab = $(curimg).find(".maproll-item").find(".maproll-item-large").find("img");
   var h = Number(imgrab.height());
 
@@ -465,7 +475,7 @@ function image_resize_fix(curimg){
 
 .mapblock{
   width:100%;
-  height:660px;
+  height:800px;
 }
 
 .maproll-item-description h2{

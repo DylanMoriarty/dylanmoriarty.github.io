@@ -3,7 +3,6 @@ layout: post
 title:  "Timtom!"
 type: blog
 description: This is a testing dummy post!
-link: www.google.com
 banner: /graphics/banners/banner1.jpg
 ---
 

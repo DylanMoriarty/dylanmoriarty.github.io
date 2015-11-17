@@ -3,7 +3,6 @@ layout: post
 title:  Springtime 15'
 type: blog
 description: Springtime! Graphics for apps & a few maps.
-link: www.google.com
 banner: /graphics/banners/banner6.jpg
 ---
 

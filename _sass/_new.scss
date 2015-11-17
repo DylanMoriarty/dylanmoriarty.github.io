@@ -118,8 +118,9 @@ header {
 
 #front-content p{
   margin: 0;
-  padding-top: 6px;
-  padding-bottom: 16px;
+  position: relative;
+  top:-2px;
+  padding-bottom: 10px;
   line-height: 18px;
 }
 
@@ -132,8 +133,10 @@ header {
 .news-container{
   img{
     width:100%;
+    border: solid #333 1.5px;
   }
 }
+
 
 /* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 

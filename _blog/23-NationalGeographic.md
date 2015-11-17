@@ -1,15 +1,14 @@
 ---
 layout: post
-title:  Summer 15'
+title:  Nat Geo Basemap
 type: maps
-description: This is a testing dummy post!
+description: I put together a slippy map for a National Geographic project
 banner: /graphics/banners/banner7.jpg
 links: <a href="http://127.0.0.1:4000/"><i class="fa fa-angle-left fa-2x"></i></a>
 ---
 
-Howdy folks!
 
-Another two months, another chuck full of a wide variety of projects. Life's good when it's busy.
+
 
 {% include bits/chapter1.html %}I
 {% include bits/chapter2.html %}Plaid Map!

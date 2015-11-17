@@ -1,23 +1,45 @@
 ---
 layout: post
-title:  Summer 15'
+title:  Development Seed
 type: maps
-description: This is a testing dummy post!
+description: Handmade 
 banner: /graphics/banners/banner7.jpg
 links: <a href="http://127.0.0.1:4000/"><i class="fa fa-angle-left fa-2x"></i></a>
 ---
 
-Howdy folks!
+Howdy folks,
 
-Another two months, another chuck full of a wide variety of projects. Life's good when it's busy.
+Over the last few months I've joined the Development Seed team and moved out to Washington DC! Here's a quick overview of what that's entailed, & a few odds and end projects that I finished up on before the big move.
 
 {% include bits/chapter1.html %}I
-{% include bits/chapter2.html %}Plaid Map!
+{% include bits/chapter2.html %}Moriarty Hand
 {% include bits/chapter3.html %}
 
-Does Cartographic fashion exist?
+I drew up the world for Daniel Huffman's Project Linework. 
 
-Yep! Though, that fashion depends more on the tools than a communities whim to put floral patterns on everything. Still, in a mostly-facetious conversation about Cartographic fashion, I decided that I needed to make a plaid map. ...and here's the product of that.
+"A library of handcrafted vector linework for cartography, each designed in a unique aesthetic style. They are meant to break us away from default line paths that we so often rely on by providing more visually-interesting alternatives."
+
+{% include bits/chapter1.html %}II
+{% include bits/chapter2.html %}Victory Lap Icons 
+{% include bits/chapter3.html %}
+
+
+{% include bits/chapter1.html %}III
+{% include bits/chapter2.html %}OSM Analytics 
+{% include bits/chapter3.html %}
+
+
+{% include bits/chapter1.html %}IV
+{% include bits/chapter2.html %}New Webzone 
+{% include bits/chapter3.html %}
+
+
+{% include bits/chapter1.html %}V
+{% include bits/chapter2.html %}I'm on Google Maps! 
+{% include bits/chapter3.html %}
+
+
+This is the first project I worked on with DevSeed that was publically released. Basically, 
 
 <div class="images"><img src="/graphics/blog/smr/lumbermap.png" class="ib"></div>
 

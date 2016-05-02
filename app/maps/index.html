@@ -1,0 +1,168 @@
+---
+layout: default
+title:  Work
+bannersplit: true
+
+project:
+  - name: Missing Maps
+    min: 3-uwmad.png
+    large: 4-hashtags.gif
+    desc: I designed the front-end for this amazing api built by Marc Farra that tracks a hashtag used for <a href="http://OpenStreetMap.org">OpenStreetMap</a> edits. <p>The site for it has been taken down, but we're doing a bunch of work to scale this concept to something that'll be useful for Mapathons & emergency mapping.
+    link: <a href="https://github.com/DylanMoriarty" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+    readmore:
+  - name: Work Elections <a href=""><i class="fa fa-link"></i></a>
+    min: 3-uwmad.png
+    large: 4-hashtags.gif
+    desc: Check it out here.
+    link: <a href="https://github.com/developmentseed/work.vote" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+    readmore: 
+  - name: Find Your Park, Love Your Park
+    min: 3-uwmad.png
+    large: 4-hashtags.gif
+    desc: 
+    link: <a href="https://github.com/DylanMoriarty" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+    readmore: 
+  - name: UW-Madison Map
+    min: 3-uwmad.png
+    large: 3-uwmad.jpg
+    desc: 
+    link: <a href="https://github.com/DylanMoriarty" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+    readmore: 
+  - name: Your Body (not) Your Choice
+    min: 1-ybnyc.png
+    large: 1-ybnyc.png
+    desc: 
+    link: <a href="https://github.com/DylanMoriarty" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+    readmore: 
+  - name: UW-Madison L&S Annual Report
+    min: 3-uwmad.png
+    large: 4-hashtags.gif
+    desc: 
+    link: <a href="https://github.com/DylanMoriarty" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+    readmore: 
+  - name: Plaid Map
+    min: 5-plaid.png
+    large: 5-plaid.png
+    desc: 
+    link: <a href="https://github.com/DylanMoriarty" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+    readmore: 
+  - name: Sub Map
+    min: 2-sandw.png
+    large: 2-sandw.png
+    desc: 
+    link: <a href="https://github.com/DylanMoriarty" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+    readmore: 
+
+---
+
+<script>
+  var everlasting = 1;
+
+  $( document ).ready(function(){
+
+    $("#more-info").on("click", function(){
+      $("#map-description").css("display", "block");
+    })
+
+    $(".maproll-item").find(".maproll-item-large").find("img").css("display", "none");
+    $(".maproll-item").find(".maproll-item-description").css("display", "none");
+
+    $( "li" ).each(function() {
+      $(this).click(function(){
+        $("#map-graphic").empty();
+        $("#map-description").empty();
+        $(this).find(".maproll-item-large").clone().appendTo("#map-graphic").css("width","100%").find("img").css("display","block");
+        $(this).find(".maproll-item-description").clone().appendTo("#map-description").css("display", "block");
+
+      image_resize_fix(this);
+
+      everlasting = $(this).prevAll().length+1;
+      })
+    });
+
+    $("li:nth-child(1) div.maproll-item-large").clone().appendTo("#map-graphic").css("width","100%").find("img").css("display","block");
+    $("li:nth-child(1) div.maproll-item-description").clone().appendTo("#map-description").css("display", "block");
+
+    // var firstthings = "li:nth-child("+0+")";
+    // console.log(firstthings)
+    // image_resize_fix(firstthings);
+
+    $('#maproll-move-right').click(function () {
+        var leftPos = $('.maproll').scrollLeft();
+        console.log(leftPos);    
+        $(".maproll").animate({
+            scrollLeft: leftPos - 250
+        }, 400);
+    });
+
+    $('#maproll-move-left').click(function () {
+      var leftPos = $('.maproll').scrollLeft();
+      console.log(leftPos); 
+      $(".maproll").animate({
+          scrollLeft: leftPos + 250
+      }, 400);
+    });  
+  });
+
+  $(window).resize(function() {
+      var locate = "li:nth-child("+everlasting+")";
+          console.log(everlasting)
+
+      image_resize_fix(locate)
+  });
+
+  $(window).scroll(function(event){
+      var locate = "li:nth-child("+everlasting+")";
+      image_resize_fix(locate)
+  });
+
+  function image_resize_fix(curimg){
+    console.log(curimg);
+
+    var imgrab = $(curimg).find(".maproll-item").find(".maproll-item-large").find("img");
+    var h = Number(imgrab.height());
+
+    var h2 = h + 126;
+    $(".mapblock").css("height",h2);
+  };
+</script>
+
+<div id= "front-content">
+<!--   <div class="maproll-outline"></div>-->  
+  <div class="maproll-container">
+      <div class="maproll">
+        <div id="maproll-move-right"><img src = "../assets/graphics/maps/left.png"></img></div>
+        <ul id = "maproll">
+          {% for p in page.project %}
+          <li>
+            <div class= "maproll-item">
+              <div class= "maproll-item-thumb">
+                <img src="../assets/graphics/maps/thumbs/{{ p.min }}"></img>
+              </div>
+              <div class= "maproll-item-large">
+                <img src="../assets/graphics/maps/full/{{ p.large }}"></img>
+              </div>
+              <div class= "maproll-item-description">
+                <h2>{{ p.name }}</h2>
+                <div class="maproll-line"></div>
+                <div class="maproll-inner-text">
+                  <p>{{ p.desc }}</p>
+                  <div class="maproll-icon-box">{{ p.link }}{{ p.readmore }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+        <div id="maproll-move-left"><img src = "../assets/graphics/maps/right.png"></img></div>
+      </div>
+    </div>
+  <div class="map-container">
+  <div class="maproll-outline"></div>
+    <div id="map-graphic"></div>
+    <div id="map-description"></div>
+    <div id="more-info"><a href="#"><i class="fa fa-info-circle fa-2x"></i></a></div>
+  </div>
+</div>
+<div class = "mapblock"></div>

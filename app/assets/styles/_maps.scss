@@ -1,0 +1,149 @@
+  .maproll-container{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 186px;
+  }
+
+  .map-container{
+    position: absolute;
+    left: 0px;
+    top: 139px;
+    width: 100%;
+    height: auto;
+    background-color: yellow;
+  }
+
+  #map-graphic{
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    width: 100%;
+    background-color: grey;
+    pointer-events: none;
+    overflow: hidden; 
+  }
+
+
+  .maproll{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space:nowrap;
+  }
+
+  .maproll li{
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+  }
+
+  .maproll-item{
+    width:100px;
+    height:100px;
+    margin: 0px 20px 0px 20px;
+    display: inline-block;
+    cursor: pointer
+  }
+
+  .maproll-item-thumb img{
+    margin-top:14px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .maproll-item-large img{
+    width:100%;
+  }
+
+  #map-description{
+    right: 20px;
+    top: 20px;
+    position: absolute;
+    width: 400px;
+    max-width: 40%;
+    background-color: rgba(255,255,255,0.95);
+    border: solid 1px rgba(0,0,0,0.3);
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    border-radius: 14px;
+    display: block;
+    @media screen and (max-width: 480px){
+      display: none;
+    }
+  }
+
+  #more-info{
+    position:absolute;
+    top: 22px;
+    right: 24px;
+    display: none;
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 50%;
+    width: 38px;
+    height: 36px;
+    text-align: center;
+    padding-top:2px;
+    @media screen and (max-width: 480px){
+      display: block;
+    }
+  }
+
+  .mapblock{
+    width:100%;
+    height:800px;
+  }
+
+  .maproll-item-description h2{
+    font-size: 1.2em;
+    margin: 18px 0px 2px 0px;
+    text-align: center;
+  }
+
+  .maproll-icon-box{
+    margin-top:10px;
+    margin-bottom: 20px;
+  }
+
+  .maproll-inner-text{
+    font-size: 0.8em;
+    margin: 10px 20px 0px 20px;
+  }
+
+  .maproll-icon-box a{
+    margin: 0 10px 0 10px;
+  }
+
+  .maproll-line{
+    width: 80%;
+    height: 2px;
+    background-color: rgba(0,0,0,0.15);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .small-window-home{
+    width: 100%;
+  }
+
+  .maproll-outline{
+    position: absolute;
+    width:100%;
+    height:1.5px;
+    background-color:black;
+    right:0px;
+  }
+
+  #maproll-move-right{
+    position: absolute;
+    left: 20px;
+    top:10px;
+  }
+
+  #maproll-move-left{
+    position: absolute;
+    right: 20px;
+    top:10px;
+  }
+
+  .page-content{
+    padding-bottom: 13px;
+  }

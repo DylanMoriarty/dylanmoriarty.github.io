@@ -9,6 +9,8 @@ links:
 
 ---
 
+(This post is a WIP.)
+
 Over a few days this past summer I took to drawing the world. Or, well, linework of it.
 
 Almost all Cartographers like their data percise and accurate- and therefore almost everyone uses the same georeferenced linework as a base for their maps. Project Linework is a resource created and curated by <span class="tooltip">Daniel Huffman<i class="fa fa-info-circle fa"></i><span class="tooltiptext">Daniel is a freelance Cartographer, lecturer, and all around smart guy. He runs a <a href="https://somethingaboutmaps.wordpress.com" target="_blank">pretty great blog</a> that details his work.</span></span> that seeks to alleviate this monotomy by providing styled lineworks that abstract boundaries in creative ways.
@@ -53,7 +55,5 @@ Daniel took over this stage, thankfully for me.
 {% include bits/chapter3.html %}
 
 And with that, we have a sketchy georeferenced artwork that folks can use for their maps! We can project it, as well as layer other georeferenced data on top of it. Enjoy!
-
-<div class="images"><img src="../assets/graphics/blog/smr/lumbermap.png" class="ib"></div>
 
 Cheers!

@@ -4,7 +4,7 @@ title:  <a href="../"><i class="fa fa-home fa"></i> /</a> Summer Work
 type: maps
 description: Summer Work! Plaid maps, cat maps, and an EP!
 bannerimg: /banners/cakebanner
-banner: ../assets/graphics/banners/banner1.jpg
+banner: ../assets/graphics/banners/banner7.jpg
 links:
 
 ---
@@ -35,21 +35,13 @@ This project was a lot of fun, and a great way to work on some hefty manipulatio
 
 <div class="images"><img src="../assets/graphics/blog/smr/cage.gif"></div>
 
-It hasn't been published yet, we're waiting on a few more adjustments, but look forward to a process post when it does. Here's a working version of what the framework looks like. The images are all placeholders, as that's something AgResource will be providing.
-
-<div class = "centermeplease"><iframe src="http://dylanmoriarty.github.io/maps/AgResource/index.html" frameborder= "0" width="100%" height="616"></iframe></div>
-<div class = "block"></div>
-
 {% include bits/chapter1.html %}III
 {% include bits/chapter2.html %}Cat Map
 {% include bits/chapter3.html %}
 
 As a follow-up to the work I'd been doing with AgResource, I was curious seeing how far I could push icons drawn with Leaflet. Essentially, I wanted to test 1. How many icons could be drawn on a screen before the user would start to get a significant amount of lag? and 2. Can those icons just be drawings as opposed to svg circles?
 
-Decided to test both things (and GeoJson manipulation within the script) with this goofy thing- Click a Cat, Get a Cat.
-
-<div class = "centermeplease"><iframe src="http://dylanmoriarty.github.io/maps/catmap/" scrolling = "no" frameborder= "0" width="100%" height="616"></iframe></div>
-<div class = "block"></div>
+Decided to test both things (and GeoJson manipulation within the script) with this goofy thing- <a href="../blog/03-Catmap.html">Click a Cat, Get a Cat.</a>
 
 {% include bits/chapter1.html %}IV
 {% include bits/chapter2.html %}Wheels

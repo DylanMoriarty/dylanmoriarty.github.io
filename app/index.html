@@ -10,7 +10,7 @@ links: <p><a href="https://github.com/DylanMoriarty" target="_blank"><i class="f
     {% for b in site.blog reversed %}
       <li>
         <div class = "news-container">
-            <a href="{{ b.url | prepend: site.baseurl }}">
+            <a href="{{ site.baseurl }}{{ b.url }}">
                <img src="{{ b.banner }}">              
               <p>{{ b.description }}
           </div></a>

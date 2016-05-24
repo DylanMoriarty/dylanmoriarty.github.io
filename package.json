@@ -1,18 +1,18 @@
 {
-  "name": "OpenElectionData",
+  "name": "DylanMoriarty",
   "version": "0.1.0",
-  "description": "Database & Documentation for Open Election Data",
+  "description": "Home for the things cobbled together by Dylan Moriarty",
   "repository": {
     "type": "git",
-    "url": "https://github.com/electiondata/electiondata.github.io.git"
+    "url": "dylanmoriarty.github.io"
   },
   "author": {
-    "name": "Development Seed",
-    "url": "https://developmentseed.org"
+    "name": "Dylan Moriarty",
+    "url": "dylanmoriarty.github.io"
   },
   "license": "",
   "bugs": {
-    "url": "https://github.com/electiondata/electiondata.github.io/issues"
+    "url": "https://github.com/dylanmoriarty/dylanmoriarty.github.io/issues"
   },
   "homepage": "",
   "scripts": {

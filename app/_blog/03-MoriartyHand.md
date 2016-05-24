@@ -6,7 +6,7 @@ description: Moriarty Hand; a vector linework with human error
 bannerimg: /banners/cakebanner
 banner: ../assets/graphics/banners/banner1.jpg
 links:
-date: 10-1-15
+date: 2015-10-15
 display: no
 permalink: blog/moriarty-hand.html
 

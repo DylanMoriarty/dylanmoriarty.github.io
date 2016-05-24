@@ -6,7 +6,7 @@ description: Incentivizing mapping on OSM for humanitarian projects
 bannerimg: /banners/missingmaps
 banner: ../assets/graphics/banners/banner4.jpg
 links: <a href="http://www.missingmaps.org/" target="_blank"> Check out the site</a> | <a href="https://github.com/missingmaps" target="_blank"><i class="fa fa-github fa"></i> Github code</a> 
-date: 5-15-16
+date: 2016-05-15
 display: 'no'
 permalink: blog/missing-maps.html
 

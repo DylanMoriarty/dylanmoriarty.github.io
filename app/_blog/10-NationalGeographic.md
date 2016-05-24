@@ -6,7 +6,7 @@ description: National Geographic basemap
 bannerimg: /banners/banner5
 banner: ../assets/graphics/banners/banner2.jpg
 links:  <!-- | <a href="https://github.com/missingmaps" target="_blank"><i class="fa fa-github fa"></i> Github code</a>  -->
-date: 5-8-16
+date: 2016-05-08
 display: 'yes'
 permalink: blog/national-geographic.html
 

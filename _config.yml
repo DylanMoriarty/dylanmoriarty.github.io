@@ -1,4 +1,5 @@
 # Site settings
+source: app
 title: DylanMoriarty.github.io
 safe:           false
 source:         app
@@ -9,6 +10,8 @@ exclude:
   - README.md
 timezone: America/New_York
 highlighter: false 
+
+syntax_highlighter: rouge
 
 baseurl: "../"
 

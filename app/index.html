@@ -14,7 +14,7 @@ links: <div class = "special-icon"><p><a href="https://github.com/DylanMoriarty"
             <a href="{{ site.baseurl }}{{ b.url }}">
                <img src="{{ b.banner }}">              
               <div class = "description-name">{{ b.description }}</div>
-              <div class = "description-date">{{ b.date }}</div>
+              <div class = "description-date">{{ b.date | date: '%B %d, %Y' }}</div>
           </div></a>
       </li>
       {% endif %}

@@ -6,7 +6,7 @@ description: Springtime! Illustrations, maps, & music.
 bannerimg: /banners/cakebanner
 banner: ../assets/graphics/banners/banner6.jpg
 links: 
-date: 5-2-15
+date: 2015-05-02
 display: 'yes'
 permalink: blog/springtime-15.html
 

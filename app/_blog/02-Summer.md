@@ -6,7 +6,7 @@ description: Summer Work! Plaid maps, cat maps, and an EP!
 bannerimg: /banners/cakebanner
 banner: ../assets/graphics/banners/banner7.jpg
 links:
-date: 7-6-15
+date: 2015-06-07
 display: 'yes'
 permalink: blog/summer-15.html
 

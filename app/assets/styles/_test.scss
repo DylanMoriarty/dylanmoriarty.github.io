@@ -85,6 +85,18 @@
 	}
 }
 
+.special-icon{
+	i{
+		border-radius: 50%;
+		width:34px;
+		height:34px;
+		transition: background-color .35s;
+		&:hover{
+			background-color: lighten($Gold, 35);
+		}
+	}
+}
+
 .welcomeillus{
 
 }

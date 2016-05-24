@@ -6,6 +6,9 @@ description: Election Worker; making it easier to work your poll stations
 bannerimg: /banners/workbanner
 banner: ../assets/graphics/banners/banner3.jpg
 links: 
+date: 5-8-16
+display: no
+permalink: blog/electino-worker.html
 
 ---
 

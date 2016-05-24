@@ -6,6 +6,9 @@ description: Summer Work! Plaid maps, cat maps, and an EP!
 bannerimg: /banners/cakebanner
 banner: ../assets/graphics/banners/banner7.jpg
 links:
+date: 7-6-15
+display: 'yes'
+permalink: blog/summer-15.html
 
 ---
 
@@ -33,7 +36,7 @@ A major project I've been building of late is a framework for [agresource](http:
 
 This project was a lot of fun, and a great way to work on some hefty manipulation of Leaflet icons.
 
-<div class="images"><img src="../assets/graphics/blog/smr/cage.gif"></div>
+<div class="images"><img src="../assets/graphics/blog/smr/cage.gif" class="ib"></div>
 
 {% include bits/chapter1.html %}III
 {% include bits/chapter2.html %}Cat Map
@@ -47,7 +50,7 @@ Decided to test both things (and GeoJson manipulation within the script) with th
 {% include bits/chapter2.html %}Wheels
 {% include bits/chapter3.html %}
 
-<div class="images"><img src="../assets/graphics/blog/smr/Wheels.png"></div>
+<div class="images"><img src="../assets/graphics/blog/smr/Wheels.png" class="ib"></div>
 
 My band Gallant Ghosts finally released our EP! It was a lot of work, but the good kind. Listen and enjoy while also enjoying a couple more posters I'd drawn up for some of our shows.
 

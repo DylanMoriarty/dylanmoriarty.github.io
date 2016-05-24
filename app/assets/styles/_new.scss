@@ -39,7 +39,7 @@ body{
 a:link{
 	text-decoration: none;
   color: #959595;
-  transition: color 0.1s;
+  transition: color 0.2s;
 }
 
 a:visited{
@@ -154,9 +154,6 @@ header {
     border: solid #555 1px;
     transition: border 0.1s;
   }
-  p{
-    font-size:0.85em;
-  }
   &:hover{
     img{
       border: solid darken($Gold,15) 1px;
@@ -164,6 +161,24 @@ header {
   }
 }
 
+.description-name{
+  font-size:0.85em;
+  float: left;
+  padding-bottom: 0.75em;
+  @media screen and (max-width: 500px){
+    width: 80%;
+  }
+}
+
+.description-date{
+  font-size: 0.85em;
+  float: right;
+  font-style: italic;
+  text-align: right;
+  @media screen and (max-width: 500px){
+    width: 20%;
+  }
+}
 
 /* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
@@ -370,6 +385,13 @@ fig{
   text-align: center;
   margin: 0 auto;
   width: 95%;
+  .tooltip{
+    .tooltiptext{
+      font-size: 1em;
+      bottom: 18px;
+      text-align: left;
+    }
+  }
 }
 
 .block{
@@ -399,27 +421,30 @@ fig{
 
 .musicbox-img{
   text-align: center;
-  padding-bottom: 20px;
+  position: absolute;
+  top:-248px;
+  width: 100%;
+  img{
+    width:140px;
+  }
 }
 
-/*
-COLORS 
-
-Link Grey -- #959595
-Mid Grey -- #a1a1a1
-Back Grey -- #e5e5e5
-*/
-
-/* TEST SIZES
- border: solid;
-  border-width: 1px;*/
-
-/* RESIZING
-#front-content img{
-  max-width:95%;
-  height:auto;
+#musicbox{
+  border: 2px solid black;
+  padding: 0.1em;
+  height: 300px;
+  margin-bottom:0.5em;
 }
-*/
+
+.header-image{
+  width:100%;
+  position:absolute;
+  text-align: center;
+  top:-230px;
+  img{
+    width: 140px;
+  }
+}
 
 /* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 

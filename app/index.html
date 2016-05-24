@@ -2,19 +2,22 @@
 layout: default
 title:  Dylan Moriarty
 bannersplit: true
-links: <p><a href="https://github.com/DylanMoriarty" target="_blank"><i class="fa fa-github fa-2x"></i></a><a href="https://twitter.com/DylanMoriarty" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+links: <div class = "special-icon"><p><a href="https://github.com/DylanMoriarty" target="_blank"><i class="fa fa-github fa-2x"></i></a><a href="https://twitter.com/DylanMoriarty" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></p></div>
 ---
 
 <div id= "front-content">
   <ul class="post-list">
     {% for b in site.blog reversed %}
+      {% if b.display == 'yes' %}
       <li>
         <div class = "news-container">
             <a href="{{ site.baseurl }}{{ b.url }}">
                <img src="{{ b.banner }}">              
-              <p>{{ b.description }}
+              <div class = "description-name">{{ b.description }}</div>
+              <div class = "description-date">{{ b.date }}</div>
           </div></a>
       </li>
+      {% endif %}
     {% endfor %}
   </ul>
 

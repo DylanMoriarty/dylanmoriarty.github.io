@@ -6,6 +6,9 @@ description: Cat Map!
 bannerimg: /banners/catmapbanner
 banner: ../assets/graphics/banners/banner10.jpg
 links: 
+date: 9-22-15
+display: 'yes'
+permalink: blog/cat-map.html
 
 ---
 

@@ -1,10 +1,10 @@
 global.$ = global.jQuery = global.jquery = require('jquery');
-require('jquery-flexslider');
-require('d3.min');
-require('leaflet');
-require('marked');
-require('topojson');
-require('splitpic');
+// require('jquery-flexslider');
+// require('d3.min');
+// require('leaflet');
+// require('marked');
+// require('topojson');
+// require('splitpic');
 
 // Hide Header on on scroll down
 var didScroll;

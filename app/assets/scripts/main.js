@@ -1,29 +1,16 @@
+global.$ = global.jQuery = global.jquery = require('jquery');
+require('jquery-flexslider');
+require('d3.min');
+require('leaflet');
+require('marked');
+require('topojson');
+require('splitpic');
+
 // Hide Header on on scroll down
 var didScroll;
 var lastScrollTop = 0;
-var delta = 5;
+var delta = 5; 
 var navbarHeight = $('header').outerHeight();
-
-// $(document).ready(function() {
-//     resize_check()
-// });
-
-// $(window).resize(function() {
-//     resize_check()
-// });
-
-// function resize_check(){
-//     if ($(this).width() < 530) {
-//         $('.nav-container h1').hide();
-//         $('.nav-container').css("text-align", "center").css("font-size", "1.1em")
-//         $('.nav-container a').css("padding-left", "20px").css("padding-right", "20px")
-//     } else {
-//         $('.nav-container h1').show();
-//         $('.nav-container').css("text-align", "right").css("font-size", "0.9em")
-//         $('.nav-container a').css("padding-left", "2%").css("padding-right", "2%")
-//     };
-// };
-
 
 $(window).scroll(function(event){
     didScroll = true;

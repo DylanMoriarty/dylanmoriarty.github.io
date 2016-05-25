@@ -23,6 +23,15 @@
     "test": "echo \"No tests\" && exit 0",
     "postinstall": "[ -f _config-dev.yml ] || touch _config-dev.yml"
   },
+  "browser": {
+    "d3.min": "./app/assets/scripts/vendor/d3.min.js",
+    "jquery": "./app/assets/scripts/vendor/jquery-2.1.1.min.js",
+    "leaflet": "./app/assets/scripts/vendor/leaflet.js",
+    "marked": "./app/assets/scripts/vendor/marked.js",
+    "topojson": "./app/assets/scripts/vendor/topojson.v1.min.js",
+    "jquery-flexslider": "./app/assets/scripts/vendor/jquery.flexslider-min.js",
+    "splitpic": "./app/assets/scripts/splitpic.js"
+  },
   "browserify": {
     "transform": [
       "babelify",

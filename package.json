@@ -4,15 +4,15 @@
   "description": "Home for the things cobbled together by Dylan Moriarty",
   "repository": {
     "type": "git",
-    "url": "dylanmoriarty.github.io"
+    "url": "DylanMoriarty.github.io"
   },
   "author": {
     "name": "Dylan Moriarty",
-    "url": "dylanmoriarty.github.io"
+    "url": "DylanMoriarty.github.io"
   },
   "license": "",
   "bugs": {
-    "url": "https://github.com/dylanmoriarty/dylanmoriarty.github.io/issues"
+    "url": "https://github.com/DylanMoriarty/DylanMoriarty.github.io/issues"
   },
   "homepage": "",
   "scripts": {

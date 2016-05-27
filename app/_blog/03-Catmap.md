@@ -52,6 +52,8 @@ permalink: blog/cat-map.html
 </div>
 <fig>Map made to test manipulating a geojson in the browser via an interaction. Cats drawn for my own amusement.</fig>
 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
 
 <script>
 	var howmanycats = Math.floor(Math.random()*10);

@@ -24,11 +24,6 @@
     "postinstall": "[ -f _config-dev.yml ] || touch _config-dev.yml"
   },
   "browser": {
-    "d3.min": "./app/assets/scripts/vendor/d3.min.js",
-    "jquery": "./app/assets/scripts/vendor/jquery-2.1.1.min.js",
-    "leaflet": "./app/assets/scripts/vendor/leaflet.js",
-    "marked": "./app/assets/scripts/vendor/marked.js",
-    "topojson": "./app/assets/scripts/vendor/topojson.v1.min.js",
     "jquery-flexslider": "./app/assets/scripts/vendor/jquery.flexslider-min.js",
     "splitpic": "./app/assets/scripts/splitpic.js"
   },
@@ -78,6 +73,11 @@
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.7.0",
-    "yamljs": "^0.2.7"
+    "yamljs": "^0.2.7",
+    "jquery": "^1.7.4",
+    "D3": "^3.5.17",
+    "marked": "^0.3.5",
+    "leaflet": "^0.7.7",
+    "topojson": "^1.6.26"
   }
 }

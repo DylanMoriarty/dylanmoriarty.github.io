@@ -39,7 +39,9 @@ It was fun to put together, and highlighted a lot of the limitations of Mapbox S
 	}
 </style>
 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
 <script>
+
 	addMap();
 
 	function addMap () {

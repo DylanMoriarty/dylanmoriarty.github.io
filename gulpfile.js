@@ -255,7 +255,7 @@ gulp.task('html', function () {
   var jkConf = YAML.load('_config.yml');
   return gulp.src('_site/**/*.html')
     .pipe($.useref({searchPath: ['.tmp', 'app', '.']}))
-    .pipe($.if('*.js', $.uglify()))
+    // .pipe($.if('*.js', $.uglify()))
     .pipe($.if('*.css', $.csso()))
     .pipe($.if(/\.(css|js)$/, rev()))
     .pipe(revReplace({prefix: jkConf.baseurl}))
@@ -265,13 +265,13 @@ gulp.task('html', function () {
 // Compress images.
 gulp.task('images', function () {
   return gulp.src('_site/assets/graphics/**/*')
-    .pipe($.cache($.imagemin({
-      progressive: true,
-      interlaced: true,
-      // don't remove IDs from SVGs, they are often used
-      // as hooks for embedding and styling
-      svgoPlugins: [{cleanupIDs: false}]
-    })))
+    // .pipe($.cache($.imagemin({
+    //   progressive: true,
+    //   interlaced: true,
+    //   // don't remove IDs from SVGs, they are often used
+    //   // as hooks for embedding and styling
+    //   svgoPlugins: [{cleanupIDs: false}]
+    // })))
     .pipe(gulp.dest('_site/assets/graphics'));
 });
 

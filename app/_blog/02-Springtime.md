@@ -1,10 +1,11 @@
 ---
 layout: post
-title:  <a href="../"><i class="fa fa-home fa"></i> /</a> Springtime
+title:  Springtime
+home: 'yes'
 type: maps
 description: Springtime! Illustrations, maps, & music.
 bannerimg: /banners/cakebanner
-banner: ../assets/graphics/banners/banner6.jpg
+banner: banner6.jpg
 links: 
 date: 2015-05-02
 display: 'yes'

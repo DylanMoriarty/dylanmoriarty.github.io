@@ -1,10 +1,11 @@
 ---
 layout: post
-title:  <a href="../"><i class="fa fa-home fa"></i> /</a> Moriarty Hand
+title: Moriarty Hand
 type: maps
+home: 'yes'
 description: Moriarty Hand; a vector linework with human error
 bannerimg: /banners/cakebanner
-banner: ../assets/graphics/banners/banner1.jpg
+banner: banner1.jpg
 links:
 date: 2015-10-15
 display: no

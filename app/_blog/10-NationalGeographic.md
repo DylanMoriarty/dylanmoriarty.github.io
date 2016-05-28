@@ -1,10 +1,11 @@
 ---
 layout: post
-title:  <a href="../"><i class="fa fa-home fa"></i> /</a> NG Basemap
+title:  NG Basemap
+home: 'yes'
 type: maps
 description: National Geographic basemap
 bannerimg: /banners/banner5
-banner: ../assets/graphics/banners/banner2.jpg
+banner: banner2.jpg
 links:  <!-- | <a href="https://github.com/missingmaps" target="_blank"><i class="fa fa-github fa"></i> Github code</a>  -->
 date: 2016-05-08
 display: 'yes'

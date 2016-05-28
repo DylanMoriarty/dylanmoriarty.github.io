@@ -3,8 +3,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Dylan Moriarty</title>
 <link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,700,400italic' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type="text/css">
-
+<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type="text/css">
+ -->
 <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
@@ -12,14 +12,14 @@
 <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 
 <!-- build:css /assets/styles/main.css -->
-<link rel="stylesheet" href="/assets/styles/main.css">
+<link rel="stylesheet" href="{{ site.basurl }}/assets/styles/main.css">
 <!-- endbuild -->
 
 <!-- build:js /assets/scripts/vendor.js -->
-<script src="/assets/scripts/vendor.js"></script>
+<script src="{{ site.basurl }}/assets/scripts/vendor.js"></script>
 <!-- endbuild -->
 <!-- build:js /assets/scripts/bundle.js -->
-<script src="/assets/scripts/bundle.js"></script>
+<script src="{{ site.basurl }}/assets/scripts/bundle.js"></script>
 <!-- endbuild -->
 
 

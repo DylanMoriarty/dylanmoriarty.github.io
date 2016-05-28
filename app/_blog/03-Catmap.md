@@ -1,10 +1,11 @@
 ---
 layout: post
-title:  <a href="../"><i class="fa fa-home fa"></i> /</a> Cat Map
+title: Cat Map
+home: 'yes'
 type: maps
 description: Cat Map!
 bannerimg: /banners/catmapbanner
-banner: ../assets/graphics/banners/banner10.jpg
+banner: banner10.jpg
 links: 
 date: 2015-09-22
 display: 'yes'

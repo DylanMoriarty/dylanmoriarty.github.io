@@ -13,7 +13,7 @@ highlighter: false
 
 syntax_highlighter: rouge
 
-baseurl: "../"
+baseurl: ""
 
 collections:
   blog:

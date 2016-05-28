@@ -1,10 +1,11 @@
 ---
 layout: post
-title:  <a href="../"><i class="fa fa-home fa"></i> /</a> Summer Work 
+title: Summer Work 
+home: 'yes'
 type: maps
 description: Summer Work! Plaid maps, cat maps, and an EP!
 bannerimg: /banners/cakebanner
-banner: ../assets/graphics/banners/banner7.jpg
+banner: banner7.jpg
 links:
 date: 2015-06-07
 display: 'yes'

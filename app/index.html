@@ -12,7 +12,7 @@ links: <div class = "special-icon"><p><a href="https://github.com/DylanMoriarty"
       <li>
         <div class = "news-container">
             <a href="{{ site.baseurl }}{{ b.url }}">
-               <img src="{{ b.banner }}">              
+               <img src="{{ site.baseurl }}/assets/graphics/banners/{{ b.banner }}">              
               <div class = "description-name">{{ b.description }}</div>
               <div class = "description-date">{{ b.date | date: '%B %d, %Y' }}</div>
           </div></a>
@@ -21,15 +21,5 @@ links: <div class = "special-icon"><p><a href="https://github.com/DylanMoriarty"
     {% endfor %}
   </ul>
 
-<!--   <div class="page-content">
-    <div class="cake-line"></div>
-    <div class="centerme">
-      <div class=""><p>Site currently under construction. 
-      <p>While here, enjoy the <a href="../tunes/index.html">tunes</a>.
-      <p><i class="fa fa-music"></i>
-      </div>
-    </div>
-    <div class="cake-line"></div>
-  </div> -->
 </div>
 

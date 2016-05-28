@@ -1,11 +1,11 @@
 <div class = "site-entire">
 	<header class ="nav-down">
 		<div class ="nav-container">
-			<a href= "../"><i class="fa fa-home"></i> <h1>Home</h1></a>
+			<a href= "{{ site.baseurl }}/"><i class="fa fa-home"></i> <h1>Home</h1></a>
 <!-- 			<a href="../maps/"><i class="fa fa-globe"></i> <h1>Work</h1></a>			
- -->			<a href="../cake/"><i class="fa fa-paint-brush"></i> <h1>Toons</h1></a>
-			<a href="../tunes/"><i class="fa fa-music"></i> <h1>Tunes</h1>
-			<a href="../about/"><i class="fa fa-user"></i> <h1>Contact</h1></a>		
+ -->			<a href="{{ site.baseurl }}/cake/"><i class="fa fa-paint-brush"></i> <h1>Toons</h1></a>
+			<a href="{{ site.baseurl }}/tunes/"><i class="fa fa-music"></i> <h1>Tunes</h1>
+			<a href="{{ site.baseurl }}/about/"><i class="fa fa-user"></i> <h1>Contact</h1></a>		
 		</div>
 	</header>
 
@@ -25,7 +25,7 @@
 			<div class="welcomecarto">
 			</div>
 			<div class="welcomeplate">
-			<h1> {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+			<h1> {% if page.home == 'yes' %}<a href="{{ site.basurl }}/"><i class="collecticons collecticons-home"></i> /</a>{% endif %}{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
 				<div class="welcomeiconbox">
 					{% if page.links %}{{ page.links }}{% else %}{{ }}{% endif %}
 				</div>

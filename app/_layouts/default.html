@@ -1,4 +1,15 @@
 <!DOCTYPE html>
+
+<!-- Check for needed JS libraries.-->
+{% if page.scripts != null %}
+	{% if page.scripts contains 'D3' %}
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+	{% endif %}
+	{% if page.scripts contains 'Leaflet' %}
+			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
+	{% endif %}
+{% endif %}
+
 <html>
 
 	{% include head.html  %}

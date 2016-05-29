@@ -69,11 +69,11 @@ It was fun to put together, and highlighted a lot of the limitations of Mapbox S
 {% include bits/chapter2.html %}Love Your Park
 {% include bits/chapter3.html %}
 
-What was super exciting about this opportunity was that it was something _new_ for NG. They have design nailed down when it comes to beautiful <span class="tooltip">small scale maps<i class="fa fa-info-circle fa"></i><span class="tooltiptext">World view; A map scale that shows a relatively large area on the ground with a low level of detail.</span></span>, but they don't really have a standard for the <span class="tooltip">large scale maps<i class="fa fa-info-circle fa"></i><span class="tooltiptext">City/street view; A map scale that shows a small area on the ground at a high level of detail.</span></span>. This meant I had a lot of relative freedom in what that would look like, and how to scale it down from the distinctive style NG is so well known for.
+What was super exciting about this opportunity was that it was something _new_ for NG. They have design nailed down when it comes to beautiful {% include bits/tooltips.html face="small scale maps" longtext="World view; A map scale that shows a relatively large area on the ground with a low level of detail." %} but they don't really have a standard for the {% include bits/tooltips.html face="large scale maps" longtext="City/street view; A map scale that shows a small area on the ground at a high level of detail." %} This meant I had a lot of relative freedom in what that would look like, and how to scale it down from the distinctive style NG is so well known for.
 
 The goal was to show every park in the United States, and make the distinction between National & local parks. To ensure the map didn't look like a jumbled mess of green polygons, we knew early on we'd need the parks to come slowly depending on how far the user was zoomed in.
 
-There are a few options for styling a basemap, but I went with <a href="https://www.mapbox.com/">Mapbox Studio Classic.</a>
+There are a few options for styling a basemap, but I went with [Mapbox Studio Classic.](https://www.mapbox.com/)
 
 {% include bits/chapter1.html %}II
 {% include bits/chapter2.html %}Boxing up that map
@@ -85,9 +85,11 @@ Let's unpack that.
 
 <a href="https://www.openstreetmap.org/">OpenStreetMap</a> is a wikipedia-style dataset of the world. Anyone can contribute and anyone can use the data from it. 
 
-Included in the dataset is <span class="tooltip">everything geographic<i class="fa fa-info-circle fa"></i><span class="tooltiptext">Roads, rivers, boundaries, buildings, parks, etc. Anything you can map could (and likely is) be part of OSM.</span></span> of which a lot has metadata for place names, type, function, or use. Because anyone can edit it, this metadata is an absolute mess, but it's there all out in the open to parse through.
+Included in the dataset is 
 
-Mapbox hosts a filter of OSM data on their own servers. This means we don't need to wrangle with the <span class="tooltip">original massive dataset<i class="fa fa-info-circle fa"></i><span class="tooltiptext">617 GB uncompressed!</span></span> saving us much time and many headaches. Bless their hearts <i class="fa fa-heart fa" style="color:red"></i>.
+{% include bits/tooltips.html face="everything geographic" longtext="Roads, rivers, boundaries, buildings, parks, etc. Anything you can map could (and likely is) be part of OSM." %} of which a lot has metadata for place names, type, function, or use. Because anyone can edit it, this metadata is an absolute mess, but it's there all out in the open to parse through.
+
+Mapbox hosts a filter of OSM data on their own servers. This means we don't need to wrangle with the {% include bits/tooltips.html face="original massive dataset" longtext="617 GB uncompressed!" %} saving us much time and many headaches. Bless their hearts <i class="collecticons collecticons-heart-full" style="color:red"></i>.
 
 Through their Studio service, we can then target those OSM elements with CartoCSS. That is, we can say something like: ```#roads{ stroke-color: red }``` and all elements in the dataset that are tagged as 'roads' will be colored red. It's rad.
 
@@ -107,7 +109,7 @@ To achieve the continuous look, I turned primarily to their satellite & hillshad
 
 <div class="images"><img src="../assets/graphics/blog/ngm/layers.png" style="height:300px"><fig>Layer stack for the map</fig></div>
 
-The satellite layer is very saturated & dynamic. Much to strong for my purposes. Following an example  <span class="tooltip">AJ Ashton<i class="fa fa-info-circle fa"></i><span class="tooltiptext">AJ is the lead Cartographer at Mapbox. <a href="https://github.com/ajashton">He does really cool stuff</a>, and was nice enough to lend some advice while I worked on this. Thanks!</span></span> did in the style <span class="tooltip">Satellite Afternoon<i class="fa fa-info-circle fa"></i><span class="tooltiptext"><a href="https://github.com/mapbox/mapbox-studio-satellite-afternoon.tm2">You can view this style on Github</a>, or pop check it out in Mapbox Studio Classic from the default list they provide.</span></span>, I used their image-filter to achieve a natural look. 
+The satellite layer is very saturated & dynamic. Much to strong for my purposes. Following an example {% include bits/tooltips.html face="AJ Ashton" longtext="AJ is the lead Cartographer at Mapbox. [He does really cool stuff](https://github.com/ajashton), and was nice enough to lend some advice while I worked on this. Thanks!" %} did in the style {% include bits/tooltips.html face="Satellite Afternoon" longtext="[You can view this style on Github](https://github.com/mapbox/mapbox-studio-satellite-afternoon.tm2), or pop check it out in Mapbox Studio Classic from the default list they provide." %}, I used their image-filter to achieve a natural look. 
 
 <div class="images"><img src="../assets/graphics/blog/ngm/sat_1.jpg" class="ib"><fig>Satellite layer hue shifted to green tones.</fig></div>
 

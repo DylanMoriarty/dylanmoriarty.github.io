@@ -65,7 +65,7 @@
 }
 
 .tooltiptext{
-    transition: opacity 0.2s;
+    transition: all 0.2s;
     display: none;
     &:hover{
 			opacity: 1;
@@ -75,8 +75,8 @@
 
 /* Tooltip text */
 .tooltip .tooltiptext {
-    opacity: 0;
     width: 200px;
+    opacity: 0;
     background-color: white;
     padding: 5px 0;
     border-radius: 6px;
@@ -92,6 +92,33 @@
     /* Position the tooltip text - see examples below! */
     position: absolute;
     z-index: 1;
+    margin-bottom:6px;
+}
+
+.tooltiptext:before{
+  content:'';
+  position: absolute;
+  top: 100%;
+  left: 10%;
+  margin-left: -11px;
+  width: 0;
+  height: 0;
+  border-top: solid 13px #666;
+  border-left: solid 11px transparent;
+  border-right: solid 11px transparent;
+}
+
+.tooltiptext:after{
+    content:'';
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    margin-left: -10px;
+    width: 0;
+    height: 0;
+    border-top: solid 12px white;
+    border-left: solid 10px transparent;
+    border-right: solid 10px transparent;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
@@ -106,7 +133,7 @@
 		line-height: 1.75em;
 	}
 	i{
-  	font-size: 0.8em;
+  	font-size: 0.75em;
 	}
 	ul{
 		padding: 0.75em 0;
@@ -120,9 +147,13 @@
 .article-foot{
 	text-align:center;
 	padding:1.5em 0 2.5em 0;
+	font-size:0.7em;
+	width: 140px;
+	margin: 0 auto;
 	i{
-	  margin-right: 0.4em;
-	  font-size:1.1em;
+	  font-size:8em;
+	  text-align:center;
+	  display: block;
 	}
 }
 
@@ -137,4 +168,8 @@ code{
 aside{
 	font-size: 0.76em;
 	line-height: 1em;
+}
+
+.center{
+	text-align:center;
 }

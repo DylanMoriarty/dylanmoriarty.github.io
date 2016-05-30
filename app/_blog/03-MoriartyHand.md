@@ -61,7 +61,7 @@ Over a few days this past summer I took to drawing the world. Or, well, linework
 
 Almost all Cartographers like their data percise and accurate. Therefore almost everyone uses the same georeferenced linework as a base for their maps.
 
-Still, not all maps need such percision! As {% include bits/tooltips.html face="Daniel Huffman" longtext="Daniel is a freelance Cartographer, lecturer, and all around smart guy. He runs [somethingaboutmaps](https://somethingaboutmaps.wordpress.com)" %} puts it: 
+Still, not all maps need such percision! As {% include bits/tooltips.html face="Daniel Huffman" longtext="Daniel is a freelance Cartographer, lecturer, and all around smart guy. He runs [somethingaboutmaps](https://somethingaboutmaps.wordpress.com){:target='_blank'}" %} puts it: 
 
 > "[Project Linework is a] library of handcrafted vector linework for cartography, each designed in a unique aesthetic style. They are meant to break us away from default line paths that we so often rely on by providing more visually-interesting alternatives."
 
@@ -93,7 +93,7 @@ As for converting the sketch I did into a Shapefile, well, that's something you 
 
 It always feels great when you want to do something and the first Google result provides a super easy method.
 
-In this case, I used [http://www.myscriptfont.com/](http://www.myscriptfont.com/) to generate a font out of my handwriting. You just download their template, draw on it, re-upload it, and bang. You've got yourself a font.
+In this case, I used [http://www.myscriptfont.com/](http://www.myscriptfont.com/){:target="_blank"} to generate a font out of my handwriting. You just download their template, draw on it, re-upload it, and bang. You've got yourself a font.
 
 <div class="images"><img class= "" src="../assets/graphics/blog/moh/font.png"><fig>Having a drawing tablet lowers the barrier on this even further.</fig></div>
 

@@ -3,7 +3,7 @@ layout: post
 title: Moriarty Hands
 type: maps
 home: 'yes'
-description: Moriarty Hand; a vector linework with human error
+description: Moriarty Hand; a vector linework & font with human error
 bannerimg: blog/moh/banner
 banner: banner1.jpg
 links: <a href="http://www.projectlinework.org/" target="_blank">Download Linework</a>  | <a href="/assets/data/MoriartyFont.zip" target="_blank">Download Font</a> 
@@ -65,7 +65,7 @@ Still, not all maps need such percision! As {% include bits/tooltips.html face="
 
 > "[Project Linework is a] library of handcrafted vector linework for cartography, each designed in a unique aesthetic style. They are meant to break us away from default line paths that we so often rely on by providing more visually-interesting alternatives."
 
-A great comparison are fonts. The root goals for a font are that it A) has clear, distinct letters, & B) that it is consistent. We could very well just use <span style="font-family: Arial">Arial</span> for everything. But we don't, as we know type can be manipulated to better convey the statements mission, whether it be selling milk, promoting art, or just letting folks know casual Friday is coming up.
+A great comparison are fonts. The root goals for a font are that it A) has clear, distinct letters, & B) that it is consistent. We could very well just use <span style="font-family: Arial">Arial</span> for everything. But we don't as we know type can be manipulated to better convey the mission; whether that be selling milk, promoting art, or just letting folks know casual Friday is coming up.
 
 In occasional cases, even geographic ones, precision can take a back seat to pushing a mood.
 
@@ -77,7 +77,7 @@ In occasional cases, even geographic ones, precision can take a back seat to pus
 {% include bits/chapter2.html %}The Linework
 {% include bits/chapter3.html %}
 
-We wanted to make a linework that looked hand drawn, but not inaccurate to the point of it being useless. I first tried to eyeball it. It went disastrously. Next I tried tracing a print out of an accurate base but that proved too close. It resembled shaky-cam NaturalEarthData.
+We wanted to make a linework that looked hand drawn, but not inaccurate to the point of it being useless. I first tried to eyeball it... which went disastrously. Next I tried tracing a print out of an accurate base but that proved too close. It just resembled shaky-cam NaturalEarthData.
 
 We determined the best way to get a nice balance was to use our print out of NaturalEarthData as a base and make markers around the boundaries- at tips of coasts or where country borders split. Then I'd eyeball the spaces in between doing it freehand. 
 

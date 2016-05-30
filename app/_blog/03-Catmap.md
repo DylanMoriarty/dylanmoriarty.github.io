@@ -27,8 +27,6 @@ scripts: "D3 Leaflet"
 		border: solid 1px #888;
 	}
   #introbox{
-    width:100px;
-    height:100px;
     z-index: 5;
     position: absolute;
     top: 25vh;
@@ -45,7 +43,6 @@ scripts: "D3 Leaflet"
 		left:0;
 	}
 	.post-content img{
-		max-width: initial;
 	}
 </style>
 

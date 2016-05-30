@@ -6,8 +6,33 @@
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
 	{% endif %}
 	{% if page.scripts contains 'Leaflet' %}
-			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
 	{% endif %}
+	{% if page.scripts contains 'Mapbox-GL' %}
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.18.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.18.0/mapbox-gl.css' rel='stylesheet' />
+	{% endif %}
+	{% if page.scripts contains 'MyHand' %}
+	<style>
+		@font-face {
+		    font-family: "myHand";
+		    src: url("/assets/fonts/MyHand.woff") format('woff');
+		}
+		@font-face {
+		    font-family: "myHand_bold";
+		    src: url("/assets/fonts/MyHand_bold.woff") format('woff');
+		}
+
+		.MyHand{
+			font-family: myHand, "Crimson Text", serif;	
+		}
+
+		.MyHand_b{
+			font-family: myHand_bold, "Crimson Text", serif;
+		}
+	</style>		
+	{% endif %}
+	}
 {% endif %}
 
 <html>

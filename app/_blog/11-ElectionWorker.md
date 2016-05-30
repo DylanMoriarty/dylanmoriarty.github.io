@@ -7,7 +7,7 @@ bannerimg: /banners/workbanner
 banner: banner3.jpg
 links: 
 date: 5-8-16
-display: no
+display: 'no'
 permalink: blog/electino-worker.html
 
 ---

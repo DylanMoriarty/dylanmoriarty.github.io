@@ -395,11 +395,12 @@ header {
 .images{
   text-align: center;
   padding: 10px 0px 26px 20px;
+  clear:both;
   .ib{
-    border: solid;
-    border-color: #959595;
-    border-width: 2px;
-    clear:both;
+    border: solid #959595 2px;
+  }
+  .ibd{
+    border: solid #444 2px;
   }
 }
 
@@ -523,4 +524,13 @@ fig{
 
 .footer-content a:hover{
   color: #34e0ca;
+}
+
+blockquote{
+  border-left: #8A8A8A 1px solid;
+  margin: 2em 0;
+  font-size: 0.9em;
+  padding-left: 20px;
+  font-style: initial;
+  letter-spacing: initial;
 }

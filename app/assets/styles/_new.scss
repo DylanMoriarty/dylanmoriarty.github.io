@@ -62,8 +62,8 @@ a:hover{
 
 header {
     background: rgba(0,0,0,0.6);
-    border-bottom: solid 2px black;
-    height: 36px;
+    border-bottom: solid 3px black;
+    height: 37px;
     position: fixed;
     top: 0;
     transition: top 0.2s ease-in-out;
@@ -72,14 +72,14 @@ header {
 }
 
 .nav-up {
-    top: -37px;
+    top: -50px;
 }
 
 .nav-container{
   text-align: right;
-  margin-top:8px;
+  margin-top:9px;
   margin-right: 5%;
-  height: 30px;
+  height: 38px;
   i{
     display: none;
     @media screen and (max-width: 530px){
@@ -87,11 +87,9 @@ header {
     }
   }
   a{
-    padding-left:2%;
-    padding-right:2%;
+    padding: 0 2%;
     @media screen and (max-width: 530px) {
-      padding-left: 20px;
-      padding-right: 20px;
+      padding: 0 15px;
     }
   }
   h1{
@@ -105,6 +103,32 @@ header {
   @media screen and (max-width: 530px) {
     text-align: center;
     font-size: 1.1em;
+  }
+}
+
+.nav-up {
+    top: -40px;
+}
+
+.nav-home{
+  float: left;
+  text-align: left;
+  margin-left: 1em;
+  width: 150px;
+  a{
+    margin: 0 0.5em;
+  }
+  i{
+    display: inline-block;
+    font-size:1.2em;
+  }
+  @media screen and (max-width: 530px) {
+    float: initial;
+    margin-left: initial;
+    a{
+      margin: auto;
+      padding: 0 15px;
+    }
   }
 }
 

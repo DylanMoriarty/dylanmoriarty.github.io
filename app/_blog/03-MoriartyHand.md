@@ -12,6 +12,11 @@ display: 'yes'
 permalink: blog/moriarty-hand.html
 scripts: 'Mapbox-GL MyHand'
 
+twitter: 'yes'
+twit-title: 'Moriarty Hands'
+twit-descrip: 'Converting handdrawn and writing into georefernced vector linework & usable font'
+twit-img: 'http://dylanmoriarty.github.io/assets/graphics/blog/moh/banner.jpg'
+
 ---
 
 Over a few days this past summer I took to drawing the world. Or, well, linework of it. More recently I cobbled together a font based off my own handwriting. Why? Read on.

@@ -40,4 +40,12 @@
 <meta name="msapplication-TileImage" content="{{ site.baseurl }}/assets/graphics/favicon/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
 
-</head>	
+{% if page.twitter == 'yes' %}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@DylanMoriarty">
+<meta name="twitter:creator" content="@DylanMoriarty">
+<meta name="twitter:title" content="{{ page.twit-title }}">
+<meta name="twitter:description" content="{{ page.twit-descrip }}">
+<meta name="twitter:image" content="{{ page.twit-img }}">
+</head>
+{% endif %}

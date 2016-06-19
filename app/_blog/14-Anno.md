@@ -19,7 +19,7 @@ I like having a website, but worry that the 'highlight reel' nature of it doesn'
 
 Halfway through the year, I finally got around to building it!
 
-Now you too can see the brief forays into Mapbox Studio and post it note doodles I do on a daily basis. Oh boy! The project lives on [{{ site.baseurl }}/anno/](dylanmoriarty.github.io/anno).
+Now you too can see the brief forays into Mapbox Studio and post it note doodles I do on a daily basis. Oh boy! The project lives on [dylanmoriarty.github.io/anno/]({{ site.baseurl }}/anno).
 
 {% include bits/chapters.html chapter='I' title='Anno?'%}
 

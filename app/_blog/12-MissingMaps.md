@@ -8,7 +8,7 @@ bannerimg: /banners/missingmaps
 banner: banner4.jpg
 links: <a href="http://www.missingmaps.org/" target="_blank"> Check out the site</a> | <a href="https://github.com/missingmaps" target="_blank"><i class="collecticons collecticons-github"></i> Github code</a> 
 date: 2016-05-15
-display: 'no'
+display: 'yes'
 permalink: blog/missing-maps.html
 
 ---
@@ -61,28 +61,67 @@ We felt good about the original copy on the landing page, but wanted to better f
 {% include bits/splitpic.html img1='mms/mm-before-3.jpg' img2='mms/mm-after-3.jpg' cap= "About section" %}
 
 
-{% include bits/chapters.html chapter='IV' title='Landing Page'%}
+{% include bits/chapters.html chapter='IV' title='User Pages'%}
+
+One major component of the Missing Maps upgrade was adding [user pages](https://developmentseed.org/blog/2016/06/09/mm-badges) to the site. If you edit OSM for Missing Maps, you automatically get one! 
+
+<div class="images">
+	<a href="http://www.missingmaps.org/users/#/1784968">
+		<img src="../assets/graphics/blog/mms/userpage.jpg"></img>
+	</a>
+	<fig>As you can see I've mapped just a lil' bit of buildings.</fig>
+</div>
+
+The main goal for the user pages was to clearly and nicely layout contribution statistics. We list out what projects folks have been a part of, give a little calendar for when they contributed, and a map of _where_ they mapped
+
+Through these pages we also award badges.
 
 By providing a badge or similar reward for doing small tasks within OSM, we both provide a ‘light at the end of the tunnel’ and immediate positive feedback. These tasks can also be utilized to steer our users towards mapping {% include bits/tooltips.html face="high priority elements." longtext="i.e. Areas in crisis as identified by the Red Cross, adding emergency features like hospitals to small towns, or preemptively mapping territories that aren't on OSM but in high-risk areas." %}
 
-To begin, we brainstormed with the American Red Cross to determine which metrics we wanted to incentivize. Once we had a few ideas, we researched other badge systems and tried to pin-point where they succeeded or faltered. 
+{% include bits/chapters.html chapter='V' title='Badge Design'%}
 
-One's that worked well were friendly, distinct, & just geometric enough to look polished. 
+<div class="images"><img src="../assets/graphics/blog/mms/mm-badge-heros.png"></img></div>
 
-{% include bits/chapters.html chapter='V' title='The Blessings of Open Source'%}
+I wrote a bunch of words on this on [Development Seed's blog](https://developmentseed.org/blog/2016/06/09/mm-badges), but I'll do a tl;dr version here. My first iterations on the badge design was much like the center one here:
 
-Next we brought the sketches into Illustrator and created vector versions making sure we pulled colors and design styles from the MissingMaps brand identity.
+To begin, we brainstormed with the American Red Cross to determine which metrics we wanted to incentivize- do we want to encourage people to map only the areas they're familiar with? Can we possibly steer these folks towards more advanced mapping techniques with badges?
 
-While not appropriate for every call to action, gamification does have it’s time and place. Think about tasks you want to steer your community towards doing, what style speaks best to your brand and how badges or gamification elements fit within your site or application.
+Once we had a few ideas, we researched other badge systems and tried to pin-point where they succeeded or faltered. All in all the ones that worked well were friendly, distinct, & just geometric enough to look polished.
 
-To see the rest of the MissingMaps badge collection, become a MissingMaps contributor!
+<div class="images"><img src="../assets/graphics/blog/mms/mm-badge-working.png"></img></div>
+
+...but we wanted these to be in a style that was easily replicated. Doing a flat style worked pretty great for that, and has been fairly successful with the Red Cross making their own versions of the graphics for other parts of the site & media.
+
+<div class="images"><img src="../assets/graphics/blog/mms/mm-badge-story.png"></img></div>
+
+One thing we settled on pretty early in designing these were that for the badges levels should tell a story of sorts. This inheritly binds badges of the same category together, and provides a little extra intrigue into what the next badge is gonna be.
+
+{% include bits/chapters.html chapter='VI' title='Leaderboards'%}
+
+The final component of the Missing Maps update was building out leaderboards that update live~*. This serves as a tool to use during events themselves to let people 'race' eachother to see who can contribute the most. It also provides a quick means of identifying super users.
+
+This was the part that saw the most iterations, as we tested it out multiple times before officially launching the tool.
+
+<div class="images"><img src="../assets/graphics/blog/mms/leaderboards.jpg"></img></div>
+
+The above are screenshots from the various iterations, each deployed at various Mapathons. The final layout differed quite a bit from this as we optomized the layout for comparing events to one another.
+
+<div class="images"><img src="../assets/graphics/blog/mms/leaderboards-new.jpg"></img></div>
+
+{% include bits/chapters.html chapter='VII' title='The Blessings of Open Source'%}
+
+Within two weeks of the launching the new Missing Maps site, a translation feature was added by someone entirely unconnected to the project. Someone in the OSM community noticed that being able to translate the site into French/Spanish/etc. would be incredibly useful for mapping efforts in those countries, and went ahead and built it out. In a similiar fashion, MissingMaps has also added a blog section, a stats overview page, & upgraded a few sections we originally built.
+
+That sort of gumption was only possible because we built the whole thing Open Source. All the code for the Missing Maps website & the API that fuels the database are [checked out via Github.](https://github.com/missingmaps)
+
+To see the rest of the MissingMaps badge collection, [become a MissingMaps contributor!](http://www.missingmaps.org/contribute/)
 
 <script type="text/javascript">
 	NodeList.prototype.forEach = Array.prototype.forEach;
 	(function() {
-		var horizontal = document.querySelectorAll('.splitpic-horizontal .splitpic-images'             );
+		var horizontal = document.querySelectorAll('.splitpic-horizontal .splitpic-images');
 		for (var i = 0; i < horizontal.length; ++i) {
-		var sp = new SplitPic(horizontal[i]);
+			var sp = new SplitPic(horizontal[i]);
 		}
 	}
 	)();

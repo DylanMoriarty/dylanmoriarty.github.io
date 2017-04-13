@@ -132,9 +132,6 @@
 	p{
 		line-height: 1.75em;
 	}
-	i{
-  	font-size: 0.75em;
-	}
 	ul{
 		padding: 0.75em 0;
 	}
@@ -142,6 +139,10 @@
 		list-style-type:circle;
 		padding: 0.5em 0;
 	}
+}
+
+.collecticons-circle-information {
+	font-size: 0.75rem;
 }
 
 .article-foot{

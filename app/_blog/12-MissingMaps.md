@@ -84,7 +84,7 @@ By providing a badge or similar reward for doing small tasks within OSM, we both
 
 I wrote a bunch of words on this on [Development Seed's blog](https://developmentseed.org/blog/2016/06/09/mm-badges), but I'll do a tl;dr version here. My first iterations on the badge design was much like the center one here:
 
-To begin, we brainstormed with the American Red Cross to determine which metrics we wanted to incentivize- do we want to encourage people to map only the areas they're familiar with? Can we possibly steer these folks towards more advanced mapping techniques with badges?
+To begin, we brainstormed with the American Red Cross to determine which metrics we wanted to incentive- do we want to encourage people to map only the areas they're familiar with? Can we possibly steer these folks towards more advanced mapping techniques with badges?
 
 Once we had a few ideas, we researched other badge systems and tried to pin-point where they succeeded or faltered. All in all the ones that worked well were friendly, distinct, & just geometric enough to look polished.
 
@@ -94,23 +94,23 @@ Once we had a few ideas, we researched other badge systems and tried to pin-poin
 
 <div class="images"><img src="../assets/graphics/blog/mms/mm-badge-story.png"></img></div>
 
-One thing we settled on pretty early in designing these were that for the badges levels should tell a story of sorts. This inheritly binds badges of the same category together, and provides a little extra intrigue into what the next badge is gonna be.
+One thing we settled on pretty early in designing these were that for the badges levels should tell a story of sorts. This inherently binds badges of the same category together, and provides a little extra intrigue into what the next badge is gonna be.
 
 {% include bits/chapters.html chapter='VI' title='Leaderboards'%}
 
-The final component of the Missing Maps update was building out leaderboards that update live~*. This serves as a tool to use during events themselves to let people 'race' eachother to see who can contribute the most. It also provides a quick means of identifying super users.
+The final component of the Missing Maps update was building out leaderboards that update live~*. This serves as a tool to use during events themselves to let people 'race' each other to see who can contribute the most. It also provides a quick means of identifying super users.
 
 This was the part that saw the most iterations, as we tested it out multiple times before officially launching the tool.
 
 <div class="images"><img src="../assets/graphics/blog/mms/leaderboards.jpg"></img></div>
 
-The above are screenshots from the various iterations, each deployed at various Mapathons. The final layout differed quite a bit from this as we optomized the layout for comparing events to one another.
+The above are screenshots from the various iterations, each deployed at various Mapathons. The final layout differed quite a bit from this as we optimized the layout for comparing events to one another.
 
 <div class="images"><img src="../assets/graphics/blog/mms/leaderboards-new.jpg"></img></div>
 
 {% include bits/chapters.html chapter='VII' title='The Blessings of Open Source'%}
 
-Within two weeks of the launching the new Missing Maps site, a translation feature was added by someone entirely unconnected to the project. Someone in the OSM community noticed that being able to translate the site into French/Spanish/etc. would be incredibly useful for mapping efforts in those countries, and went ahead and built it out. In a similiar fashion, MissingMaps has also added a blog section, a stats overview page, & upgraded a few sections we originally built.
+Within two weeks of the launching the new Missing Maps site, a translation feature was added by someone entirely unconnected to the project. Someone in the OSM community noticed that being able to translate the site into French/Spanish/etc. would be incredibly useful for mapping efforts in those countries, and went ahead and built it out. In a similar fashion, MissingMaps has also added a blog section, a stats overview page, & upgraded a few sections we originally built.
 
 That sort of gumption was only possible because we built the whole thing Open Source. All the code for the Missing Maps website & the API that fuels the database are [checked out via Github.](https://github.com/missingmaps)
 

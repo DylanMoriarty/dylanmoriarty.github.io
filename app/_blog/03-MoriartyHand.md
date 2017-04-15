@@ -76,8 +76,6 @@ In occasional cases, even geographic ones, precision can take a back seat to pus
 
 <div class="images"><img class= "ibd" src="../assets/graphics/blog/moh/fam-map.jpg"><fig>This pre-dates the linework, but is exactly the kind of map that benefits from the looser style.</fig></div>
 
-
-
 {% include bits/chapter1.html %}II
 {% include bits/chapter2.html %}The Linework
 {% include bits/chapter3.html %}

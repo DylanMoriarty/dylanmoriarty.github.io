@@ -60,7 +60,7 @@ When it came to make a fancy EP release though, we pretty quickly settled on {% 
 
 <div class="images"><img src="../assets/graphics/blog/bib/wheels_cover.jpg"></div>
 
-{% include bits/chapters.html chapter='III' title='Odds & Ends'%}
+{% include bits/chapters.html chapter='IV' title='Odds & Ends'%}
 
 Between the social media accounts & everything there was a lot of room for _making a lot of stuff_.
 
@@ -83,7 +83,7 @@ I also got to make some merch! Buttons, stickers, & coozies galore. We never man
 <div class="images"><img src="../assets/graphics/blog/bib/bandmate_5.jpg"></div>
 <div class="images"><img src="../assets/graphics/blog/bib/bandmate_6.jpg"></div>
 
-{% include bits/chapters.html chapter='III' title='In Memoriam'%}
+{% include bits/chapters.html chapter='V' title='In Memoriam'%}
 
 I left the band after moving to DC, though they still chugged along for a good year. Gallant Ghosts continued on for a little over a year before splitting into different projects.
 

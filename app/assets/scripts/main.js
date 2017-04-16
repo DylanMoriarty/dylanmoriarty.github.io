@@ -8,16 +8,16 @@ function checkHeader() {
     var rightNow = new Date().getHours()
     var newImage = "../assets/graphics/banners/main/"
 
-    if (rightNow < 9) {
-    bannerImage.src=newImage + "morning.jpg"
+    if (rightNow > 19 || rightNow < 5) {
+      bannerImage.src=newImage + "evening.jpg"
+    } else if (rightNow < 9) {
+      bannerImage.src=newImage + "morning.jpg"
     } else if (rightNow < 12) {
-    bannerImage.src=newImage + "brunch.jpg"
+      bannerImage.src=newImage + "brunch.jpg"
     } else if (rightNow < 16) {
-    bannerImage.src=newImage + "lunch.jpg"
-    } else if (rightNow < 19) {
-    bannerImage.src=newImage + "latenoon.jpg"
+      bannerImage.src=newImage + "lunch.jpg"
     } else {
-    bannerImage.src=newImage + "evening.jpg"
+      bannerImage.src=newImage + "latenoon.jpg"
     }
   }
 }

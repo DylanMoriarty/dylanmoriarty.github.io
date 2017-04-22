@@ -1,0 +1,10 @@
+<script type="text/javascript">
+	NodeList.prototype.forEach = Array.prototype.forEach;
+	(function() {
+		var horizontal = document.querySelectorAll('.splitpic-horizontal .splitpic-images');
+		for (var i = 0; i < horizontal.length; ++i) {
+			var sp = new SplitPic(horizontal[i]);
+		}
+	}
+	)();
+</script>

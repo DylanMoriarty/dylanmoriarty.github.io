@@ -8,7 +8,7 @@ bannerimg: /banners/hb-cameron
 banner: hb-cameron.jpg
 links: 
 date: 2014-06-20
-display: 'yes'
+display: 'no'
 permalink: blog/to-be-a-designer.html
 
 ---

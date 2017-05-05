@@ -44,7 +44,7 @@ For this project we needed to create projected shapefiles that would work in Map
 
 [Missing Maps](http://www.missingmaps.org/) was also officially launched at the start of the year! This joint venture with the Red Cross & the Humanitarian OpenStreetMap Team was the first major project I led design on, and it's been really neat to see it thrive since. I've written a bunch about it's development [elsewhere on this site](https://dylanmoriarty.github.io/blog/missing-maps.html).
 
-<div class="images"><img src="../assets/graphics/blog/mms/intro.svg" />
+<div class="images"><img src="../assets/graphics/blog/mms/Intro.svg" />
 </div>
 
 Outside of those, I also helped create map styles for [OpenAQ](https://openaq.org/#/map), [OpenAerialMap](https://map.openaerialmap.org/#/?_k=sz9v83), & a bunch of World Bank projects. Here's a handful of highlights:

@@ -182,6 +182,25 @@ header {
     img{
       border: solid darken($Gold,15) 1px;
     }
+    .collecticons-star-full {
+      -ms-transform: rotate(0deg); /* IE 9 */
+      -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+      transform: rotate(0deg);
+      color: $Gold;
+    }
+  }
+}
+
+.news-container-pinned {
+  position: relative;
+  .collecticons-star-full {
+    color: #bbb;
+    position: absolute;
+    left: -1.75rem;
+    -ms-transform: rotate(17deg); /* IE 9 */
+    -webkit-transform: rotate(17deg); /* Chrome, Safari, Opera */
+    transform: rotate(17deg);
+    transition: all 0.2s;
   }
 }
 
@@ -387,14 +406,18 @@ header {
 .post-content{
   padding-top:2em;
   img{
-  max-width:95%;
-  height:auto;
+    max-width:95%;
+    height:auto;
+  }
+  svg{
+    max-width: 95%;
+    height: auto;
   }
 }
 
 .images{
   text-align: center;
-  padding: 10px 0px 26px 20px;
+  padding: 3rem 0px 4rem 0;
   clear:both;
   .ib{
     border: solid #959595 2px;

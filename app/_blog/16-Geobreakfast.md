@@ -22,11 +22,11 @@ scripts: 'Mapbox-GL MyHand'
 
 <br>
 
-Everyone loves an excuse to grab breakfast in the morning. Like DC, San Fransisco & New York have a large geography community, & among the many meetups there's a popular one called {% include bits/tooltips.html face="Geobreakfast" longtext="They have a [twitter account](https://twitter.com/geobreakfast?lang=en){:target='_blank'} and everything." %}. Myself and some folks from USAID have been leading the charge to make it a thing out in DC as well.
+Everyone loves an excuse to grab breakfast in the morning. Much like DC- San Fransisco & New York have a large geography community, & among the many meetups there’s a popular one called Geobreakfast. Myself and some folks from USAID have been leading the charge to make it a thing out in DC as well.
 
-We originally just did little call outs on twitter saying 'hey! come join us', but that proved to be a pretty poor way to let people know what was up. Some people forgot, or just simply missed the announcement. We talked about making an official meetup site for it, but we all liked this being a little more insular & small.
+We did little call outs on twitter saying ‘hey! come join us’, but that proved to be a pretty poor way to let people know what was up. Some people forgot, or missed the announcement. We talked about making an official meetup site for it, but we all liked this being a little more insular & small.
 
-So, while on vacation in Wisconsin I put together a quick lil' site:
+So, while on vacation in Wisconsin I put together a quick lil’ site:
 
 <div class="images">
 	<a href="https://geobreakfastdc.github.io/" target="_blank">
@@ -35,7 +35,7 @@ So, while on vacation in Wisconsin I put together a quick lil' site:
 	</a>
 </div>
 
-This gives folks a good place to go to check if we're hanging out, and provides a quick means for people to sign up to be directly notified when we're doing the next one.
+With this site people have a home to check where we're meeting. We also have a sign up that goes to a google doc so that I can simply email folks to notify that we're meeting as opposed to a tagging 20 people in tweets.
 
 <style>
 	.full-bleed{
@@ -64,5 +64,4 @@ This gives folks a good place to go to check if we're hanging out, and provides 
 	map.addControl(new mapboxgl.Navigation({position: 'top-left'})); 
 </script>
 
-Happy eatin'!
-
+Happy eatin’!

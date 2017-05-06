@@ -557,3 +557,17 @@ blockquote{
   font-style: initial;
   letter-spacing: initial;
 }
+
+.footnotes {
+  padding-top: 2rem;
+  margin: 6rem 0 4rem;
+  border-top: $MidGrey 1px solid;
+  font-size: 0.8rem;
+  .tooltip{
+    .tooltiptext{
+      font-size: 1em;
+      bottom: 18px;
+      text-align: left;
+    }
+  }
+}

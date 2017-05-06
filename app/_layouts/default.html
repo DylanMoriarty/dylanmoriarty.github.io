@@ -30,7 +30,10 @@
 		.MyHand_b{
 			font-family: myHand_Bold, "Crimson Text", serif;
 		}
-	</style>		
+	</style>
+	{% endif %}
+	{% if page.scripts contains "svg-text" %}
+	<link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
 	{% endif %}
 {% endif %}
 

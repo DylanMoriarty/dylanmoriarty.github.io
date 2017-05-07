@@ -13,6 +13,10 @@ permalink: blog/foggy-spaces.html
 
 scripts: 'Mapbox-GL svg-text'
 
+twit-title: "Foggy Spaces"
+twit-descrip: "Mental maps of youth & places once called home"
+twit-image: "http://dylanmoriarty.github.io/assets/graphics/blog/fsp/cloudy.png"
+
 ---
 
 I spend a lot of time looking at maps. 

@@ -40,16 +40,24 @@
 <meta name="msapplication-TileImage" content="{{ site.baseurl }}/assets/graphics/favicon/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff"> 
 
-<meta property="og:description" content="A home for all the Illustration, Web Dev, and Cartographic shenanagins I work on." />
+<meta property="og:description" content="Dylan's online smorgasbord of maps, illustrations, & musings." />
 <meta property="og:url"content="dylanmoriarty.github.io" />
+{% if page.title %}
+<meta property="og:title" content="{{ page.title }}" />
+{% else %}
 <meta property="og:title" content="DylanMoriarty.github.io" />
+{% endif %}
 
 {% if page.twitter == 'yes' %}
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@DylanMoriarty">
 <meta name="twitter:creator" content="@DylanMoriarty">
 <meta name="twitter:title" content="{{ page.twit-title }}">
+{% if page.twit-descrip%}
 <meta name="twitter:description" content="{{ page.twit-descrip }}">
+{% else %}
+<meta name="twitter:description" content="Dylan's online smorgasbord of maps, illustrations, & musings">
+{% endif%}
 <meta name="twitter:image" content="{{ page.twit-img }}">
 </head>
 {% endif %}

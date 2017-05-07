@@ -11,7 +11,7 @@ date: 2017-05-06
 display: 'yes'
 permalink: blog/foggy-spaces.html
 
-scripts: 'Mapbox-GL svg-text'
+scripts: 'svg-text'
 
 twit-title: "Foggy Spaces"
 twit-descrip: "Mental maps of youth & places once called home"

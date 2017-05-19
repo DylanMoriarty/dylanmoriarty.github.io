@@ -75,7 +75,7 @@ gulp.task('serve', ['vendorScripts', 'javascript', 'styles', 'jekyll'], function
   ], ['jekyll', reload]);
 
   gulp.watch('app/assets/graphics/collecticons/**', ['collecticons']);
-
+  gulp.watch('app/assets/styles/**/*.js', ['scripts']);
   gulp.watch('app/assets/styles/**/*.scss', ['styles']);
   gulp.watch('package.json', ['vendorScripts']);
 });
@@ -256,7 +256,7 @@ gulp.task('html', function () {
   return gulp.src('_site/**/*.html')
     .pipe($.useref({searchPath: ['.tmp', 'app', '.']}))
     // .pipe($.if('*.js', $.uglify()))
-    .pipe($.if('*.css', $.csso()))
+    // .pipe($.if('*.css', $.csso()))
     .pipe($.if(/\.(css|js)$/, rev()))
     .pipe(revReplace({prefix: jkConf.baseurl}))
     .pipe(gulp.dest('_site'));

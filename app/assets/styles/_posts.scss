@@ -1,8 +1,72 @@
+/* ~ ~ ~ ~ ~ 
+Post Layout
+ ~ ~ ~ ~ ~ */
+.post-content{
+  padding-top:2em;
+  img{
+    max-width:95%;
+    height:auto;
+  }
+  svg{
+    max-width: 95%;
+    height: auto;
+  }
+}
+
+/* ~ ~ ~ ~ ~ 
+Post Images
+ ~ ~ ~ ~ ~ */
+.images{
+  text-align: center;
+  padding: 3rem 0px 4rem 0;
+  clear:both;
+  .ib{
+    border: solid #959595 2px;
+  }
+  .ibd{
+    border: solid #444 2px;
+  }
+}
+
+figcaption{
+  display: block;
+  font-size: 0.7em;
+  text-align: center;
+  margin: 0 auto;
+  width: 95%;
+  .tooltip{
+    .tooltiptext{
+      font-size: 1em;
+      bottom: 18px;
+      text-align: left;
+    }
+  }
+}
+
+.block{
+  height: 616px;
+  width: 100%;
+}
+
+.centermeplease{
+  position: absolute;
+  left:0;
+  width:100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.centerme{
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+
 .Chapterbox{
 	font-family: Quicksand;
 	text-align: center;
-	margin-top: 20px;
-	margin-bottom: 40px;
+	margin: 3.5rem 0 4rem;
 	color: #8f8f8f;
 	h1{
 		position: relative;
@@ -89,7 +153,6 @@
     font-style: initial;
     line-height: 1.4em;
     color: #444;
-    /* Position the tooltip text - see examples below! */
     position: absolute;
     z-index: 1;
     margin-bottom:6px;
@@ -158,19 +221,17 @@
 	}
 }
 
-code{
-	padding: 4px 5px;
-	background-color: white;
-	font-size: 0.75em;
-	vertical-align: text-top;
-	line-height: 15px;
+.footnotes {
+  padding-top: 2rem;
+  margin: 6rem 0 4rem;
+  border-top: $MidGrey 1px solid;
+  font-size: 0.8rem;
+  .tooltip{
+    .tooltiptext{
+      font-size: 1em;
+      bottom: 18px;
+      text-align: left;
+    }
+  }
 }
 
-aside{
-	font-size: 0.76em;
-	line-height: 1em;
-}
-
-.center{
-	text-align:center;
-}

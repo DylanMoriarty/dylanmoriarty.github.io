@@ -1,0 +1,39 @@
+a {
+  text-decoration: none;
+  color: #959595;
+  transition: color 0.2s;
+  &:visited {
+    color: #959595;
+  }
+  &:hover,
+  &:active {
+    color: $Gold;
+    text-decoration: none;
+  }
+}
+
+::selection { 
+    background: $LightGold;
+}
+
+blockquote{
+  border-left: #8A8A8A 1px solid;
+  margin: 2em 0;
+  font-size: 0.9em;
+  padding-left: 20px;
+  font-style: initial;
+  letter-spacing: initial;
+}
+
+code{
+  padding: 4px 5px;
+  background-color: white;
+  font-size: 0.75em;
+  vertical-align: text-top;
+  line-height: 15px;
+}
+
+aside{
+  font-size: 0.76em;
+  line-height: 1em;
+}

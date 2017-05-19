@@ -1,0 +1,71 @@
+/* ~ ~ ~ ~ ~ 
+  Nav
+ ~ ~ ~ ~ ~ */
+
+header {
+	background: rgba(0,0,0,0.6);
+	border-bottom: solid 3px black;
+	height: 37px;
+	position: fixed;
+	top: 0;
+	transition: top 0.2s ease-in-out;
+	width: 100%;
+	z-index:1000;
+}
+
+.nav-up {
+	top: -50px;
+}
+
+.nav-container{
+  text-align: right;
+  margin-top:9px;
+  margin-right: 5%;
+  height: 38px;
+  i{
+    display: none;
+    @media screen and (max-width: 530px){
+      display: inline-block;
+    }
+  }
+  a{
+    padding: 0 2%;
+    @media screen and (max-width: 530px) {
+      padding: 0 15px;
+    }
+  }
+  h1{
+    font-size: 0.9em;
+    font-weight: normal;
+    display: inline-block;
+    @media screen and (max-width: 530px) {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 530px) {
+    text-align: center;
+    font-size: 1.1em;
+  }
+}
+
+.nav-home{
+  float: left;
+  text-align: left;
+  margin-left: 1em;
+  width: 150px;
+  a{
+    margin: 0 0.5em;
+  }
+  i{
+    display: inline-block;
+    font-size:1.2em;
+  }
+  @media screen and (max-width: 530px) {
+    float: initial;
+    margin-left: initial;
+    a{
+      margin: auto;
+      padding: 0 15px;
+    }
+  }
+}

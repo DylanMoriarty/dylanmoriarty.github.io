@@ -1,21 +1,43 @@
+.cake-intro{
+  padding-top: 20px;
+}
+
 .cake-line{
-	width: 60%;
-	height: 1px;
-	background-color: rgba(0,0,0,0.6);
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 4px;
-	margin-bottom: 40px;
+  width: 60%;
+  height: 1px;
+  background-color: rgba(0,0,0,0.6);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4px;
+  margin-bottom: 14px;
 }
 
 .cake-title{
-	position: absolute;
-	text-align: center;
-	width: 100%;
-	left: 0px;
-	top:-90px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  left: 0px;
+  top:-90px;
+  img{
+    max-width: 95%;
+  }
 }
 
-.welcomeplate h1{
-	color: #e5e5e5;
+.cake-roll{
+  position: relative;
+  text-align:center;
+  list-style: none;
+}
+
+#comic img{
+  max-width: 100%;
+}
+
+#comicnav{
+  padding-top:14px;
+  text-align: center;
+}
+
+.cake-comic-title{
+  padding-top: 2px;
 }

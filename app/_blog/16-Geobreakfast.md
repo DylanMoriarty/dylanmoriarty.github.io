@@ -18,7 +18,7 @@ scripts: 'Mapbox-GL MyHand'
 <div class= "full-bleed">
 	<div id="map"></div>
 </div>
-<fig>If you've ever wondered what DC would look like as a cast iron skillet cooking pancakes and eggs, <i>I got you</i></fig>
+<figcaption>If you've ever wondered what DC would look like as a cast iron skillet cooking pancakes and eggs, <i>I got you</i></figcaption>
 
 <br>
 
@@ -31,7 +31,7 @@ So, while on vacation in Wisconsin I put together a quick lil’ site:
 <div class="images">
 	<a href="https://geobreakfastdc.github.io/" target="_blank">
 		<img src="../assets/graphics/blog/gbr/geobreakfast.jpg">
-		<fig>Check it out! If you're in DC, sign up!</fig>
+		<figcaption>Check it out! If you're in DC, sign up!</figcaption>
 	</a>
 </div>
 

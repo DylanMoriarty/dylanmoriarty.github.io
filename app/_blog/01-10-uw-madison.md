@@ -16,7 +16,7 @@ permalink: blog/uw-madison-map.html
 Almost a year ago I was shown this map, made in 1937 by Hans Werner.
 
 <div class="images"><img src="../assets/graphics/blog/uwm/original.jpg">
-	<fig>You can see a larger version over at <a href="http://maphugger.com/post/40056792629/hans-werner-university-of-wisconsin-visitors">MagHugger</a> courtesy of Marty Elmer</fig>
+	<figcaption>You can see a larger version over at <a href="http://maphugger.com/post/40056792629/hans-werner-university-of-wisconsin-visitors">MagHugger</a> courtesy of Marty Elmer</figcaption>
 </div>
 
 Old maps like this one are intrinsically inspiring. The illustrations may be simple but the depth and variety of things to glance at makes it a fun playground for the eyes and imagination to fling across.
@@ -152,8 +152,9 @@ It took another two tries, but eventually it came out right.
 {% include bits/chapters.html chapter='VII' title='(Final) Final'%}
 
 
-<div class="images"><img src="../assets/graphics/blog/uwm/final_1.jpg">
-	<fig>Viola!</fig>
+<div class="images">
+	<img src="../assets/graphics/blog/uwm/final_1.jpg">
+	<figcaption>Viola!</figcaption>
 </div>
 
 <div>

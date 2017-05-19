@@ -15,7 +15,7 @@ permalink: blog/anno.html
 
 I like having a website, but worry that the 'highlight reel' nature of it doesn't offer a decent space to just post some of the smaller things I do on a day to day basis. Since around Christmas I thought it'd be a neat to create a space for that in the form of a reverse calendar.
 
-<div class="images"><a href="{{ site.baseurl }}/anno/"><img src="../assets/graphics/blog/ann/annoover.png" class="ib"><fig>Check it out!</fig></a></div>
+<div class="images"><a href="{{ site.baseurl }}/anno/"><img src="../assets/graphics/blog/ann/annoover.png" class="ib"><figcaption>Check it out!</figcaption></a></div>
 
 Halfway through the year, I finally got around to building it!
 

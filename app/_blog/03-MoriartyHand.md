@@ -74,7 +74,7 @@ A great comparison are fonts. The root goals for a font are that it A) has clear
 
 In occasional cases, even geographic ones, precision can take a back seat to pushing a mood.
 
-<div class="images"><img class= "ibd" src="../assets/graphics/blog/moh/fam-map.jpg"><fig>This pre-dates the linework, but is exactly the kind of map that benefits from the looser style.</fig></div>
+<div class="images"><img class= "ibd" src="../assets/graphics/blog/moh/fam-map.jpg"><figcaption>This pre-dates the linework, but is exactly the kind of map that benefits from the looser style.</figcaption></div>
 
 {% include bits/chapter1.html %}II
 {% include bits/chapter2.html %}The Linework
@@ -84,7 +84,7 @@ We wanted to make a linework that looked hand drawn, but not inaccurate to the p
 
 We determined the best way to get a nice balance was to use our print out of NaturalEarthData as a base and make markers around the boundaries- at tips of coasts or where country borders split. Then I'd eyeball the spaces in between doing it freehand. 
 
-<div class="images"><img class= "" src="../assets/graphics/blog/moh/difference.png"><fig>The <span style="color:red">red</span> outlines in this image are the accurate source, NaturalEarthData. The black is Moriarty Hand. With the overlap it's clear where I traced vs. where it was free-handed.</fig></div>
+<div class="images"><img class= "" src="../assets/graphics/blog/moh/difference.png"><figcaption>The <span style="color:red">red</span> outlines in this image are the accurate source, NaturalEarthData. The black is Moriarty Hand. With the overlap it's clear where I traced vs. where it was free-handed.</figcaption></div>
 
 For example, for Florida I marked where the south-most tip was, where it bent to, and then drew in the rest. This put things in roughly the right place with enough flourishes and errors for it to truly look manmade.
 
@@ -98,7 +98,7 @@ It always feels great when you want to do something and the first Google result 
 
 In this case, I used [http://www.myscriptfont.com/](http://www.myscriptfont.com/){:target="_blank"} to generate a font out of my handwriting. You just download their template, draw on it, re-upload it, and bang. You've got yourself a font.
 
-<div class="images"><img class= "" src="../assets/graphics/blog/moh/font.png"><fig>Having a drawing tablet lowers the barrier on this even further.</fig></div>
+<div class="images"><img class= "" src="../assets/graphics/blog/moh/font.png"><figcaption>Having a drawing tablet lowers the barrier on this even further.</figcaption></div>
 
 It took a few tries to get something that looked _fairly_ consistent in it's weight & heights. It could certainly use some further tweaking, but the unevenness is much more true to my actual handwriting. Here's an example:
 

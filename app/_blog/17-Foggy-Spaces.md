@@ -45,7 +45,7 @@ Once we remove the fog crop, it's borderline unrecognizable to me as the same pl
 
 <div class="images">
 	<img src="../assets/graphics/blog/fsp/fullthing.jpg">
-	<fig><a href="https://www.youtube.com/watch?v=TGofoH9RDEA" target="_blank">This is not my beautiful house!</a></fig>
+	<figcaption><a href="https://www.youtube.com/watch?v=TGofoH9RDEA" target="_blank">This is not my beautiful house!</a></figcaption>
 </div>
 
 Which got me thinking about other spaces I vaguely knew. I would visit Madison Wisconsin fairly frequently, mostly because of my farmers market loving & proud alumni parents. The main commerce avenue, State Street, has been familiar to me pretty much all my life.

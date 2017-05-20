@@ -21,7 +21,7 @@ header {
   text-align: right;
   margin-right: 5%;
   height: $header-height;
-  line-height: $header-height;
+  line-height: $header-height + 5;
   i{
     vertical-align: middle;
     display: none;
@@ -36,7 +36,7 @@ header {
     }
   }
   h1{
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: normal;
     display: inline-block;
     @media screen and (max-width: 530px) {
@@ -52,14 +52,14 @@ header {
 .nav-home{
   float: left;
   text-align: left;
-  margin-left: 1em;
+  margin-left: 1rem;
   width: 150px;
   a{
-    margin: 0 0.5em;
+    margin: 0 0.5rem;
   }
   i{
     display: inline-block;
-    font-size:1.2em;
+    font-size:1.2rem;
   }
   @media screen and (max-width: 530px) {
     float: initial;

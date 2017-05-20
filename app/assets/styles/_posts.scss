@@ -3,7 +3,7 @@ Post Layout
  ~ ~ ~ ~ ~ */
 .post-content{
   padding-top: 1rem;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   img{
     max-width:95%;
     height:auto;
@@ -211,6 +211,7 @@ figcaption{
 }
 
 .collecticons-myhome {
+  opacity: 0.6;
   font-size: 4rem;
   vertical-align: middle;
 }

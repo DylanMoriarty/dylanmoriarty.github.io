@@ -28,13 +28,7 @@
 			<h2 class="page-title">
 				{% if page.home == 'yes' %}
 					<a href="{{ site.basurl }}/">
-						<i class="collecticons collecticons-myhome"></i> /
-					</a>
-				{% endif %}
-				{% if page.title %}
-					{{ page.title }}
-				{% else %}
-					{{ site.title }}
+						<i class="collecticons collecticons-myhome"></i> /</a>{% endif %}{% if page.title %}{{ page.title }}{% else %}{{ site.title }}
 				{% endif %}
 			</h2>
 

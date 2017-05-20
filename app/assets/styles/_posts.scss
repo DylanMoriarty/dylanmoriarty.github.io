@@ -1,8 +1,73 @@
+/* ~ ~ ~ ~ ~ 
+Post Layout
+ ~ ~ ~ ~ ~ */
+.post-content{
+  padding-top: 1rem;
+  font-size: 1.1rem;
+  img{
+    max-width:95%;
+    height:auto;
+  }
+  svg{
+    max-width: 95%;
+    height: auto;
+  }
+}
+
+/* ~ ~ ~ ~ ~ 
+Post Images
+ ~ ~ ~ ~ ~ */
+.images{
+  text-align: center;
+  padding: 3rem 0px 4rem 0;
+  clear:both;
+  .ib{
+    border: solid #959595 2px;
+  }
+  .ibd{
+    border: solid #444 2px;
+  }
+}
+
+figcaption{
+  display: block;
+  font-size: 0.7em;
+  text-align: center;
+  margin: 0 auto;
+  width: 95%;
+  .tooltip{
+    .tooltiptext{
+      font-size: 1rem;
+      bottom: 18px;
+      text-align: left;
+    }
+  }
+}
+
+.block{
+  height: 616px;
+  width: 100%;
+}
+
+.centermeplease{
+  position: absolute;
+  left:0;
+  width:100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.centerme{
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+
 .Chapterbox{
 	font-family: Quicksand;
 	text-align: center;
-	margin-top: 20px;
-	margin-bottom: 40px;
+	margin: 3.5rem 0 4rem;
 	color: #8f8f8f;
 	h1{
 		position: relative;
@@ -50,6 +115,7 @@
   display: inline-block;
   font-style: italic;
   cursor: help;
+  font-size: 1.1rem;
   i{
   	vertical-align: super;
   	line-height: 0px;
@@ -81,15 +147,14 @@
     padding: 5px 0;
     border-radius: 6px;
     border: 1px solid #666;
-    font-size: 0.75em;
-    padding: 0.75em 1em;
+    font-size: 0.9rem;
+    padding: 0.75rem 1rem;
     bottom: 30px;
     left: 0;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
     font-style: initial;
-    line-height: 1.4em;
+    line-height: 1.2rem;
     color: #444;
-    /* Position the tooltip text - see examples below! */
     position: absolute;
     z-index: 1;
     margin-bottom:6px;
@@ -145,32 +210,37 @@
 	font-size: 0.75rem;
 }
 
+.collecticons-myhome {
+  opacity: 0.6;
+  font-size: 4rem;
+  vertical-align: middle;
+}
+
 .article-foot{
 	text-align:center;
-	padding:1.5em 0 2.5em 0;
-	font-size:0.7em;
+	padding: 2rem 0 2.5rem 0;
+	font-size:0.7rem;
 	width: 140px;
 	margin: 0 auto;
 	i{
-	  font-size:8em;
+	  font-size: 6rem;
 	  text-align:center;
 	  display: block;
 	}
 }
 
-code{
-	padding: 4px 5px;
-	background-color: white;
-	font-size: 0.75em;
-	vertical-align: text-top;
-	line-height: 15px;
+.footnotes {
+  padding-top: 2rem;
+  margin: 6rem 0 4rem;
+  border-top: $MidGrey 1px solid;
+  font-size: 0.9rem;
+  .tooltip{
+    font-size: 0.8rem;
+    .tooltiptext{
+      font-size: 0.8rem;
+      bottom: 18px;
+      text-align: left;
+    }
+  }
 }
 
-aside{
-	font-size: 0.76em;
-	line-height: 1em;
-}
-
-.center{
-	text-align:center;
-}

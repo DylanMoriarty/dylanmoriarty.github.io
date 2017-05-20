@@ -46,7 +46,7 @@ One of the primary entry points for OSM mapping are Mapathons. These are locally
 The hardest technical lift for this project was getting the live data stream set up for each user's edits. In preparation, we actually built out a couple of 'test runs' to see how the system would hold up during a real Mapathon. The first of these was *Trending OSM Hashtags*.
 
 <div class="images"><img src="../assets/graphics/blog/mms/4-hashtags.gif" class="ib"></img>
-<fig>{% include bits/tooltips.html face="Why the #'s? I promise we're not just jumping on the twitter bandwagon." longtext="Well, OSM, like most tech older than ten years, is an aged beast. The initial developers are still involved, but OSM isn't the bread-winning job for most of them. Making major changes to the infrastructure requires much more work than anyone presently has the time or money to do. The hashtags are inserted into the comments section of each edit & make them scrap-able. It's not a feature, it's a hack. But it works!" %}</fig></div>
+<figcaption>{% include bits/tooltips.html face="Why the #'s? I promise we're not just jumping on the twitter bandwagon." longtext="Well, OSM, like most tech older than ten years, is an aged beast. The initial developers are still involved, but OSM isn't the bread-winning job for most of them. Making major changes to the infrastructure requires much more work than anyone presently has the time or money to do. The hashtags are inserted into the comments section of each edit & make them scrap-able. It's not a feature, it's a hack. But it works!" %}</figcaption></div>
 
 Following this and a few other proof of concepts, we ventured into building out the site.
 
@@ -69,7 +69,7 @@ One major component of the Missing Maps upgrade was adding [user pages](https://
 	<a href="http://www.missingmaps.org/users/#/1784968">
 		<img src="../assets/graphics/blog/mms/userpage.jpg"></img>
 	</a>
-	<fig>As you can see I've mapped just a lil' bit of buildings.</fig>
+	<figcaption>As you can see I've mapped just a lil' bit of buildings.</figcaption>
 </div>
 
 The main goal for the user pages was to clearly and nicely layout contribution statistics. We list out what projects folks have been a part of, give a little calendar for when they contributed, and a map of _where_ they mapped
@@ -116,13 +116,4 @@ That sort of gumption was only possible because we built the whole thing Open So
 
 To see the rest of the MissingMaps badge collection, [become a MissingMaps contributor!](http://www.missingmaps.org/contribute/)
 
-<script type="text/javascript">
-	NodeList.prototype.forEach = Array.prototype.forEach;
-	(function() {
-		var horizontal = document.querySelectorAll('.splitpic-horizontal .splitpic-images');
-		for (var i = 0; i < horizontal.length; ++i) {
-			var sp = new SplitPic(horizontal[i]);
-		}
-	}
-	)();
-</script>
+{% include scripts/splitpic.html %}

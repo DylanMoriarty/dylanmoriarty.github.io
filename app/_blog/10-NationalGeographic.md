@@ -25,7 +25,7 @@ It was fun to put together, and highlighted a lot of the limitations of Mapbox S
 	<div id="map"></div>
 </div>
 
-<fig>Map produced for Love Your Park, Find Your Park. Fonts have been changed.</fig>
+<figcaption>Map produced for Love Your Park, Find Your Park. Fonts have been changed.</figcaption>
 
 <style>
 	.full-bleed{
@@ -107,19 +107,19 @@ Almost all Mapbox maps are based on vector data, which leads to a nice but discr
 
 To achieve the continuous look, I turned primarily to their satellite & hillshade data layers. The hillshade layers worked to help punch out the elevation data, while the satellite layer at a low opacity helped mask the discrete borders and give it a much more realistic tone.
 
-<div class="images"><img src="../assets/graphics/blog/ngm/layers.png" style="height:300px"><fig>Layer stack for the map</fig></div>
+<div class="images"><img src="../assets/graphics/blog/ngm/layers.png" style="height:300px"><figcaption>Layer stack for the map</figcaption></div>
 
 The satellite layer is very saturated & dynamic. Much to strong for my purposes. Following an example {% include bits/tooltips.html face="AJ Ashton" longtext="AJ is the lead Cartographer at Mapbox. [He does really cool stuff](https://github.com/ajashton), and was nice enough to lend some advice while I worked on this. Thanks!" %} did in the style {% include bits/tooltips.html face="Satellite Afternoon" longtext="[You can view this style on Github](https://github.com/mapbox/mapbox-studio-satellite-afternoon.tm2), or pop check it out in Mapbox Studio Classic from the default list they provide." %}, I used their image-filter to achieve a natural look. 
 
-<div class="images"><img src="../assets/graphics/blog/ngm/sat_1.jpg" class="ib"><fig>Satellite layer hue shifted to green tones.</fig></div>
+<div class="images"><img src="../assets/graphics/blog/ngm/sat_1.jpg" class="ib"><figcaption>Satellite layer hue shifted to green tones.</figcaption></div>
 
-<div class="images"><img src="../assets/graphics/blog/ngm/sat_2.jpg" class="ib"><fig>Added background color underneath the satellite layer, & bathymetry layer above to cover the toxic looking water.</fig></div>
+<div class="images"><img src="../assets/graphics/blog/ngm/sat_2.jpg" class="ib"><figcaption>Added background color underneath the satellite layer, & bathymetry layer above to cover the toxic looking water.</figcaption></div>
 
-<div class="images"><img src="../assets/graphics/blog/ngm/sat_3.jpg" class="ib"><fig>Added MB hillshade for terrain shading & color on top to dilute the darker areas. Lookin' good!</fig></div>
+<div class="images"><img src="../assets/graphics/blog/ngm/sat_3.jpg" class="ib"><figcaption>Added MB hillshade for terrain shading & color on top to dilute the darker areas. Lookin' good!</figcaption></div>
 
 One downside to this method is that it requires the satellite image to be layered over with a ```multiply``` composite. This makes the white areas see-thru, and we end up with weird looking cold places. One solution is to simply use the MB land cover layer to target areas with the ```snow``` tag, but...
 
-<div class="images"><img src="../assets/graphics/blog/ngm/sat_4.jpg" class="ib"><fig>Antarctica enjoying some long sandy beaches</fig></div>
+<div class="images"><img src="../assets/graphics/blog/ngm/sat_4.jpg" class="ib"><figcaption>Antarctica enjoying some long sandy beaches</figcaption></div>
 
 Even then it's not perfect. With some more GIS work the water layer could be made to match up with the snow area to cover it up. However, this map was only meant to show the United States... so we could just bound the map's view to non-arctic areas and deal with this at a later time.
 
@@ -131,7 +131,7 @@ For the large scale there was a lot of freedom, but there was a looming restrict
 
 From testing out a few options, just having the sat imagery stay faint as we zoomed in seemed to be the better alternative. From that point, I made a pleasant simple view at the lower levels of warm brown roads with a light green tinted satellite base layer beneath it.
 
-<div class="images"><img src="../assets/graphics/blog/ngm/large_1.jpg" class="ib"><fig>Lovely little city called Madison</fig></div>
+<div class="images"><img src="../assets/graphics/blog/ngm/large_1.jpg" class="ib"><figcaption>Lovely little city called Madison</figcaption></div>
 
 Another option would have been to show OSM data for buildings. We decided against that due to the fact that OSM is <em>very</em> incomplete for buildings, and it would be worthless for smaller towns.
 

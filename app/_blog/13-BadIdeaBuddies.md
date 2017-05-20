@@ -22,7 +22,7 @@ TL;DR: It was great.
 <div id = "musicbox">
 <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3Aeatincake%3Aplaylist%3A2pjcFWJo4mgvO6dwvui2NC" width="100%" height="300px" frameborder="0" allowtransparency="true"></iframe>
 </div>
-<fig>While I'd always recommend listening to tunes when browsing this site, for this post I really must insist.</fig>
+<figcaption>While I'd always recommend listening to tunes when browsing this site, for this post I really must insist.</figcaption>
 
 {% include bits/chapters.html chapter='I' title='LETS FORM A BAND YEAH YEAH'%}
 

@@ -23,7 +23,7 @@ From July-October I kept a <a href="https://dylanmoriarty.github.io/anno/" targe
 <div>
 	<a href="https://www.washingtonpost.com/2016-election-results/us-presidential-race" target="_blank">
 		<div class="images"><img src="../assets/graphics/blog/six/wapo.jpg">
-			<fig>Check it out!</fig>
+			<figcaption>Check it out!</figcaption>
 		</div>
 	</a>
 </div>
@@ -37,7 +37,7 @@ For this project we needed to create projected shapefiles that would work in Map
 <div>
 	<a href="https://devseed.com/dirty-reprojectors-app/" target="_blank">
 		<div class="images"><img src="../assets/graphics/blog/six/projection-examples.gif" />
-			<fig>Front facing for Dirty Reprojectors, designed by moi.</fig>
+			<figcaption>Front facing for Dirty Reprojectors, designed by moi.</figcaption>
 		</div>
 	</a>
 </div>
@@ -74,31 +74,31 @@ This was a small tool made to let the client more easily make maps showing off s
 I also did a handful of logos & swag work.
 
 <div class="images"><img src="../assets/graphics/blog/six/logos.png">
-	<fig>Logos for (in order): <a href="https://developmentseed.org/blog/2017/01/30/NASA-on-the-cloud/" target="_blank">Cumulus</a>- a cloud service for NASA's earth science data, <a href="http://www.dc125.us/" target="_blank">The Daily Cardinal 125th Anniversary</a>, <a href="https://github.com/sat-utils" target="_blank">SAT-UTILS</a>- open source utilities for processing satellite imagery, & <a href="https://developmentseed.org/blog/2016/05/16/macrocosm-easy/" target="_blank">MacrocOSM</a>- making a forks of OpenStreetMap API easier to use.</fig>
+	<figcaption>Logos for (in order): <a href="https://developmentseed.org/blog/2017/01/30/NASA-on-the-cloud/" target="_blank">Cumulus</a>- a cloud service for NASA's earth science data, <a href="http://www.dc125.us/" target="_blank">The Daily Cardinal 125th Anniversary</a>, <a href="https://github.com/sat-utils" target="_blank">SAT-UTILS</a>- open source utilities for processing satellite imagery, & <a href="https://developmentseed.org/blog/2016/05/16/macrocosm-easy/" target="_blank">MacrocOSM</a>- making a forks of OpenStreetMap API easier to use.</figcaption>
 </div>
 
 Development Seed goes to a quite a few conferences every year, so we enjoy having stylish shirts we can share with friends. I did a regular design that was just the flat logo on t-shirts, and also put together this:
 
 <div class="images"><img src="../assets/graphics/blog/six/shirt.jpg">
-	<fig>Notion here is Makeshift to the Moon! highlighting our general effective scrappiness.</fig>
+	<figcaption>Notion here is Makeshift to the Moon! highlighting our general effective scrappiness.</figcaption>
 </div>
 
 I also had the honor of doing a bunch of graphics for Ian Schuler's camp ground wedding.
 
 <div class="images"><img src="../assets/graphics/blog/six/wed.jpg">
-	<fig></fig>
+	<figcaption></figcaption>
 </div>
 
 This included some imagery for his wedding site properly titled 'Wed Hot American Summer', and a map of the camp that I hear was a big hit.
 
 <div class="images"><img src="../assets/graphics/blog/six/SmallerCampMap.jpg">
-	<fig></fig>
+	<figcaption></figcaption>
 </div>
 
 {% include bits/chapters.html chapter='III' title='Diving into the OSM Community'%}
 
 <div class="images"><img src="../assets/graphics/blog/six/sotm.jpg">
-	<fig></fig>
+	<figcaption></figcaption>
 </div>
 
 Almost everything I've done this year has in some way shape or form related to OpenStreetMap. As I've contributed more to the OSM ecosystem, I've also dived further into the organizations around it.
@@ -106,7 +106,7 @@ Almost everything I've done this year has in some way shape or form related to O
 Quite a few projects we've done at Development Seed are through the Humanitarian OpenStreetMap Team. As of this year, I've officially <a href="https://www.hotosm.org/users/dylan_moriarty" target="_blank">joined them as a voting member</a> to help make graphics for their communications.
 
 <div class="images"><img src="../assets/graphics/blog/six/openaerialmap.jpg">
-	<fig>OpenAerialMap was one such project with HOT we did. I put together the homepage for it, and even managed to get a little illustrated bit towards the end.</fig>
+	<figcaption>OpenAerialMap was one such project with HOT we did. I put together the homepage for it, and even managed to get a little illustrated bit towards the end.</figcaption>
 </div>
 
 I also managed to attend the 2016 HOT Summit & State of the Map conference in Brussels (pictured above). I gave <a href="https://www.slideshare.net/DylanMoriarty/tracking-openstreetmap-contributions-in-real-time" target="_blank">a talk at State of the Map</a> on the api behind the Missing Maps project, and while video exists of it the sounds messed up. Ah well. I gave the same talk to the North American Cartographic Information Society's conference shortly thereafter, & an additional one on <a href="https://www.slideshare.net/DylanMoriarty/maps-by-hands" target="_blank">maps by hands</a>.
@@ -116,7 +116,7 @@ Back in DC, after pestering them for enough times about it, I also joined Maptim
 {% include bits/chapters.html chapter='IV' title='...but most importantly'%}
 
 <div class="images"><img src="../assets/graphics/blog/six/bowie.jpg">
-	<fig>From Spotify's end of the year review of what you listened to.</fig>
+	<figcaption>From Spotify's end of the year review of what you listened to.</figcaption>
 </div>
 
 RIP Bowie. Black Star was a spectacular swan song.

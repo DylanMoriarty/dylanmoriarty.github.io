@@ -50,7 +50,7 @@ scripts: "D3 Leaflet"
   <div id = "introbox"><img src="../assets/graphics/blog/cat/intro.png"></img></div>
 	<div id = "catmap"></div>
 </div>
-<fig>Map made to test manipulating a geojson in the browser via an interaction. Cats drawn for my own amusement.</fig>
+<figcaption>Map made to test manipulating a geojson in the browser via an interaction. Cats drawn for my own amusement.</figcaption>
 
 <script>
 	var howmanycats = Math.floor(Math.random()*10);

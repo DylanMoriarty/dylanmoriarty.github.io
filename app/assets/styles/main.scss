@@ -3,14 +3,23 @@
 
 // Reset and normalize
 @import "variables";
-@import "base";
+@import "reset";
+@import "settings";
+@import "utils";
+
+// Bring in the icon fonts
+@import "collecticons";
+
 @import "layout";
+@import "nav";
+
 @import "syntax-highlighting";
 @import "posts";
-@import "new";
-@import "test";
-@import "maps";
-@import "collecticons";
+@import "header-content";
 @import "blog-specific";
-@import "leaflet";
-@import "splitpic";
+@import "music-box";
+@import "cake";
+@import "footer";
+
+@import "vendor/leaflet";
+@import "vendor/splitpic";

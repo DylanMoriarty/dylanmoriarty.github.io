@@ -24,14 +24,26 @@
 					<img class="tothetop" src="{{ site.baseurl }}/assets/graphics/meta/cover.svg"></img>
 			</div>
 		</div>
-		<div class="welcomecover">
-			<div class="welcomecarto">
-			</div>
-			<div class="welcomeplate">
-			<h1> {% if page.home == 'yes' %}<a href="{{ site.basurl }}/"><i class="collecticons collecticons-myhome"></i> /</a>{% endif %}{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
-				<div class="welcomeiconbox">
-					{% if page.links %}{{ page.links }}{% else %}{{ }}{% endif %}
-				</div>
+		<div class="title-container">
+			<h2 class="page-title">
+				{% if page.home == 'yes' %}
+					<a href="{{ site.basurl }}/">
+						<i class="collecticons collecticons-myhome"></i> /
+					</a>
+				{% endif %}
+				{% if page.title %}
+					{{ page.title }}
+				{% else %}
+					{{ site.title }}
+				{% endif %}
+			</h2>
+
+			<div class="page-subtitle">
+				{% if page.links %}
+					{{ page.links }}
+				{% else %}
+					{{ }}
+				{% endif %}
 			</div>
 			<div class="welcomeillus">
 			</div>

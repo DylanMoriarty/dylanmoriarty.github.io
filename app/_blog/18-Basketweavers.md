@@ -8,7 +8,7 @@ bannerimg: /banners/foggybanner
 banner: hb-foggy.jpg
 links: 
 date: 2017-05-18
-display: 'yes'
+display: 'no'
 permalink: blog/basketweavers-and-osm.html
 
 scripts: 'svg-text'

@@ -2,7 +2,8 @@
 Post Layout
  ~ ~ ~ ~ ~ */
 .post-content{
-  padding-top:2em;
+  padding-top: 1rem;
+  font-size: 1.3rem;
   img{
     max-width:95%;
     height:auto;
@@ -36,7 +37,7 @@ figcaption{
   width: 95%;
   .tooltip{
     .tooltiptext{
-      font-size: 1em;
+      font-size: 1rem;
       bottom: 18px;
       text-align: left;
     }
@@ -114,6 +115,7 @@ figcaption{
   display: inline-block;
   font-style: italic;
   cursor: help;
+  font-size: 1.1rem;
   i{
   	vertical-align: super;
   	line-height: 0px;
@@ -145,13 +147,13 @@ figcaption{
     padding: 5px 0;
     border-radius: 6px;
     border: 1px solid #666;
-    font-size: 0.75em;
-    padding: 0.75em 1em;
+    font-size: 0.9rem;
+    padding: 0.75rem 1rem;
     bottom: 30px;
     left: 0;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
     font-style: initial;
-    line-height: 1.4em;
+    line-height: 1.2rem;
     color: #444;
     position: absolute;
     z-index: 1;
@@ -208,14 +210,19 @@ figcaption{
 	font-size: 0.75rem;
 }
 
+.collecticons-myhome {
+  font-size: 4rem;
+  vertical-align: middle;
+}
+
 .article-foot{
 	text-align:center;
-	padding:1.5em 0 2.5em 0;
-	font-size:0.7em;
+	padding: 2rem 0 2.5rem 0;
+	font-size:0.7rem;
 	width: 140px;
 	margin: 0 auto;
 	i{
-	  font-size:8em;
+	  font-size: 6rem;
 	  text-align:center;
 	  display: block;
 	}
@@ -225,10 +232,11 @@ figcaption{
   padding-top: 2rem;
   margin: 6rem 0 4rem;
   border-top: $MidGrey 1px solid;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   .tooltip{
+    font-size: 0.8rem;
     .tooltiptext{
-      font-size: 1em;
+      font-size: 0.8rem;
       bottom: 18px;
       text-align: left;
     }

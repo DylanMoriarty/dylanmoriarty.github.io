@@ -66,45 +66,6 @@
 	z-index: -10;
 }
 
-.welcomecover{
-	position: relative;
-	height:100%;
-	top: -10px;
-}
-
-.welcomecarto{
-
-}
-
-.welcomeplate{
-	position: relative;
-	text-align: center;
-	height: 100%;
-	width:40%;
-	min-width: 300px;
-	margin: 0 auto;
-	h1{
-		position: relative;
-		margin-bottom: 0;
-	}
-	@media screen and (max-width: 675px){
-		margin-top:1.5em;
-	}
-}
-
-
-.welcomeiconbox{
-	position: relative;
-	margin-bottom: 1.5em;
-	a{
-		margin: 0 15px 0 15px;
-	}
-	i{
-		vertical-align: middle;
-		margin-right: 4px;
-	}
-}
-
 .special-icon{
 	i{
 		border-radius: 50%;
@@ -115,8 +76,4 @@
 			background-color: lighten($Gold, 35);
 		}
 	}
-}
-
-.welcomeillus{
-
 }

@@ -17,8 +17,9 @@ a {
 }
 
 blockquote{
+  max-width: $tighter-width;
   border-left: #8A8A8A 1px solid;
-  margin: 2em 0;
+  margin: 2em auto;
   font-size: 0.9em;
   padding-left: 20px;
   font-style: initial;
@@ -36,8 +37,4 @@ code{
 aside{
   font-size: 0.76em;
   line-height: 1em;
-}
-
-em {
-  font-size: 1.1rem;
 }

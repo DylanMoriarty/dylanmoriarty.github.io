@@ -12,6 +12,15 @@ body{
   position: relative;
 }
 
+.wrapper {
+  max-width: $content-width;
+}
+
+.small-wrapper {
+  margin: 0 auto;
+  max-width: $tighter-width;
+}
+
 .page-content {
   position: relative;
   padding-bottom:2em;

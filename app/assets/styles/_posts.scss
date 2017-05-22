@@ -3,6 +3,7 @@ Post Layout
  ~ ~ ~ ~ ~ */
 .post-content{
   padding-top: 1rem;
+  margin-bottom: 2rem;
   font-size: 1.1rem;
   img{
     max-width:95%;
@@ -29,13 +30,19 @@ Post Images
   }
 }
 
+.smaller-image {
+  max-width: $tighter-width;
+  margin: 0 auto;
+}
+
 figcaption{
   display: block;
   font-size: 0.7em;
   text-align: center;
-  margin: 0 auto;
-  width: 95%;
+  margin: 0.5rem auto 0;
+  max-width: $tighter-width;
   .tooltip{
+    font-size: 0.85rem;
     .tooltiptext{
       font-size: 1rem;
       bottom: 18px;
@@ -195,9 +202,13 @@ figcaption{
 
 .post{
 	p{
+    max-width: $content-width - 300px;
+    margin: 0 auto 0.75rem;
 		line-height: 1.75em;
 	}
 	ul{
+    max-width: $tighter-width;
+    margin: 0 auto;
 		padding: 0.75em 0;
 	}
 	li{
@@ -244,3 +255,10 @@ figcaption{
   }
 }
 
+.g-artboard {
+  display: none;
+}
+
+.g-aiImg {
+  pointer-events: none;
+}

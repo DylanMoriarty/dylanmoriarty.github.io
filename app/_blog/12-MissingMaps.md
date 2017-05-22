@@ -52,7 +52,7 @@ Following this and a few other proof of concepts, we ventured into building out 
 
 {% include bits/chapters.html chapter='IV' title='Landing Page'%}
 
-{% include bits/splitpic.html img1='mms/mm-before-1.jpg' img2='mms/mm-after-1.jpg' cap='Landing Page View. (before / after)'%}
+{% include bits/splitpic.html img1='mms/mm-before-1.jpg' img2='mms/mm-after-1.jpg' cap='Landing Page View. Hover over the image to see the before & after.'%}
 
 We felt good about the original copy on the landing page, but wanted to better frame and dole it out. 
 
@@ -80,7 +80,7 @@ By providing a badge or similar reward for doing small tasks within OSM, we both
 
 {% include bits/chapters.html chapter='V' title='Badge Design'%}
 
-<div class="images"><img src="../assets/graphics/blog/mms/mm-badge-heros.png"></img></div>
+<div class="images smaller-image"><img src="../assets/graphics/blog/mms/mm-badge-heros.png"></img></div>
 
 I wrote a bunch of words on this on [Development Seed's blog](https://developmentseed.org/blog/2016/06/09/mm-badges), but I'll do a tl;dr version here. My first iterations on the badge design was much like the center one here:
 
@@ -88,11 +88,11 @@ To begin, we brainstormed with the American Red Cross to determine which metrics
 
 Once we had a few ideas, we researched other badge systems and tried to pin-point where they succeeded or faltered. All in all the ones that worked well were friendly, distinct, & just geometric enough to look polished.
 
-<div class="images"><img src="../assets/graphics/blog/mms/mm-badge-working.png"></img></div>
+<div class="images smaller-image"><img src="../assets/graphics/blog/mms/mm-badge-working.png"></img></div>
 
 ...but we wanted these to be in a style that was easily replicated. Doing a flat style worked pretty great for that, and has been fairly successful with the Red Cross making their own versions of the graphics for other parts of the site & media.
 
-<div class="images"><img src="../assets/graphics/blog/mms/mm-badge-story.png"></img></div>
+<div class="images smaller-image"><img src="../assets/graphics/blog/mms/mm-badge-story.png"></img></div>
 
 One thing we settled on pretty early in designing these were that for the badges levels should tell a story of sorts. This inherently binds badges of the same category together, and provides a little extra intrigue into what the next badge is gonna be.
 

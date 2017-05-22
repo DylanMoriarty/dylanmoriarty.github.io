@@ -44,7 +44,7 @@ For this project we needed to create projected shapefiles that would work in Map
 
 <a href="http://www.missingmaps.org/" target="_blank">Missing Maps</a> was also officially launched at the start of the year! This joint venture with the Red Cross & the Humanitarian OpenStreetMap Team was the first major project I led design on, and it's been really neat to see it thrive since. I've written a bunch about it's development <a href="https://dylanmoriarty.github.io/blog/missing-maps.html" target="_blank">elsewhere on this site</a>.
 
-<div class="images"><img src="../assets/graphics/blog/mms/Intro.svg" />
+<div class="images smaller-image"><img src="../assets/graphics/blog/mms/Intro.svg" />
 </div>
 
 Outside of those, I also helped create map styles for <a href="https://openaq.org/#/map" target="_blank">OpenAQ</a>, <a href="https://map.openaerialmap.org/#/?_k=sz9v83" target="_blank">OpenAerialMap</a>, & a bunch of World Bank projects. Here's a handful of highlights:
@@ -59,7 +59,7 @@ Outside of those, I also helped create map styles for <a href="https://openaq.or
 
 <a href="https://openaq.org/#/map" target="_blank">OpenAQ</a> is an open database for air quality information across the world. For this there was a lot of hoopla over what the color scheme would be for the points. We initially didn't want to use a diverging scheme because there isn't really a halfway _turning point_ where the amount of a mineral in the air makes it suddenly bad. We tried out a few other schemes, but the users sent a lot of feedback that they missed the red/blue dichotomy. Gotta go with what works for the users.
 
-<div class="images"><img src="../assets/graphics/blog/six/roads.jpg" />
+<div class="images smaller-image"><img src="../assets/graphics/blog/six/roads.jpg" />
 </div>
 
 The above image shows road styling for <a href="https://developmentseed.org/blog/2015/04/15/openstreetmap-for-government/" target="_blank">Open Roads</a>, a custom OSM iD editor for the World Bank. Was a fun challenge figuring out how to make the same style look appropriate for both a satellite basemap & a very light one. We ended up making two different styles- one with a stronger casing so the roads pop on the sat imagery, and softer casing for the light version.
@@ -73,7 +73,7 @@ This was a small tool made to let the client more easily make maps showing off s
 
 I also did a handful of logos & swag work.
 
-<div class="images"><img src="../assets/graphics/blog/six/logos.png">
+<div class="images smaller-image"><img src="../assets/graphics/blog/six/logos.png">
 	<figcaption>Logos for (in order): <a href="https://developmentseed.org/blog/2017/01/30/NASA-on-the-cloud/" target="_blank">Cumulus</a>- a cloud service for NASA's earth science data, <a href="http://www.dc125.us/" target="_blank">The Daily Cardinal 125th Anniversary</a>, <a href="https://github.com/sat-utils" target="_blank">SAT-UTILS</a>- open source utilities for processing satellite imagery, & <a href="https://developmentseed.org/blog/2016/05/16/macrocosm-easy/" target="_blank">MacrocOSM</a>- making a forks of OpenStreetMap API easier to use.</figcaption>
 </div>
 
@@ -105,7 +105,7 @@ Almost everything I've done this year has in some way shape or form related to O
 
 Quite a few projects we've done at Development Seed are through the Humanitarian OpenStreetMap Team. As of this year, I've officially <a href="https://www.hotosm.org/users/dylan_moriarty" target="_blank">joined them as a voting member</a> to help make graphics for their communications.
 
-<div class="images"><img src="../assets/graphics/blog/six/openaerialmap.jpg">
+<div class="images smaller-image"><img src="../assets/graphics/blog/six/openaerialmap.jpg">
 	<figcaption>OpenAerialMap was one such project with HOT we did. I put together the homepage for it, and even managed to get a little illustrated bit towards the end.</figcaption>
 </div>
 

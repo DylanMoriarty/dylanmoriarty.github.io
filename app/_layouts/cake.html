@@ -6,38 +6,39 @@ bannerimg: /banners/cakebanner
 .welcomeplate h1{
 	color: rgba(0,0,0,0);
 }
+
+.page-title {
+	opacity: 0;
+}
 </style>
 
 <div class="cake-title">
 	<a href="{{ site.url }}/cake/"><img src="{{ site.baseurl }}/assets/graphics/cake/ComicHead.png"></img></a>
 </div>
 
-<div class="cake-line"></div>
-
-<div class="cake-comic-title">{{ page.name }}</div>
-
 <div id = "comic-content">
-    <div id="comic">
-      <img src = "{{ site.baseurl }}/assets/graphics/cake/comics/{{ page.comic }}" alt= "{{ page.hovertext }}"> 
-    </div>
+	<div class="cake-comic-title">{{ page.name }}</div>
 
+  <div id="comic">
+    <img src = "{{ site.baseurl }}/assets/graphics/cake/comics/{{ page.comic }}" alt= "{{ page.hovertext }}"> 
+  </div>
 
-<div id="comicnav">
-{% if page.prev == null %}
-  <img src="{{ site.baseurl }}/assets/graphics/cake/comics/previousi.png"></img>
-{% else %}
-  <a href = "{{ site.baseurl }}/cakes/{{ page.prev }}"><img src = "{{ site.baseurl }}/assets/graphics/cake/comics/previous.png" onmouseover="this.src='{{ site.baseurl }}/assets/graphics/cake/comics/previousc.png'" onmouseout="this.src='{{ site.baseurl }}/assets/graphics/cake/comics/previous.png'"></a> 
-{% endif %}
- <a href = "{{ site.baseurl }}/cake/"><img src = "{{ site.baseurl }}/assets/graphics/cake/comics/archieve.png" onmouseover="this.src='{{ site.baseurl }}/assets/graphics/cake/comics/archievec.png'" onmouseout="this.src='{{ site.baseurl }}/assets/graphics/cake/comics/archieve.png'"></a>
-{% if page.next == null %}
- <img src="{{ site.baseurl }}/assets/graphics/cake/comics/nexti.png"></imgs>
-{% else %}
-  <a href = "{{ site.baseurl }}/cakes/{{ page.next }}"><img src = "{{ site.baseurl }}/assets/graphics/cake/comics/next.png" onmouseover="this.src='{{ site.baseurl }}/assets/graphics/cake/comics/nextc.png'" onmouseout="this.src='{{ site.baseurl }}/assets/graphics/cake/comics/next.png'"></a> 
-{% endif %}
- </div>
+	<div class="comicnav">
+		{% if page.prev == null %}
+		  <img src="{{ site.baseurl }}/assets/graphics/cake/comics/previousi.png"></img>
+		{% else %}
+			<a href = "{{ site.baseurl }}/cakes/{{ page.prev }}"><img src = "{{ site.baseurl }}/assets/graphics/cake/comics/previous.png" onmouseover="this.src='{{ site.baseurl }}/assets/graphics/cake/comics/previousc.png'" onmouseout="this.src='{{ site.baseurl }}/assets/graphics/cake/comics/previous.png'"></a> 
+		{% endif %}
+			<a href = "{{ site.baseurl }}/cake/"><img src = "{{ site.baseurl }}/assets/graphics/cake/comics/archieve.png" onmouseover="this.src='{{ site.baseurl }}/assets/graphics/cake/comics/archievec.png'" onmouseout="this.src='{{ site.baseurl }}/assets/graphics/cake/comics/archieve.png'"></a>
+		{% if page.next == null %}
+			<img src="{{ site.baseurl }}/assets/graphics/cake/comics/nexti.png"></imgs>
+		{% else %}
+			<a href = "{{ site.baseurl }}/cakes/{{ page.next }}"><img src = "{{ site.baseurl }}/assets/graphics/cake/comics/next.png" onmouseover="this.src='{{ site.baseurl }}/assets/graphics/cake/comics/nextc.png'" onmouseout="this.src='{{ site.baseurl }}/assets/graphics/cake/comics/next.png'"></a> 
+		{% endif %}
+	 </div>
 
-<div class= "comic-words">
-	{{ content }}
-</div>
+	<div class= "comic-words">
+		{{ content }}
+	</div>
 
 </div>

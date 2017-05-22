@@ -10,7 +10,6 @@
 	{% endif %}
 	{% if page.scripts contains 'Mapbox-GL' %}
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.18.0/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.18.0/mapbox-gl.css' rel='stylesheet' />
 	{% endif %}
 	{% if page.scripts contains 'MyHand' %}
 	<style>
@@ -32,9 +31,6 @@
 		}
 	</style>
 	{% endif %}
-	{% if page.scripts contains "svg-text" %}
-	<link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
-	{% endif %}
 {% endif %}
 
 <html>
@@ -52,6 +48,10 @@
 		</div>
 
 		{% include footer.html %}
+
+	{% if page.scripts contains 'ai2html' %}
+		{% include scripts/resizer-script.html %}
+	{% endif %}
 
 	</body>
 </html>

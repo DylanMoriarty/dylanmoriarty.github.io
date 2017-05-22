@@ -25,25 +25,25 @@ I think pretty much everyone nowadays does.
 
 But every time I try to locate my hometown on a map with no labels I can hardly ever locate it. Each time I've gone back home, I'm struck by how different the mental maps I have of Janesville are compared to how things _actually_ are.
 
-<div class="images">
+<div class="images smaller-image">
 	{% include svgs/school-route.svg %}
 </div>
 
 Above is a mental map of the route I would take to elementary school as a kid. Between the ages of 2~10 this was "the know world" to me. Sure, I knew there was an Olive Garden somewhere in the aether, but where it was relative to my home and how to get there were beyond me. Here's 1996 Janesville according to six year old Dylan:
 
-<div class="images">
+<div class="images smaller-image">
 	{% include svgs/janesville.svg %}
 </div>
 
 Which goes a long way to explain why it's so incredibly strange to me looking at how Janesville is actually laid out. The in between was a foggy space. In actuality, my route to school looks like this:
 
-<div class="images">
+<div class="images smaller-image">
 	{% include svgs/school-route-actual.svg %}
 </div>
 
 Once we remove the fog crop, it's borderline unrecognizable to me as the same place.
 
-<div class="images">
+<div class="images smaller-image">
 	<img src="../assets/graphics/blog/fsp/fullthing.jpg">
 	<figcaption><a href="https://www.youtube.com/watch?v=TGofoH9RDEA" target="_blank">This is not my beautiful house!</a></figcaption>
 </div>
@@ -53,7 +53,7 @@ Which got me thinking about other spaces I vaguely knew. I would visit Madison W
 There was also one building where school competitions would frequent, I now know is the campus 
 {% include bits/tooltips.html face="Humanities building" longtext="Well, the building is really more of a dungeon. It was literally built so tanks/anti-protest vehicles could easily mount the sides in case of protests in reaction to the Vietnam protests. Love you Madison." %}. The building _roughly_ looks the same on all sides, so I never really knew which direction I was looking out coming out of it. There were more than a few occasions where following folks to grab lunch I'd be amazed to discover how close it was to my 'known' world of State Street.
 
-<div class="images relative">
+<div class="images smaller-image relative">
 	{% include svgs/madison.svg %}
 	<img class="rotation-special" src="../assets/graphics/blog/fsp/humanitees.png">
 </div>
@@ -62,7 +62,7 @@ Now, two years I ago I moved to Washington DC, a geographic clean slate to my me
 
 As such everything really just slots onto that basemap, like a puzzle piece. The overall context of where things are in relation to one another isn't a mystery and I'm always somewhat aware of how far away I am from everything else.
 
-<div class="images">
+<div class="images smaller-image">
 	{% include svgs/washington.svg %}
 </div>
 
@@ -72,7 +72,7 @@ I suppose what strikes me about it is that my impression of DC is an aerial view
 
 I kinda miss the discovery between foggy spaces.
 
-<div class="footnotes">
+<div class="footnotes smaller-image">
 	<p>All maps here were made using satellite imagery screenshot'd from <a href="mapbox.com" target="_blank">Mapbox</a>'s Satellite base layer. The Basemap used for DC is Mapbox Light style with the labels nixed.</p>
 
 	<p>This could also all just be the result of living in a city too, where a more prominent public transit system help reinforce the almighty basemap. Or maybe just getting older and being more aware of my surroundings in general. Regardless, I'm just thinking out loud here ;)</p>

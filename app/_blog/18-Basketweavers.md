@@ -66,6 +66,10 @@ Well, for many places in the world, it's surprisingly complete where it counts. 
   	border-top-color: #ececec;
   }
 
+  .mapboxgl-popup-anchor-top .mapboxgl-popup-tip {
+  	border-bottom-color: #ececec;
+  }
+
   .tooltip-text {
   	margin: 0 0.25rem;
   }
@@ -91,7 +95,7 @@ This makes OSM special. You can find other sources that have global coverage, ar
 
 Gathering geospatial data is an expensive endeavor. Most organizations dedicated to creating it were either narrowly focused (creating a dataset of a cities parks), compiling it to sell, or were just large enough to eat the sunk cost.
 
-Instead of throwing millions of dollars at the problem, thanks to the internet OSM instead throws millions of volunteers. With some exceptions, most of the data has been added by volunteers mapping their world.
+Instead of throwing millions of $ at the problem, OSM instead throws millions of volunteers. With some exceptions, all OSM data has been added by volunteers mapping their world. Much like Wikipedia anyone can add information.
 
 <div class= "full-bleed">
 	<div id="map-buildings" class="mapstyle"></div>
@@ -100,97 +104,75 @@ Instead of throwing millions of dollars at the problem, thanks to the internet O
 
 <br>
 
-Above is the building data from Madison, Wisconsin. You might notice as you zoom out it tapers it out in the upper right hand side once you get away from the downtown. This is just another gap in the database.
+Above is the building data from Madison, Wisconsin. You might notice as you zoom out it tapers it out in the upper right hand side once you get away from the downtown.
 
 Much like the neglected basketweavers of the world, no one's quite gotten around to adding in those residential buildings quite yet. Mapping the world is an insurmountable task, so most mappers have understandably prioritized adding buildings such as hospitals, schools, and other major buildings before large residential blocks.
 
-Still we can do some fun thing with the data that is there. Like say, make an interactive map that shows where the nearest bar is to any given location in the DC area.
+Particularly in major cities, the map is incredibly detailed.
+
+<div class= "full-bleed">
+	<div id="map-eur" class="mapstyle"></div>
+</div>
+<figcaption>Guess the city! OSM began in Europe, so the cities there are some of the best mapped out.</figcaption>
+
+<br>
+
+{% include bits/chapters.html chapter='II' title='So how is this Reliable?'%}
+
+For the reasons mentioned above, every map made with OSM data should have a caveat: _There's almost certainly missing bits here._
+
+That said, because anyone can edit it, it's constantly being improved.
+
+For example, here's an interactive that shows for any given point in DC where the nearest bar is.
 
 <div class= "full-bleed">
 	<div id="map-bars" class="mapstyle"></div>
 </div>
-<figcaption></figcaption>
+<figcaption>Hover over the map to view a voronoi highlight of which areas are closest to each bar. <em>There's almost certainly missing bits here.</em></figcaption>
 
 <br>
 
+I'm sure someone native to DC will notice their favorite bar missing. But, there's nothing stopping them from making an account on OSM and adding it to the database!
 
-{% include bits/chapters.html chapter='II' title='So how is this Reliable?'%}
+This kind of map can be made to fetch live data too- so an individual adding a feature labeled `bar` to DC would immediately update it. That's powerful. 
 
+But if anyone can update the data, how do we make sure it's valid & accurate?
 
-CHAPTER III - how is it safe
+{% include bits/chapters.html chapter='III' title='Pokemon & Valid Geodata'%}
 
-Well, Pokemon
+In many ways, OSM has protection through obscurity. It's less visible than Wikipedia, and the notion of adding features to a map sounds significantly more difficult than just editing text. Most interactions we make online are editing text fields after all.
 
-CHAPTER IV --- 
+In mid 2016, Nintantic released PokemonGO and brought with it a flood of folks adding made up features to the database. PokemonGO is a game that uses THE WORLD as it's base, and has changes what critters you encounter based on what natural features you're around. If you're near a lake you'll run into water Pokemon. If you're in a field, you'll find bird Pokemon, and so on. It encourages folks to leave their house and go to parks, rivers, and such to find all these critters.
 
-You can add data too!
+At some point someone discovered PokemonGO was referencing OSM data when it determined which natural features it's players were around. For some folks, this was great to know because their hometown hadn't been well mapped out:
 
-learn to map~
+> I just signed up on OSM and made some edits to my very small hometown which had nothing ever added to it before. I added the park, the baseball field, landmark names. Also made some edits near where I work (added an area as industrial which wasn't labeled before).
+>
+>[- reddit person AlphaRocker](https://www.reddit.com/r/TheSilphRoad/comments/5px80u/made_4_new_nests_appear_with_osm/dcuvfnr/)
 
+Others took advantage of this and created 'nests' of fake features surrounding their home. Folks also started adding features that were in the game to the map like item spawn points that don't exist in our actual world.
 
+[[image]]
 
+Luckily, OSM is widely used enough that there are people who run checks over the database to identify bad contributions. After a comb is run through the entire database, these checks flag potential bugs, and then someone either removes or reconciles the issue.
 
+One basic example is a check that makes sure there aren't polygons that self-intersect.
 
+For PokemonGO, checks were created that filtered for things like:
 
+- Is the word 'Pokemon' used in the contribution anywhere?
+- Is this contribution full of questionably overlapping features?
+- Is this contribution made by someone who just joined, with less than 5 edits, and mapping major features like lakes?
 
+The same goes for the rest of the database broadly speaking.
 
+{% include bits/chapters.html chapter='IV' title='Basketweavers Unite'%}
 
+So, it's incomplete, but it's _fucking awesome._ And it's in a state of constant improvement.
 
+& hey, if you know any basketweavers, you should add them so I and endless others after will have ever so slightly more accurate maps.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{% include bits/chapters.html chapter='I' title='The Building Blocks (Points)'%}
-
-Generally speaking, Europe is the best mapped area in the world. This is largely due to Britian being the birthplace of the whole project, and a large group of blah blah blah
-
-
-{% include bits/chapters.html chapter='II' title='The Missing Bits'%}
-
-There's a reason when you see 3d maps it's almost _always_ San Fran or New York. They're incredibly well mapped out and have data inside for everything from water fountains to building heights!
-
-<div class="images">
-</div>
-
-Other parts of the world that lack the volume of people are significantly less represented. If your hometown is under 20,000 people, chance is good large sections of your town haven't been mapped out. Even where there's a polygon for the buildling we can still see disparity of coverage looking at city malls,
-
-<div class="images">
-</div>
-
-The best thing about OpenStreetMap though? It's a {% include bits/tooltips.html face="Wiki-esque" longtext="I take pride that I made it this far without calling OSM a Wiki version of Google Maps" %}. database that anyone can edit!
-
-There are a few people out there who get paid to contribute and maintain the quality of OpenStreetMap, but not quite enough to map everything. Have some time to spare?
-
-<div class="images">
-</div>
-<figcaption>Learn to Map & add your local basketweaver to the world!</figcaption>
-
-
-
-
-For places in the world 
-
-[ HOT efforts ]
-
-
+{% include bits/tooltips.html face="asdf" longtext="asdf" %}.
 
 <script>
 	mapboxgl.accessToken = 'pk.eyJ1IjoiZG1vcmlhcnR5IiwiYSI6Ikd3T29EOWMifQ.-DKJ4ernht84AZmc6Bk51Q';
@@ -249,6 +231,17 @@ For places in the world
     });
 	}
 
+	function europeMap() {
+		var eurMap = new mapboxgl.Map({
+		    container: 'map-eur',
+		    style: 'mapbox://styles/mapbox/streets-v9',
+		    zoom: 17,
+		    center: [-0.1278, 51.5085]
+		});
+		eurMap.scrollZoom.disable();
+		eurMap.addControl(new mapboxgl.Navigation({position: 'top-left'}));
+	}
+
 	function barMap() {
 		var barMap = new mapboxgl.Map({
 	    container: 'map-bars',
@@ -293,7 +286,7 @@ For places in the world
 						barMap.setFilter('selection', ['==', 'name', features[0].properties.name])
 
 						var beeer = String.fromCharCode(0xD83C, 0xDF7A)
-			      var popupContent = '<div class="tooltip-text"> ' + beeer + ' <span class="bold">' + features[0].properties.name + '</span> ' + beeer + '</div>';
+			      var popupContent = '<div class="tooltip-text"> ' + beeer + ' <span class="bold"> ' + features[0].properties.name + '</span> ' + beeer + '</div>';
 
 			      popup.setLngLat(e.lngLat)
 			        .setHTML(popupContent)
@@ -314,49 +307,10 @@ For places in the world
 
 	  barMap.on('style.load', onStyleLoad);
 	  barMap.on('source.load', onSourceLoad);
-
-
-
-    // THIS ALL WORKS BELOWWW
-    // var popup = new mapboxgl.Popup({
-    //     closeButton: false,
-    //     closeOnClick: false
-    // });
-
-    // barMap.on('mousemove', function(e) {
-    //   var features = barMap.queryRenderedFeatures(e.point, { layers: ['interactive'] });
-    //   // Change the cursor style as a UI indicator.
-    //   barMap.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
-
-    //   // empty
-    //   if (!features.length) {
-    //     popup.remove();
-    //     return;
-    //   } else {
-	   //    var feature = features[0];
-	   //    var thisId = feature.properties['name']
-
-	   //    if (barMap.getLayoutProperty('selection', 'visibility') === 'none') {
-		  //     barMap.setLayoutProperty('selection-outline', 'visibility', 'visible')
-		  //     barMap.setLayoutProperty('selection', 'visibility', 'visible')
-	   //    }
-
-	   //    barMap.setFilter('selection-outline', ['==', 'name', thisId])
-	   //    barMap.setFilter('selection', ['==', 'name', thisId])
-
-    //   }
-    // });
 	}
 
 	roadMap()
 	madBuilding()
+	europeMap()
 	barMap()
 </script>
-
-<div class="images">
-	<img src="../assets/graphics/blog/fsp/fullthing.jpg">
-	<figcaption><a href="https://www.youtube.com/watch?v=TGofoH9RDEA" target="_blank">This is not my beautiful house!</a></figcaption>
-</div>
-
-
-{% include bits/tooltips.html face="" longtext="" %}.

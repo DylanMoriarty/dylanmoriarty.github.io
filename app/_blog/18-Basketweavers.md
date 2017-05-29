@@ -7,9 +7,9 @@ description: Basketweavers & Open Data
 bannerimg: /banners/basketweave
 banner: hb-baskets.jpg
 links: 
-date: 2017-05-18
+date: 2017-05-29
 display: 'yes'
-permalink: blog/basketweavers-and-osm.html
+permalink: blog/basketweavers-and-open-data.html
 
 scripts: 'ai2html Mapbox-GL'
 
@@ -122,6 +122,13 @@ Particularly in major cities, the map is incredibly detailed.
 
 <br>
 
+As you may have picked up from the basketweaver map, Europe is the best mapped continent. This is in part because OSM was founded in Britain, but is maintained thanks to vibrant mapping communities scattered throughout Europe that get together in pub's and map their areas.
+
+<div class="images">
+	<img src="../assets/graphics/blog/bwo/basketweaver_2.png">
+	<figcaption></figcaption>
+</div>
+
 
 {% include bits/chapters.html chapter='II' title='So how is this Reliable?'%}
 
@@ -177,6 +184,11 @@ Others would misunderstand OSM and would add things that only existed in the gam
 Luckily, OSM is widely used enough that there are people who run checks over the database to identify bad contributions. After a comb is run through the entire database, these checks flag potential bugs, and then someone either removes or reconciles the issue.
 
 One basic example is a check that makes sure there aren't polygons that self-intersect.
+
+<div class="images">
+	<img src="../assets/graphics/blog/bwo/self-intersecting.jpg">
+	<figcaption>There might be buildings that are built in a bowtie shape, but it's a flag if one wall goes straight through the building. In the event of a bowtie building, it should just be an outline of that shape.</figcaption>
+</div>
 
 For PokemonGO, folks created checks that looked for:
 

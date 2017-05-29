@@ -4,11 +4,11 @@ title:  Basketweavers & Open Data
 home: 'yes'
 type: maps
 description: Basketweavers & Open Data
-bannerimg: /banners/foggybanner
-banner: hb-foggy.jpg
+bannerimg: /banners/basketweave
+banner: hb-baskets.jpg
 links: 
 date: 2017-05-18
-display: 'no'
+display: 'yes'
 permalink: blog/basketweavers-and-osm.html
 
 scripts: 'ai2html Mapbox-GL'
@@ -25,11 +25,16 @@ Here's a map of all the basketweavers in the world:
 	{% include svgs/bwo/basketweavers.html %}
 </div>
 
-Or, well, that's all of the basketmakers in the world... according to data from OpenStreetMap.
+Or, well, that's all of the basket makers in the world... according to data from OpenStreetMap.
 
-Which seems off, right? It's reasonable to assume there's at least one Aussie out there crafting baskets. Obviously this means OpenStreetMap (_referred to as 'OSM' from here on out_) is an unreliable data source and no one should ever use it.
+<div class="images">
+	<img src="../assets/graphics/blog/bwo/basketweaver.png">
+	<figcaption></figcaption>
+</div>
 
-Yet thousands of applications rely on data from it! From Uber navigating millions around dense cities, to Doctors without Borders deciding where to allocate resources, to etc etc etc
+Which seems off, right? It's reasonable to assume there's at least one Aussie out there crafting baskets. Obviously this means OpenStreetMap (_OSM_) is an unreliable data source and no one should ever use it.
+
+Yet thousands of applications rely on data from it! Apple maps supplements their maps with OSM, Foursquare bases it's entire platform off it, and everything from government map based tools to prominent news orgs utilize it for a base.
 
 Why are so many organizations using a source that's clearly flawed?
 
@@ -87,15 +92,15 @@ Well, for many places in the world, it's surprisingly complete where it counts. 
 <div class= "full-bleed">
 	<div id="map-roads" class="mapstyle"></div>
 </div>
-<figcaption>Here are all major US roads. The above map excludes tertiary & service roads, as well as footpaths, trails etc. but you get the idea.</figcaption>
+<figcaption>These are major roads in OSM cropped to the United States, projected in a special version of albers that has Florida and Alaska positioned in the bottom left corner. Had I not cropped that data, these roads would indeed extend into Canada & Mexico. I'm also excluding tertiary & service roads, as well as footpaths, trails etc.</figcaption>
 
 <br>
 
-This makes OSM special. You can find other sources that have global coverage, are detailed, or are free to use, but only OSM offers it all. Which is by design!
+You can find other sources that have global coverage, are detailed, or are free to use, but only OSM offers it all. Which is what makes it so special.
 
 Gathering geospatial data is an expensive endeavor. Most organizations dedicated to creating it were either narrowly focused (creating a dataset of a cities parks), compiling it to sell, or were just large enough to eat the sunk cost.
 
-Instead of throwing millions of $ at the problem, OSM instead throws millions of volunteers. With some exceptions, all OSM data has been added by volunteers mapping their world. Much like Wikipedia anyone can add information.
+Started in 2004, OSM was created as an alternative to those approaches. Instead of throwing millions of $ at the problem, it instead throws millions of volunteers. With some exceptions, all OSM data has been added by volunteers mapping their world. Much like Wikipedia anyone can edit any and all of the information, adding features to the map or adding proper tags.
 
 <div class= "full-bleed">
 	<div id="map-buildings" class="mapstyle"></div>
@@ -104,18 +109,19 @@ Instead of throwing millions of $ at the problem, OSM instead throws millions of
 
 <br>
 
-Above is the building data from Madison, Wisconsin. You might notice as you zoom out it tapers it out in the upper right hand side once you get away from the downtown.
+Above is the building data for Madison, Wisconsin. You might notice as you zoom out it tapers it out in the upper right hand side once you get away from the downtown.
 
-Much like the neglected basketweavers of the world, no one's quite gotten around to adding in those residential buildings quite yet. Mapping the world is an insurmountable task, so most mappers have understandably prioritized adding buildings such as hospitals, schools, and other major buildings before large residential blocks.
+Much like the neglected basketweavers of the world, no one's quite gotten around to adding in those residential buildings quite yet. Mapping the world is an insurmountable task, so most mappers have understandably prioritized adding the most important buildings such as hospitals, schools, and other major buildings before endless swaths of residential blocks.
 
 Particularly in major cities, the map is incredibly detailed.
 
 <div class= "full-bleed">
 	<div id="map-eur" class="mapstyle"></div>
 </div>
-<figcaption>Guess the city! OSM began in Europe, so the cities there are some of the best mapped out.</figcaption>
+<figcaption>Guess the city!</figcaption>
 
 <br>
+
 
 {% include bits/chapters.html chapter='II' title='So how is this Reliable?'%}
 
@@ -123,7 +129,7 @@ For the reasons mentioned above, every map made with OSM data should have a cave
 
 That said, because anyone can edit it, it's constantly being improved.
 
-For example, here's an interactive that shows for any given point in DC where the nearest bar is.
+For example, here's an interactive that shows the nearest bar for any given point in DC.
 
 <div class= "full-bleed">
 	<div id="map-bars" class="mapstyle"></div>
@@ -132,17 +138,26 @@ For example, here's an interactive that shows for any given point in DC where th
 
 <br>
 
-I'm sure someone native to DC will notice their favorite bar missing. But, there's nothing stopping them from making an account on OSM and adding it to the database!
+I'm sure someone native to DC will notice their favorite bar missing, which could be because that bar is missing in the database, or tagged something other than `bar`, such as a restaurant. If I had this interactive hooked up to the live database, anyone adding a bar feature to DC would instantly see it pop up on the map.
 
-This kind of map can be made to fetch live data too- so an individual adding a feature labeled `bar` to DC would immediately update it. That's powerful. 
+I made this map because it's a fun novelty, but that principle of 'one true source' is another place OSM shines. Humanitarian organizations in particular make great use out of mapped areas. They can mark roads flooded, utilize building data to determine where to allocate resources, or access damage to towns using before/after satellite imagery.
 
-But if anyone can update the data, how do we make sure it's valid & accurate?
+But if anyone can update the data, how do we make sure it's valid? What's to stop some intrepid kid from <a href="https://www.youtube.com/watch?v=Oxs-Ap68BNA" target="_blank">drawing dicks everywhere</a>?
 
 {% include bits/chapters.html chapter='III' title='Pokemon & Valid Geodata'%}
 
-In many ways, OSM has protection through obscurity. It's less visible than Wikipedia, and the notion of adding features to a map sounds significantly more difficult than just editing text. Most interactions we make online are editing text fields after all.
+<div class="images">
+	<img src="../assets/graphics/blog/bwo/poke-osm.png">
+	<figcaption></figcaption>
+</div>
 
-In mid 2016, Nintantic released PokemonGO and brought with it a flood of folks adding made up features to the database. PokemonGO is a game that uses THE WORLD as it's base, and has changes what critters you encounter based on what natural features you're around. If you're near a lake you'll run into water Pokemon. If you're in a field, you'll find bird Pokemon, and so on. It encourages folks to leave their house and go to parks, rivers, and such to find all these critters.
+In many ways, OSM has protection through obscurity. 
+
+It's less visible than Wikipedia, and the notion of adding features to a map sounds significantly more difficult than just editing text. Most interactions we make online are editing text fields after all, so we're well trained there.
+
+In mid 2016, Nintantic released PokemonGO and brought with it a flood of folks adding made up features to OSM. 
+
+PokemonGO is a game that uses * *the world* * as it's base, and what you encounter in the game is determined by what natural features you're physically around. If you're near a lake you'll run into water Pokemon. If you're in a field, you'll find bird Pokemon, and so on. It encourages folks to leave their house and go to parks, rivers, and such to find all these critters.
 
 At some point someone discovered PokemonGO was referencing OSM data when it determined which natural features it's players were around. For some folks, this was great to know because their hometown hadn't been well mapped out:
 
@@ -150,29 +165,51 @@ At some point someone discovered PokemonGO was referencing OSM data when it dete
 >
 >[- reddit person AlphaRocker](https://www.reddit.com/r/TheSilphRoad/comments/5px80u/made_4_new_nests_appear_with_osm/dcuvfnr/)
 
-Others took advantage of this and created 'nests' of fake features surrounding their home. Folks also started adding features that were in the game to the map like item spawn points that don't exist in our actual world.
+Others took advantage of this and created 'nests' of fake features surrounding their home.
 
-[[image]]
+<div class="images">
+	<img src="../assets/graphics/blog/bwo/pokemon_maps.jpg">
+	<figcaption>Can't help but love that they at least acknowledged that these weren't actual parks.</figcaption>
+</div>
+
+Others would misunderstand OSM and would add things that only existed in the game to the basemap, like checkpoints or item drop locations.
 
 Luckily, OSM is widely used enough that there are people who run checks over the database to identify bad contributions. After a comb is run through the entire database, these checks flag potential bugs, and then someone either removes or reconciles the issue.
 
 One basic example is a check that makes sure there aren't polygons that self-intersect.
 
-For PokemonGO, checks were created that filtered for things like:
+For PokemonGO, folks created checks that looked for:
 
 - Is the word 'Pokemon' used in the contribution anywhere?
-- Is this contribution full of questionably overlapping features?
+- Is this contribution full of questionably overlapping features, such as seven overlapping parks?
 - Is this contribution made by someone who just joined, with less than 5 edits, and mapping major features like lakes?
 
-The same goes for the rest of the database broadly speaking.
+& to detect other vandalism, the same sort of checks are used for the rest of the database broadly speaking.
+
+But, even when checks don't catch vandalism, OSM is widely used and people are pretty quick to notice when something like the following shows up in their hometown;
+
+<div class="images">
+	<img src="../assets/graphics/blog/bwo/osm_vandal.png">
+	<figcaption></figcaption>
+</div>
 
 {% include bits/chapters.html chapter='IV' title='Basketweavers Unite'%}
 
-So, it's incomplete, but it's _fucking awesome._ And it's in a state of constant improvement.
+So, it's incomplete, but it's _awesome._ And it's in a state of constant improvement.
 
-& hey, if you know any basketweavers, you should add them so I and endless others after will have ever so slightly more accurate maps.
+It's not perfect, but no geospatial dataset can be- the only 1 to 1 translation of the actual world is the real thing. At least with OSM there exists the means of updating which is open to anyone with the gumption to contribute.
 
-{% include bits/tooltips.html face="asdf" longtext="asdf" %}.
+So, if you know any local basketweavers in your hometown, you should consider adding them to the database. Once you've done that, consider checking out if your favorite bar is there, or that the local parks aren't absent.
+
+Even small contributions like those will help countless others have ever so slightly more accurate maps.
+
+<div class="footnotes smaller-image">
+	<p>All the maps here were made with Mapbox GL JS. The data is all from OSM and obtained through Overpass Turbo queries.</p>
+	<p>The US road data was pulled using a more complex method utilizing geofabrick initially written out by <a href="https://twitter.com/kamicut" target="_blank">Marc Farra</a> The result you see here has been simplified via a combination of topojson & mbtiles to help reduce the geometry at lower zoom levels.
+	</p>
+	<p>If you're more interested in how on earth this data is valid, Sanjay Bhangar of Mapbox has a great talk you can <a href="https://www.youtube.com/watch?v=8-RYUIULN6U" target="_blank">view here</a>.
+	</p>
+</div>
 
 <script>
 	mapboxgl.accessToken = 'pk.eyJ1IjoiZG1vcmlhcnR5IiwiYSI6Ikd3T29EOWMifQ.-DKJ4ernht84AZmc6Bk51Q';

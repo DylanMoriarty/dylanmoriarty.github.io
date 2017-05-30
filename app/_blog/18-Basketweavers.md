@@ -217,9 +217,11 @@ Even small contributions like those will help countless others have ever so slig
 
 <div class="footnotes smaller-image">
 	<p>All the maps here were made with Mapbox GL JS. The data is all from OSM and obtained through Overpass Turbo queries.</p>
-	<p>The US road data was pulled using a more complex method utilizing geofabrick initially written out by <a href="https://twitter.com/kamicut" target="_blank">Marc Farra</a> The result you see here has been simplified via a combination of topojson & mbtiles to help reduce the geometry at lower zoom levels.
+	<p>If you want to hear more on vandalism detection and how people are checking OSM, Sanjay Bhangar of Mapbox has a great talk you can <a href="https://www.youtube.com/watch?v=8-RYUIULN6U" target="_blank">view here</a>.
 	</p>
-	<p>If you're more interested in how on earth this data is valid, Sanjay Bhangar of Mapbox has a great talk you can <a href="https://www.youtube.com/watch?v=8-RYUIULN6U" target="_blank">view here</a>.
+	<p>The US road data was pulled out of geofabrick exports of North America using code written by <a href="https://twitter.com/kamicut" target="_blank">Marc Farra</a> The result you see here has been simplified via a combination of topojson & mbtiles to help reduce the geometry at lower zoom levels.
+	</p>
+	<p>I chose basket weavers as a quirky way to show off OSM's weaknesses, strengths, and occasional odd specificity. If you have any comments, or more importantly corrections, I'd love to hear it. Feel free to <a href="{{ site.baseurl }}/about/">drop me a line.</a>
 	</p>
 </div>
 

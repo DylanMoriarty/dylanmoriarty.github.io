@@ -64,7 +64,10 @@ twit-image: "http://dylanmoriarty.github.io/assets/graphics/blog/got/cloudy.png"
     center: [40,5],
   })
 
-  map.addControl(new mapboxgl.Navigation({position: 'top-left'}))
+  map.on('load', function () {
+    map.addControl(new mapboxgl.Navigation({position: 'top-left'}))
+    singSong()
+  })
 
   var clockTick = 0,
       clockCycle = 0,
@@ -120,7 +123,6 @@ twit-image: "http://dylanmoriarty.github.io/assets/graphics/blog/got/cloudy.png"
     }, 200)
   }
 
-  singSong()
 </script>
 
 George R.R. Martin's Game of Thrones is a pretty fantastic story, and the density of the world building he put together for it is astounding. Every episode opens with zooming into different places in his world, & I thought it'd be fun to put together a version where you yourself could do that zoomin'.

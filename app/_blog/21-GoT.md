@@ -63,8 +63,8 @@ twit-image: "http://dylanmoriarty.github.io/assets/graphics/blog/got/cloudy.png"
     zoom: 1.8,
     center: [40,5],
   });
-  
-  map.addControl(new mapboxgl.NavigationControl(), 'top-left');
+
+  map.addControl(new mapboxgl.NavigationControl());
 
   var clockTick = 0,
       clockCycle = 0,
@@ -125,7 +125,7 @@ twit-image: "http://dylanmoriarty.github.io/assets/graphics/blog/got/cloudy.png"
 
 George R.R. Martin's Game of Thrones is a pretty fantastic story, and the density of the world building he put together for it is astounding. Every episode opens with zooming into different places in his world, & I thought it'd be fun to put together a version where you yourself could do that zoomin'.
 
-Just before the new season dropped, I did a search to see if anyone had made {% include bits/tooltips.html face="Shapefiles" longtext="Think image files that have longitude & latitude coordinates baked into the image." %} of the Game of Thrones world. Alas, some person going by the username Cadael had! You can check it out yourself <a href="https://www.cartographersguild.com/showthread.php?t=30472" target="_blank">here at the Cartographers Guild.</a> Bless ya'll fantasy mappers. From there, I simply edited those files in QGIS a bit to generate some waterline layers & tweak the label points to better cooperate.
+Just before the new season dropped, I did a search to see if anyone had made {% include bits/tooltips.html face="Shapefiles" longtext="Think image files that have longitude & latitude coordinates baked into the image." %} of the Game of Thrones world. Alas, some person going by the username Cadael had! You can check it out yourself <a href="https://www.cartographersguild.com/showthread.php?t=30472" target="_blank">here at the Cartographers Guild.</a> Bless ya'll fantasy mappers. From there, I edited those files in QGIS to generate some waterline layers & tweak the label points to better cooperate.
 
 Hope ya'll enjoy the map! There's seven little doodles based on events of this season that I've scattered on the map- to see them, you'll have to zoom in tight. Good luck!
 

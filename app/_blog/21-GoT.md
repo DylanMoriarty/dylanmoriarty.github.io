@@ -55,16 +55,16 @@ twit-image: "http://dylanmoriarty.github.io/assets/graphics/blog/got/cloudy.png"
 
 <script>
 
-  mapboxgl.accessToken = 'pk.eyJ1IjoiZ3Rocm9uZXMiLCJhIjoiY2o2dHJhMGVvMGluNzJxcnAzZzRsb3M2bCJ9.kED7UULUxqdsnLpmrMDljA';
+  mapboxgl.accessToken = 'pk.eyJ1IjoiZ3Rocm9uZXMiLCJhIjoiY2o2dHJhMGVvMGluNzJxcnAzZzRsb3M2bCJ9.kED7UULUxqdsnLpmrMDljA'
 
   var map = new mapboxgl.Map({
     container: 'gotMap',
     style: 'mapbox://styles/gthrones/cj6trdcl7117f2rqn4xjr211y',
     zoom: 1.8,
     center: [40,5],
-  });
+  })
 
-  map.addControl(new mapboxgl.NavigationControl());
+  map.addControl(new mapboxgl.Navigation({position: 'top-left'}))
 
   var clockTick = 0,
       clockCycle = 0,

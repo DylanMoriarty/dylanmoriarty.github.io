@@ -52,14 +52,14 @@ twit-image: "http://dylanmoriarty.github.io/assets/graphics/blog/got/cloudy.png"
 
 <br>
 
+{% include scripts/got-style.html %}
 
 <script>
-
   mapboxgl.accessToken = 'pk.eyJ1IjoiZ3Rocm9uZXMiLCJhIjoiY2o2dHJhMGVvMGluNzJxcnAzZzRsb3M2bCJ9.kED7UULUxqdsnLpmrMDljA'
 
   var map = new mapboxgl.Map({
     container: 'gotMap',
-    style: 'mapbox://styles/gthrones/cj6trdcl7117f2rqn4xjr211y',
+    style: style,
     zoom: 1.8,
     center: [40,5],
   })

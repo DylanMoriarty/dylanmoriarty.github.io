@@ -1,0 +1,3652 @@
+<script>
+	var style = {
+    "version": 8,
+    "name": "got",
+    "metadata": {
+        "mapbox:autocomposite": true,
+        "mapbox:type": "template",
+        "mapbox:groups": {
+            "019e2509d583ac79a031a666c25e0b37": {
+                "name": "Other",
+                "collapsed": true
+            },
+            "5f11c477d0029b02210b2542141f9f5c": {
+                "name": "The Wall",
+                "collapsed": true
+            },
+            "3f71597e37e5fb9b2fd46f024a5c9f7a": {
+                "name": "Lakes",
+                "collapsed": true
+            },
+            "fb43c9c3becfd3b98acbaf36f0b4955d": {
+                "name": "Ruin Labels",
+                "collapsed": true
+            },
+            "f7b7b08d2895d5162ee6658db8743939": {
+                "name": "sing",
+                "collapsed": false
+            },
+            "e865301c13ea3ae85c8234fb2cf61189": {
+                "name": "Fog",
+                "collapsed": true
+            },
+            "599878805eb1f25714585d05c2837612": {
+                "name": "mountain-labels",
+                "collapsed": false
+            },
+            "1a3ea29bafd5750a1c34ee96e868615a": {
+                "name": "Islands",
+                "collapsed": true
+            },
+            "7e11e0cd8917230703acbdd08d6fc548": {
+                "name": "Land Waterlines",
+                "collapsed": true
+            },
+            "2f754640e77a7978902d9fb82e264266": {
+                "name": "Castle",
+                "collapsed": true
+            },
+            "5f44444488cbb2fee80810c8827ae44d": {
+                "name": "land-labels",
+                "collapsed": true
+            },
+            "7fb85c688356dcdbedc93efb4cd0a40d": {
+                "name": "City Labels",
+                "collapsed": true
+            },
+            "10d56246b813c913f94c4b86ac86ab9a": {
+                "name": "Lake Waterlines",
+                "collapsed": true
+            },
+            "a74d287c10d82ca7e7bdb65163c8f204": {
+                "name": "Water Labels",
+                "collapsed": true
+            },
+            "98db4d75c2c22bf38726d00724a6f020": {
+                "name": "Illustrations",
+                "collapsed": false
+            }
+        }
+    },
+    "center": [
+        61.54311383341428,
+        3.5698068520073463
+    ],
+    "zoom": 1.9161230559276066,
+    "bearing": -0.1169042911285487,
+    "pitch": 0,
+    "sources": {
+        "composite": {
+            "url": "mapbox://gthrones.by9eu5b4,gthrones.1rrt9rzq,gthrones.bq0t8y8j,gthrones.8eir4syq,gthrones.2zoejm4s,gthrones.5k7marjm,gthrones.1qetjin9,gthrones.cj6uaj5i40ogr2ws6fo9mwppc-5ngn3,gthrones.7wcgcl7n,gthrones.2j0i1eoz,gthrones.bfuzyoj1,gthrones.7d6nj8o7,gthrones.cj6tzzwod0q072wo3ye5j2hgb-74no3",
+            "type": "vector"
+        }
+    },
+    "sprite": "dylanmoriarty.github.io/assets/graphics/blog/got/sprite",
+    "glyphs": "mapbox://fonts/gthrones/{fontstack}/{range}.pbf",
+    "layers": [
+        {
+            "id": "background",
+            "type": "background",
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "background-color": "#63a182"
+            }
+        },
+        {
+            "id": "background texture",
+            "type": "background",
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "background-color": "hsl(151, 25%, 81%)",
+                "background-pattern": "paper-texture",
+                "background-opacity": 0.15
+            }
+        },
+        {
+            "id": "land",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "land-9n6088",
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "fill-color": "hsl(47, 17%, 51%)",
+                "fill-outline-color": "hsla(47, 20%, 31%, 0)"
+            }
+        },
+        {
+            "id": "land texture",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "land-9n6088",
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "fill-color": "hsl(45, 29%, 83%)",
+                "fill-pattern": "paper-texture",
+                "fill-opacity": 0.08
+            }
+        },
+        {
+            "id": "land outline",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "land-9n6088",
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "line-color": "hsl(47, 11%, 40%)",
+                "line-width": 0.5
+            }
+        },
+        {
+            "id": "rivers casing",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "rivers-c0dfna",
+            "layout": {
+                "visibility": "visible",
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "hsl(47, 11%, 40%)",
+                "line-width": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            1
+                        ],
+                        [
+                            3.5,
+                            1.5
+                        ],
+                        [
+                            4,
+                            3
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "rivers",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "rivers-c0dfna",
+            "layout": {
+                "visibility": "visible",
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "#63a182",
+                "line-width": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0.5
+                        ],
+                        [
+                            3.5,
+                            1
+                        ],
+                        [
+                            4,
+                            2
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "lakes",
+            "type": "fill",
+            "metadata": {
+                "mapbox:group": "3f71597e37e5fb9b2fd46f024a5c9f7a"
+            },
+            "source": "composite",
+            "source-layer": "lakes-78hysu",
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "fill-color": "#63a182",
+                "fill-outline-color": "hsla(47, 20%, 31%, 0)"
+            }
+        },
+        {
+            "id": "lakes copy",
+            "type": "fill",
+            "metadata": {
+                "mapbox:group": "3f71597e37e5fb9b2fd46f024a5c9f7a"
+            },
+            "source": "composite",
+            "source-layer": "lakes-78hysu",
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "fill-color": "hsl(151, 25%, 81%)",
+                "fill-outline-color": "hsl(45, 29%, 83%)",
+                "fill-pattern": "paper-texture",
+                "fill-opacity": 0.1
+            }
+        },
+        {
+            "id": "lakes outline",
+            "type": "line",
+            "metadata": {
+                "mapbox:group": "3f71597e37e5fb9b2fd46f024a5c9f7a"
+            },
+            "source": "composite",
+            "source-layer": "lakes-78hysu",
+            "layout": {},
+            "paint": {
+                "line-color": "hsl(47, 11%, 40%)",
+                "line-width": 0.5
+            }
+        },
+        {
+            "id": "islands",
+            "type": "fill",
+            "metadata": {
+                "mapbox:group": "1a3ea29bafd5750a1c34ee96e868615a"
+            },
+            "source": "composite",
+            "source-layer": "islands-crajd5",
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "fill-color": "hsl(47, 17%, 51%)",
+                "fill-outline-color": "hsla(47, 20%, 31%, 0)"
+            }
+        },
+        {
+            "id": "islands copy",
+            "type": "fill",
+            "metadata": {
+                "mapbox:group": "1a3ea29bafd5750a1c34ee96e868615a"
+            },
+            "source": "composite",
+            "source-layer": "islands-crajd5",
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "fill-color": "hsl(45, 29%, 83%)",
+                "fill-pattern": "paper-texture",
+                "fill-opacity": 0.1
+            }
+        },
+        {
+            "id": "island outline",
+            "type": "line",
+            "metadata": {
+                "mapbox:group": "1a3ea29bafd5750a1c34ee96e868615a"
+            },
+            "source": "composite",
+            "source-layer": "islands-crajd5",
+            "layout": {},
+            "paint": {
+                "line-width": 0.5,
+                "line-color": "hsl(47, 11%, 40%)"
+            }
+        },
+        {
+            "id": "lake-waterlines - 2",
+            "type": "line",
+            "metadata": {
+                "mapbox:group": "10d56246b813c913f94c4b86ac86ab9a"
+            },
+            "source": "composite",
+            "source-layer": "lake-waterlines-ctx23y",
+            "filter": [
+                "==",
+                "id",
+                2
+            ],
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "line-color": "hsl(148, 27%, 44%)",
+                "line-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            5,
+                            0
+                        ],
+                        [
+                            5.5,
+                            0.8
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "lake-waterlines - 3",
+            "type": "line",
+            "metadata": {
+                "mapbox:group": "10d56246b813c913f94c4b86ac86ab9a"
+            },
+            "source": "composite",
+            "source-layer": "lake-waterlines-ctx23y",
+            "filter": [
+                "==",
+                "id",
+                3
+            ],
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "line-color": "hsl(148, 27%, 44%)",
+                "line-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            3.5,
+                            0
+                        ],
+                        [
+                            4,
+                            0.8
+                        ],
+                        [
+                            5,
+                            0.6
+                        ],
+                        [
+                            5.5,
+                            0.6
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "lake-waterlines - 4",
+            "type": "line",
+            "metadata": {
+                "mapbox:group": "10d56246b813c913f94c4b86ac86ab9a"
+            },
+            "source": "composite",
+            "source-layer": "lake-waterlines-ctx23y",
+            "filter": [
+                "==",
+                "id",
+                4
+            ],
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "line-color": "hsl(148, 27%, 44%)",
+                "line-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            5,
+                            0
+                        ],
+                        [
+                            5.5,
+                            0.4
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "lake-waterlines - 5",
+            "type": "line",
+            "metadata": {
+                "mapbox:group": "10d56246b813c913f94c4b86ac86ab9a"
+            },
+            "source": "composite",
+            "source-layer": "lake-waterlines-ctx23y",
+            "filter": [
+                "==",
+                "id",
+                5
+            ],
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "line-color": "hsl(148, 27%, 44%)",
+                "line-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0.3
+                        ],
+                        [
+                            3.5,
+                            0.5
+                        ],
+                        [
+                            4,
+                            0.3
+                        ],
+                        [
+                            5,
+                            0.2
+                        ],
+                        [
+                            5.5,
+                            0.2
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "land-waterlines - 1",
+            "type": "line",
+            "metadata": {
+                "mapbox:group": "7e11e0cd8917230703acbdd08d6fc548"
+            },
+            "source": "composite",
+            "source-layer": "land-waterlines",
+            "filter": [
+                "==",
+                "id",
+                1
+            ],
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "line-color": "hsl(148, 27%, 44%)",
+                "line-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            5,
+                            0
+                        ],
+                        [
+                            5.5,
+                            0.8
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "land-waterlines - 2",
+            "type": "line",
+            "metadata": {
+                "mapbox:group": "7e11e0cd8917230703acbdd08d6fc548"
+            },
+            "source": "composite",
+            "source-layer": "land-waterlines",
+            "filter": [
+                "==",
+                "id",
+                2
+            ],
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "line-color": "hsl(148, 27%, 44%)",
+                "line-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            5,
+                            0
+                        ],
+                        [
+                            5.5,
+                            0.6
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "land-waterlines - 3",
+            "type": "line",
+            "metadata": {
+                "mapbox:group": "7e11e0cd8917230703acbdd08d6fc548"
+            },
+            "source": "composite",
+            "source-layer": "land-waterlines",
+            "filter": [
+                "==",
+                "id",
+                3
+            ],
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "line-color": "hsl(148, 27%, 44%)",
+                "line-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            3.5,
+                            0
+                        ],
+                        [
+                            4,
+                            0.5
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "land-waterlines - 4",
+            "type": "line",
+            "metadata": {
+                "mapbox:group": "7e11e0cd8917230703acbdd08d6fc548"
+            },
+            "source": "composite",
+            "source-layer": "land-waterlines",
+            "filter": [
+                "==",
+                "id",
+                4
+            ],
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "line-color": "hsl(148, 27%, 44%)",
+                "line-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            5,
+                            0
+                        ],
+                        [
+                            5.5,
+                            0.4
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "land-waterlines - 5",
+            "type": "line",
+            "metadata": {
+                "mapbox:group": "7e11e0cd8917230703acbdd08d6fc548"
+            },
+            "source": "composite",
+            "source-layer": "land-waterlines",
+            "filter": [
+                "==",
+                "id",
+                5
+            ],
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "line-color": "hsl(148, 27%, 44%)",
+                "line-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            5,
+                            0
+                        ],
+                        [
+                            5.5,
+                            0.3
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "land-waterlines - 6",
+            "type": "line",
+            "metadata": {
+                "mapbox:group": "7e11e0cd8917230703acbdd08d6fc548"
+            },
+            "source": "composite",
+            "source-layer": "land-waterlines",
+            "filter": [
+                "==",
+                "id",
+                6
+            ],
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "line-color": "hsl(148, 27%, 44%)",
+                "line-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0.2
+                        ],
+                        [
+                            3,
+                            0.5
+                        ],
+                        [
+                            5,
+                            0.3
+                        ],
+                        [
+                            5.5,
+                            0.1
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "Wall casing copy",
+            "type": "line",
+            "metadata": {
+                "mapbox:group": "5f11c477d0029b02210b2542141f9f5c"
+            },
+            "source": "composite",
+            "source-layer": "wall-7cgr19",
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "line-width": 3,
+                "line-color": "hsl(178, 19%, 37%)",
+                "line-dasharray": [
+                    2,
+                    2
+                ],
+                "line-translate": [
+                    0,
+                    1
+                ],
+                "line-opacity": 0.4
+            }
+        },
+        {
+            "id": "Wall casing copy 1",
+            "type": "line",
+            "metadata": {
+                "mapbox:group": "5f11c477d0029b02210b2542141f9f5c"
+            },
+            "source": "composite",
+            "source-layer": "wall-7cgr19",
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "line-width": 4,
+                "line-color": "hsl(178, 19%, 37%)",
+                "line-dasharray": [
+                    3,
+                    5,
+                    4,
+                    2
+                ],
+                "line-translate": [
+                    0,
+                    1
+                ],
+                "line-opacity": 0.4
+            }
+        },
+        {
+            "id": "Wall casing copy 2",
+            "type": "line",
+            "metadata": {
+                "mapbox:group": "5f11c477d0029b02210b2542141f9f5c"
+            },
+            "source": "composite",
+            "source-layer": "wall-7cgr19",
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "line-width": 6,
+                "line-color": "hsl(178, 19%, 37%)",
+                "line-dasharray": [
+                    8,
+                    2,
+                    5,
+                    3
+                ],
+                "line-translate": [
+                    0,
+                    1
+                ],
+                "line-opacity": 0.3
+            }
+        },
+        {
+            "id": "Wall casing",
+            "type": "line",
+            "metadata": {
+                "mapbox:group": "5f11c477d0029b02210b2542141f9f5c"
+            },
+            "source": "composite",
+            "source-layer": "wall-7cgr19",
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "line-width": 3,
+                "line-color": "hsl(178, 19%, 37%)"
+            }
+        },
+        {
+            "id": "Wall",
+            "type": "line",
+            "metadata": {
+                "mapbox:group": "5f11c477d0029b02210b2542141f9f5c"
+            },
+            "source": "composite",
+            "source-layer": "wall-7cgr19",
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "line-color": "hsl(178, 12%, 57%)",
+                "line-width": 2
+            }
+        },
+        {
+            "id": "arya pie",
+            "type": "symbol",
+            "metadata": {
+                "mapbox:group": "98db4d75c2c22bf38726d00724a6f020"
+            },
+            "source": "composite",
+            "source-layer": "illus-points",
+            "filter": [
+                "==",
+                "id",
+                1
+            ],
+            "layout": {
+                "icon-image": "arya",
+                "icon-offset": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            9,
+                            [
+                                0,
+                                -50
+                            ]
+                        ],
+                        [
+                            10,
+                            [
+                                0,
+                                0
+                            ]
+                        ]
+                    ]
+                },
+                "icon-allow-overlap": true,
+                "icon-ignore-placement": true
+            },
+            "paint": {
+                "icon-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            8,
+                            0
+                        ],
+                        [
+                            10,
+                            0.5
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "starks",
+            "type": "symbol",
+            "metadata": {
+                "mapbox:group": "98db4d75c2c22bf38726d00724a6f020"
+            },
+            "source": "composite",
+            "source-layer": "illus-points",
+            "filter": [
+                "==",
+                "id",
+                2
+            ],
+            "layout": {
+                "icon-image": "stark",
+                "icon-offset": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            9,
+                            [
+                                0,
+                                -50
+                            ]
+                        ],
+                        [
+                            10,
+                            [
+                                0,
+                                0
+                            ]
+                        ]
+                    ]
+                },
+                "icon-allow-overlap": true,
+                "icon-ignore-placement": true,
+                "icon-size": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            9,
+                            0.8
+                        ],
+                        [
+                            11,
+                            1
+                        ]
+                    ]
+                }
+            },
+            "paint": {
+                "icon-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            8,
+                            0
+                        ],
+                        [
+                            10,
+                            0.5
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "bronn",
+            "type": "symbol",
+            "metadata": {
+                "mapbox:group": "98db4d75c2c22bf38726d00724a6f020"
+            },
+            "source": "composite",
+            "source-layer": "illus-points",
+            "filter": [
+                "==",
+                "id",
+                5
+            ],
+            "layout": {
+                "icon-image": "bronn",
+                "icon-offset": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            9,
+                            [
+                                0,
+                                -50
+                            ]
+                        ],
+                        [
+                            10,
+                            [
+                                0,
+                                0
+                            ]
+                        ]
+                    ]
+                },
+                "icon-allow-overlap": true,
+                "icon-ignore-placement": true,
+                "icon-size": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            9,
+                            1
+                        ],
+                        [
+                            11,
+                            1
+                        ]
+                    ]
+                }
+            },
+            "paint": {
+                "icon-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            8,
+                            0
+                        ],
+                        [
+                            10,
+                            0.5
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "dany",
+            "type": "symbol",
+            "metadata": {
+                "mapbox:group": "98db4d75c2c22bf38726d00724a6f020"
+            },
+            "source": "composite",
+            "source-layer": "illus-points",
+            "filter": [
+                "==",
+                "id",
+                6
+            ],
+            "layout": {
+                "icon-image": "dany",
+                "icon-offset": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            9,
+                            [
+                                0,
+                                -50
+                            ]
+                        ],
+                        [
+                            10,
+                            [
+                                0,
+                                0
+                            ]
+                        ]
+                    ]
+                },
+                "icon-allow-overlap": true,
+                "icon-ignore-placement": true,
+                "icon-size": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            9,
+                            0.8
+                        ],
+                        [
+                            11,
+                            1
+                        ]
+                    ]
+                }
+            },
+            "paint": {
+                "icon-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            8,
+                            0
+                        ],
+                        [
+                            10,
+                            0.5
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "theon",
+            "type": "symbol",
+            "metadata": {
+                "mapbox:group": "98db4d75c2c22bf38726d00724a6f020"
+            },
+            "source": "composite",
+            "source-layer": "illus-points",
+            "filter": [
+                "==",
+                "id",
+                3
+            ],
+            "layout": {
+                "icon-image": "theon",
+                "icon-offset": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            9,
+                            [
+                                0,
+                                -50
+                            ]
+                        ],
+                        [
+                            10,
+                            [
+                                0,
+                                0
+                            ]
+                        ]
+                    ]
+                },
+                "icon-allow-overlap": true,
+                "icon-ignore-placement": true,
+                "icon-size": 1
+            },
+            "paint": {
+                "icon-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            8,
+                            0
+                        ],
+                        [
+                            10,
+                            0.6
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "olenna",
+            "type": "symbol",
+            "metadata": {
+                "mapbox:group": "98db4d75c2c22bf38726d00724a6f020"
+            },
+            "source": "composite",
+            "source-layer": "illus-points",
+            "filter": [
+                "==",
+                "id",
+                4
+            ],
+            "layout": {
+                "icon-image": "olenna",
+                "icon-offset": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            9,
+                            [
+                                0,
+                                -50
+                            ]
+                        ],
+                        [
+                            10,
+                            [
+                                0,
+                                0
+                            ]
+                        ]
+                    ]
+                },
+                "icon-allow-overlap": true,
+                "icon-ignore-placement": true,
+                "icon-size": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            9,
+                            1
+                        ],
+                        [
+                            11,
+                            1
+                        ]
+                    ]
+                }
+            },
+            "paint": {
+                "icon-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            8,
+                            0
+                        ],
+                        [
+                            10,
+                            0.5
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "dragon",
+            "type": "symbol",
+            "metadata": {
+                "mapbox:group": "98db4d75c2c22bf38726d00724a6f020"
+            },
+            "source": "composite",
+            "source-layer": "illus-points",
+            "filter": [
+                "==",
+                "id",
+                7
+            ],
+            "layout": {
+                "icon-image": "dragon",
+                "icon-offset": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            9,
+                            [
+                                0,
+                                -50
+                            ]
+                        ],
+                        [
+                            10,
+                            [
+                                0,
+                                0
+                            ]
+                        ]
+                    ]
+                },
+                "icon-allow-overlap": true,
+                "icon-ignore-placement": true,
+                "icon-size": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            9,
+                            0.6
+                        ],
+                        [
+                            11,
+                            1
+                        ]
+                    ]
+                }
+            },
+            "paint": {
+                "icon-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            8,
+                            0
+                        ],
+                        [
+                            10,
+                            0.5
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "island-label",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "island-label-a4692s",
+            "layout": {
+                "visibility": "visible",
+                "text-field": "{name}",
+                "text-font": [
+                    "Quintessential Regular",
+                    "Arial Unicode MS Regular"
+                ],
+                "text-size": 14,
+                "text-letter-spacing": 0.5,
+                "text-line-height": 2
+            },
+            "paint": {
+                "text-color": "hsl(153, 47%, 29%)",
+                "text-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            4.5,
+                            0
+                        ],
+                        [
+                            5,
+                            1
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "Mother of Mountains",
+            "type": "symbol",
+            "metadata": {
+                "mapbox:group": "599878805eb1f25714585d05c2837612"
+            },
+            "source": "composite",
+            "source-layer": "physical-label-0m28d9",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "name",
+                    "Mother of Mountains"
+                ],
+                [
+                    "==",
+                    "scalerank",
+                    4
+                ],
+                [
+                    "==",
+                    "type",
+                    "mountain"
+                ]
+            ],
+            "layout": {
+                "visibility": "visible",
+                "text-font": [
+                    "Quintessential Regular"
+                ],
+                "text-field": "{name}",
+                "text-letter-spacing": 0.3,
+                "text-size": 12,
+                "icon-image": "mountains"
+            },
+            "paint": {
+                "text-color": "hsl(31, 22%, 26%)"
+            }
+        },
+        {
+            "id": "Other Mountains",
+            "type": "symbol",
+            "metadata": {
+                "mapbox:group": "599878805eb1f25714585d05c2837612"
+            },
+            "source": "composite",
+            "source-layer": "physical-label-0m28d9",
+            "filter": [
+                "all",
+                [
+                    "!=",
+                    "name",
+                    "Mother of Mountains"
+                ],
+                [
+                    "==",
+                    "scalerank",
+                    4
+                ],
+                [
+                    "==",
+                    "type",
+                    "mountain"
+                ]
+            ],
+            "layout": {
+                "visibility": "visible",
+                "text-font": [
+                    "Quintessential Regular"
+                ],
+                "text-field": "{name}",
+                "text-size": 14,
+                "text-letter-spacing": 0.3,
+                "icon-image": "mountains",
+                "icon-size": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0.5
+                        ],
+                        [
+                            6,
+                            0.5
+                        ],
+                        [
+                            7,
+                            1
+                        ]
+                    ]
+                }
+            },
+            "paint": {
+                "text-color": "hsl(31, 22%, 26%)",
+                "text-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            6,
+                            0
+                        ],
+                        [
+                            6.5,
+                            1
+                        ]
+                    ]
+                },
+                "icon-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            6,
+                            0
+                        ],
+                        [
+                            6.5,
+                            0.15
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "Territory Label",
+            "type": "symbol",
+            "metadata": {
+                "mapbox:group": "5f44444488cbb2fee80810c8827ae44d"
+            },
+            "source": "composite",
+            "source-layer": "physical-label-0m28d9",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "type",
+                    "land"
+                ],
+                [
+                    "in",
+                    "scalerank",
+                    2,
+                    3
+                ]
+            ],
+            "layout": {
+                "visibility": "visible",
+                "text-font": [
+                    "Quintessential Regular"
+                ],
+                "text-field": "{name}",
+                "text-size": 16,
+                "text-letter-spacing": 0.5,
+                "text-line-height": 3
+            },
+            "paint": {
+                "text-color": "hsl(56, 21%, 31%)",
+                "text-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            0
+                        ],
+                        [
+                            4.5,
+                            0.5
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "Territory Label Small",
+            "type": "symbol",
+            "metadata": {
+                "mapbox:group": "5f44444488cbb2fee80810c8827ae44d"
+            },
+            "source": "composite",
+            "source-layer": "physical-label-0m28d9",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "scalerank",
+                    4
+                ],
+                [
+                    "==",
+                    "type",
+                    "land"
+                ]
+            ],
+            "layout": {
+                "visibility": "visible",
+                "text-font": [
+                    "Quintessential Regular"
+                ],
+                "text-field": "{name}",
+                "text-size": 14,
+                "text-letter-spacing": 0.3
+            },
+            "paint": {
+                "text-color": "hsl(56, 21%, 31%)",
+                "text-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            6.5,
+                            0
+                        ],
+                        [
+                            7,
+                            1
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "Shore Labels",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "physical-label-0m28d9",
+            "filter": [
+                "==",
+                "type",
+                "shore"
+            ],
+            "layout": {
+                "visibility": "visible",
+                "text-font": [
+                    "Quintessential Regular"
+                ],
+                "text-field": "{name}",
+                "text-size": 14,
+                "text-letter-spacing": 0.3
+            },
+            "paint": {
+                "text-color": "hsl(31, 22%, 26%)",
+                "text-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            6,
+                            0
+                        ],
+                        [
+                            6.5,
+                            1
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "Forest Labels",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "physical-label-0m28d9",
+            "filter": [
+                "==",
+                "type",
+                "forest"
+            ],
+            "layout": {
+                "text-line-height": 1.2,
+                "text-size": 14,
+                "icon-offset": [
+                    0,
+                    30
+                ],
+                "icon-image": "forest",
+                "text-font": [
+                    "Quintessential Regular"
+                ],
+                "visibility": "visible",
+                "text-offset": [
+                    0,
+                    -2
+                ],
+                "text-anchor": "bottom",
+                "text-field": "{name}",
+                "text-letter-spacing": 0.5
+            },
+            "paint": {
+                "text-color": "hsl(31, 22%, 26%)",
+                "text-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            6,
+                            0
+                        ],
+                        [
+                            6.5,
+                            0.75
+                        ]
+                    ]
+                },
+                "icon-opacity": 0.15
+            }
+        },
+        {
+            "id": "Desert Labels",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "physical-label-0m28d9",
+            "filter": [
+                "==",
+                "type",
+                "desert"
+            ],
+            "layout": {
+                "visibility": "visible",
+                "text-font": [
+                    "Quintessential Regular"
+                ],
+                "text-field": "{name}",
+                "text-size": 14,
+                "text-letter-spacing": 0.5,
+                "text-line-height": 3,
+                "text-max-width": 1012
+            },
+            "paint": {
+                "text-color": "hsl(56, 21%, 31%)",
+                "text-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            3,
+                            0
+                        ],
+                        [
+                            3.5,
+                            0.5
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "Ruin - 3",
+            "type": "symbol",
+            "metadata": {
+                "mapbox:group": "fb43c9c3becfd3b98acbaf36f0b4955d"
+            },
+            "source": "composite",
+            "source-layer": "political-label-14pgfb",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "scalerank",
+                    3
+                ],
+                [
+                    "==",
+                    "type",
+                    "Ruin"
+                ]
+            ],
+            "layout": {
+                "visibility": "visible",
+                "icon-image": "circle-11",
+                "icon-size": 0.3,
+                "text-field": "{name}",
+                "text-anchor": "bottom-left",
+                "text-font": [
+                    "HolmenHeadlineOT Regular",
+                    "Arial Unicode MS Regular"
+                ],
+                "text-size": 12,
+                "text-offset": [
+                    0.3,
+                    0
+                ]
+            },
+            "paint": {
+                "text-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            4.5,
+                            0
+                        ],
+                        [
+                            5,
+                            1
+                        ]
+                    ]
+                },
+                "icon-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            4.5,
+                            0
+                        ],
+                        [
+                            5,
+                            1
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "Ruin - 4",
+            "type": "symbol",
+            "metadata": {
+                "mapbox:group": "fb43c9c3becfd3b98acbaf36f0b4955d"
+            },
+            "source": "composite",
+            "source-layer": "political-label-14pgfb",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "type",
+                    "Ruin"
+                ],
+                [
+                    "in",
+                    "scalerank",
+                    4,
+                    5
+                ]
+            ],
+            "layout": {
+                "visibility": "visible",
+                "icon-image": "circle-11",
+                "icon-size": 0.3,
+                "text-field": "{name}",
+                "text-anchor": "bottom-left",
+                "text-font": [
+                    "HolmenHeadlineOT Regular",
+                    "Arial Unicode MS Regular"
+                ],
+                "text-size": 12,
+                "text-offset": [
+                    0.3,
+                    0
+                ]
+            },
+            "paint": {
+                "text-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            6,
+                            0
+                        ],
+                        [
+                            6.5,
+                            1
+                        ]
+                    ]
+                },
+                "icon-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            6,
+                            0
+                        ],
+                        [
+                            6.5,
+                            1
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "Town Labels",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "political-label-14pgfb",
+            "filter": [
+                "==",
+                "type",
+                "Town"
+            ],
+            "layout": {
+                "visibility": "visible",
+                "icon-image": "circle-11",
+                "icon-size": 0.3,
+                "text-field": "{name}",
+                "text-anchor": "bottom-left",
+                "text-font": [
+                    "HolmenHeadlineOT Regular",
+                    "Arial Unicode MS Regular"
+                ],
+                "text-size": 14,
+                "text-offset": [
+                    0.3,
+                    0
+                ]
+            },
+            "paint": {
+                "text-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            6,
+                            0
+                        ],
+                        [
+                            6.5,
+                            1
+                        ]
+                    ]
+                },
+                "icon-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            6,
+                            0
+                        ],
+                        [
+                            6.5,
+                            1
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "Other Labels - 3",
+            "type": "symbol",
+            "metadata": {
+                "mapbox:group": "019e2509d583ac79a031a666c25e0b37"
+            },
+            "source": "composite",
+            "source-layer": "political-label-14pgfb",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "scalerank",
+                    3
+                ],
+                [
+                    "==",
+                    "type",
+                    "Other"
+                ]
+            ],
+            "layout": {
+                "visibility": "visible",
+                "icon-image": "circle-11",
+                "icon-size": 0.3,
+                "text-field": "{name}",
+                "text-anchor": "bottom-left",
+                "text-font": [
+                    "HolmenHeadlineOT Regular",
+                    "Arial Unicode MS Regular"
+                ],
+                "text-size": 14,
+                "text-offset": [
+                    0.3,
+                    0
+                ]
+            },
+            "paint": {
+                "text-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            4.5,
+                            0
+                        ],
+                        [
+                            5,
+                            1
+                        ]
+                    ]
+                },
+                "icon-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            4.5,
+                            0
+                        ],
+                        [
+                            5,
+                            1
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "Other Labels - 4",
+            "type": "symbol",
+            "metadata": {
+                "mapbox:group": "019e2509d583ac79a031a666c25e0b37"
+            },
+            "source": "composite",
+            "source-layer": "political-label-14pgfb",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "scalerank",
+                    4
+                ],
+                [
+                    "==",
+                    "type",
+                    "Other"
+                ]
+            ],
+            "layout": {
+                "visibility": "visible",
+                "icon-image": "circle-11",
+                "icon-size": 0.3,
+                "text-field": "{name}",
+                "text-anchor": "bottom-left",
+                "text-font": [
+                    "HolmenHeadlineOT Regular",
+                    "Arial Unicode MS Regular"
+                ],
+                "text-size": 14,
+                "text-offset": [
+                    0.3,
+                    0
+                ]
+            },
+            "paint": {
+                "text-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            4.5,
+                            0
+                        ],
+                        [
+                            5,
+                            1
+                        ]
+                    ]
+                },
+                "icon-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            4.5,
+                            0
+                        ],
+                        [
+                            5,
+                            1
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "Other Labels - 4 copy",
+            "type": "symbol",
+            "metadata": {
+                "mapbox:group": "019e2509d583ac79a031a666c25e0b37"
+            },
+            "source": "composite",
+            "source-layer": "political-label-14pgfb",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "scalerank",
+                    5
+                ],
+                [
+                    "==",
+                    "type",
+                    "Other"
+                ]
+            ],
+            "layout": {
+                "visibility": "visible",
+                "icon-image": "circle-11",
+                "icon-size": 0.3,
+                "text-field": "{name}",
+                "text-anchor": "bottom-left",
+                "text-font": [
+                    "HolmenHeadlineOT Regular",
+                    "Arial Unicode MS Regular"
+                ],
+                "text-size": 14,
+                "text-offset": [
+                    0.3,
+                    0
+                ]
+            },
+            "paint": {
+                "text-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            7,
+                            0
+                        ],
+                        [
+                            7.5,
+                            1
+                        ]
+                    ]
+                },
+                "icon-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            7,
+                            0
+                        ],
+                        [
+                            7.5,
+                            1
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "City Labels - 2, 3",
+            "type": "symbol",
+            "metadata": {
+                "mapbox:group": "7fb85c688356dcdbedc93efb4cd0a40d"
+            },
+            "source": "composite",
+            "source-layer": "political-label-14pgfb",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "type",
+                    "City"
+                ],
+                [
+                    "in",
+                    "scalerank",
+                    2,
+                    3
+                ]
+            ],
+            "layout": {
+                "visibility": "visible",
+                "icon-image": "circle-11",
+                "icon-size": 0.3,
+                "text-field": "{name}",
+                "text-anchor": "bottom-left",
+                "text-font": [
+                    "HolmenHeadlineOT Regular",
+                    "Arial Unicode MS Regular"
+                ],
+                "text-size": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            14
+                        ],
+                        [
+                            5,
+                            14
+                        ],
+                        [
+                            6,
+                            18
+                        ],
+                        [
+                            8,
+                            20
+                        ]
+                    ]
+                },
+                "text-offset": [
+                    0.3,
+                    0
+                ]
+            },
+            "paint": {
+                "text-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            3,
+                            0
+                        ],
+                        [
+                            3.5,
+                            1
+                        ]
+                    ]
+                },
+                "icon-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            3,
+                            0
+                        ],
+                        [
+                            3.5,
+                            1
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "City Labels - 4",
+            "type": "symbol",
+            "metadata": {
+                "mapbox:group": "7fb85c688356dcdbedc93efb4cd0a40d"
+            },
+            "source": "composite",
+            "source-layer": "political-label-14pgfb",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "scalerank",
+                    4
+                ],
+                [
+                    "==",
+                    "type",
+                    "City"
+                ]
+            ],
+            "layout": {
+                "visibility": "visible",
+                "icon-image": "circle-11",
+                "icon-size": 0.3,
+                "text-field": "{name}",
+                "text-anchor": "bottom-left",
+                "text-font": [
+                    "HolmenHeadlineOT Regular",
+                    "Arial Unicode MS Regular"
+                ],
+                "text-size": 14,
+                "text-offset": [
+                    0.3,
+                    0
+                ]
+            },
+            "paint": {
+                "text-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            6,
+                            0
+                        ],
+                        [
+                            6.5,
+                            1
+                        ]
+                    ]
+                },
+                "icon-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            6,
+                            0
+                        ],
+                        [
+                            6.5,
+                            1
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "Castle Labels - 4",
+            "type": "symbol",
+            "metadata": {
+                "mapbox:group": "2f754640e77a7978902d9fb82e264266"
+            },
+            "source": "composite",
+            "source-layer": "political-label-14pgfb",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "scalerank",
+                    4
+                ],
+                [
+                    "==",
+                    "type",
+                    "Castle"
+                ]
+            ],
+            "layout": {
+                "visibility": "visible",
+                "icon-image": "circle-11",
+                "icon-size": 0.3,
+                "text-field": "{name}",
+                "text-anchor": "bottom-left",
+                "text-font": [
+                    "HolmenHeadlineOT Regular",
+                    "Arial Unicode MS Regular"
+                ],
+                "text-size": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            12
+                        ],
+                        [
+                            5,
+                            12
+                        ],
+                        [
+                            6,
+                            16
+                        ],
+                        [
+                            8,
+                            18
+                        ]
+                    ]
+                },
+                "text-offset": [
+                    0.3,
+                    0
+                ]
+            },
+            "paint": {
+                "text-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            6,
+                            0
+                        ],
+                        [
+                            6.5,
+                            1
+                        ]
+                    ]
+                },
+                "icon-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            6,
+                            0
+                        ],
+                        [
+                            6.5,
+                            1
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "Castle Labels - 3",
+            "type": "symbol",
+            "metadata": {
+                "mapbox:group": "2f754640e77a7978902d9fb82e264266"
+            },
+            "source": "composite",
+            "source-layer": "political-label-14pgfb",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "scalerank",
+                    3
+                ],
+                [
+                    "==",
+                    "type",
+                    "Castle"
+                ]
+            ],
+            "layout": {
+                "visibility": "visible",
+                "icon-image": "circle-11",
+                "icon-size": 0.3,
+                "text-field": "{name}",
+                "text-anchor": "bottom-left",
+                "text-font": [
+                    "HolmenHeadlineOT Regular",
+                    "Arial Unicode MS Regular"
+                ],
+                "text-size": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            12
+                        ],
+                        [
+                            5,
+                            12
+                        ],
+                        [
+                            6,
+                            16
+                        ],
+                        [
+                            8,
+                            18
+                        ]
+                    ]
+                },
+                "text-offset": [
+                    0.3,
+                    0
+                ]
+            },
+            "paint": {
+                "text-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            4.5,
+                            0
+                        ],
+                        [
+                            5,
+                            1
+                        ]
+                    ]
+                },
+                "icon-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            4.5,
+                            0
+                        ],
+                        [
+                            5,
+                            1
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "Castle Labels - 2",
+            "type": "symbol",
+            "metadata": {
+                "mapbox:group": "2f754640e77a7978902d9fb82e264266"
+            },
+            "source": "composite",
+            "source-layer": "political-label-14pgfb",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "scalerank",
+                    2
+                ],
+                [
+                    "==",
+                    "type",
+                    "Castle"
+                ]
+            ],
+            "layout": {
+                "visibility": "visible",
+                "icon-image": "circle-11",
+                "icon-size": 0.3,
+                "text-field": "{name}",
+                "text-anchor": "bottom-left",
+                "text-font": [
+                    "HolmenHeadlineOT Regular",
+                    "Arial Unicode MS Regular"
+                ],
+                "text-size": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            14
+                        ],
+                        [
+                            5,
+                            14
+                        ],
+                        [
+                            6,
+                            18
+                        ],
+                        [
+                            8,
+                            20
+                        ]
+                    ]
+                },
+                "text-offset": [
+                    0.3,
+                    0
+                ]
+            },
+            "paint": {
+                "text-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            0
+                        ],
+                        [
+                            4.5,
+                            1
+                        ]
+                    ]
+                },
+                "icon-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            0
+                        ],
+                        [
+                            4.5,
+                            1
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "Castle Black Fix",
+            "type": "symbol",
+            "metadata": {
+                "mapbox:group": "2f754640e77a7978902d9fb82e264266"
+            },
+            "source": "composite",
+            "source-layer": "political-label-14pgfb",
+            "filter": [
+                "==",
+                "id",
+                166
+            ],
+            "layout": {
+                "visibility": "visible",
+                "icon-image": "castle",
+                "icon-size": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0.1
+                        ],
+                        [
+                            3,
+                            0.2
+                        ],
+                        [
+                            5,
+                            0.2
+                        ],
+                        [
+                            6,
+                            0.3
+                        ],
+                        [
+                            7,
+                            0.6
+                        ],
+                        [
+                            8,
+                            0.8
+                        ]
+                    ]
+                },
+                "text-field": "{name}",
+                "text-anchor": "bottom-left",
+                "text-font": [
+                    "HolmenHeadlineOT Regular",
+                    "Arial Unicode MS Regular"
+                ],
+                "text-size": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            14
+                        ],
+                        [
+                            5,
+                            14
+                        ],
+                        [
+                            6,
+                            18
+                        ],
+                        [
+                            8,
+                            20
+                        ]
+                    ]
+                },
+                "text-offset": [
+                    0.3,
+                    0
+                ]
+            },
+            "paint": {
+                "text-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            3,
+                            0
+                        ],
+                        [
+                            3.5,
+                            1
+                        ]
+                    ]
+                },
+                "icon-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            3,
+                            0
+                        ],
+                        [
+                            3.5,
+                            0
+                        ],
+                        [
+                            5,
+                            0
+                        ],
+                        [
+                            6,
+                            0.2
+                        ]
+                    ]
+                },
+                "text-halo-color": "hsl(47, 17%, 51%)",
+                "text-halo-blur": 0,
+                "text-halo-width": 2
+            }
+        },
+        {
+            "id": "Castle Labels - 1",
+            "type": "symbol",
+            "metadata": {
+                "mapbox:group": "2f754640e77a7978902d9fb82e264266"
+            },
+            "source": "composite",
+            "source-layer": "political-label-14pgfb",
+            "filter": [
+                "all",
+                [
+                    "!=",
+                    "id",
+                    166
+                ],
+                [
+                    "==",
+                    "scalerank",
+                    1
+                ],
+                [
+                    "==",
+                    "type",
+                    "Castle"
+                ]
+            ],
+            "layout": {
+                "text-size": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            14
+                        ],
+                        [
+                            5,
+                            14
+                        ],
+                        [
+                            6,
+                            18
+                        ],
+                        [
+                            8,
+                            20
+                        ]
+                    ]
+                },
+                "icon-offset": [
+                    0,
+                    -100
+                ],
+                "icon-image": "castle",
+                "text-font": [
+                    "HolmenHeadlineOT Regular",
+                    "Arial Unicode MS Regular"
+                ],
+                "visibility": "visible",
+                "text-offset": [
+                    0.3,
+                    0
+                ],
+                "icon-size": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0.1
+                        ],
+                        [
+                            3,
+                            0.2
+                        ],
+                        [
+                            5,
+                            0.2
+                        ],
+                        [
+                            6,
+                            0.3
+                        ],
+                        [
+                            7,
+                            0.6
+                        ],
+                        [
+                            8,
+                            0.8
+                        ]
+                    ]
+                },
+                "text-field": "{name}"
+            },
+            "paint": {
+                "text-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            3,
+                            0
+                        ],
+                        [
+                            3.5,
+                            1
+                        ]
+                    ]
+                },
+                "icon-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            3,
+                            0
+                        ],
+                        [
+                            3.5,
+                            0
+                        ],
+                        [
+                            5,
+                            0
+                        ],
+                        [
+                            6,
+                            0.2
+                        ]
+                    ]
+                },
+                "text-halo-color": "hsl(47, 17%, 51%)",
+                "text-halo-blur": 0,
+                "text-halo-width": 0,
+                "text-translate": [
+                    0,
+                    0
+                ]
+            }
+        },
+        {
+            "id": "Rest of Water",
+            "type": "symbol",
+            "metadata": {
+                "mapbox:group": "a74d287c10d82ca7e7bdb65163c8f204"
+            },
+            "source": "composite",
+            "source-layer": "physical-label-0m28d9",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "scalerank",
+                    4
+                ],
+                [
+                    "==",
+                    "type",
+                    "water"
+                ]
+            ],
+            "layout": {
+                "visibility": "visible",
+                "text-font": [
+                    "Quintessential Regular"
+                ],
+                "text-field": "{name}",
+                "text-size": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            16
+                        ],
+                        [
+                            7,
+                            16
+                        ],
+                        [
+                            8,
+                            20
+                        ]
+                    ]
+                },
+                "text-letter-spacing": 0.3
+            },
+            "paint": {
+                "text-color": "hsl(153, 47%, 29%)",
+                "text-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            6.5,
+                            0
+                        ],
+                        [
+                            7,
+                            1
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "Tertiary  Water",
+            "type": "symbol",
+            "metadata": {
+                "mapbox:group": "a74d287c10d82ca7e7bdb65163c8f204"
+            },
+            "source": "composite",
+            "source-layer": "physical-label-0m28d9",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "scalerank",
+                    3
+                ],
+                [
+                    "==",
+                    "type",
+                    "water"
+                ]
+            ],
+            "layout": {
+                "visibility": "visible",
+                "text-font": [
+                    "Quintessential Regular"
+                ],
+                "text-field": "{name}",
+                "text-size": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            10
+                        ],
+                        [
+                            5,
+                            10
+                        ],
+                        [
+                            6,
+                            20
+                        ],
+                        [
+                            7,
+                            24
+                        ]
+                    ]
+                },
+                "text-letter-spacing": 0.3,
+                "text-line-height": 2
+            },
+            "paint": {
+                "text-color": "hsl(153, 47%, 29%)",
+                "text-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            5,
+                            0
+                        ],
+                        [
+                            5.5,
+                            0.5
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "Secondary Water",
+            "type": "symbol",
+            "metadata": {
+                "mapbox:group": "a74d287c10d82ca7e7bdb65163c8f204"
+            },
+            "source": "composite",
+            "source-layer": "physical-label-0m28d9",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "scalerank",
+                    2
+                ],
+                [
+                    "==",
+                    "type",
+                    "water"
+                ]
+            ],
+            "layout": {
+                "visibility": "visible",
+                "text-font": [
+                    "Quintessential Regular"
+                ],
+                "text-field": "{name}",
+                "text-size": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            10
+                        ],
+                        [
+                            4,
+                            10
+                        ],
+                        [
+                            5,
+                            15
+                        ],
+                        [
+                            6,
+                            25
+                        ]
+                    ]
+                },
+                "text-letter-spacing": 0.5,
+                "text-line-height": 2
+            },
+            "paint": {
+                "text-color": "hsl(153, 47%, 29%)",
+                "text-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            3,
+                            0
+                        ],
+                        [
+                            3.5,
+                            0.8
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "Primary Water",
+            "type": "symbol",
+            "metadata": {
+                "mapbox:group": "a74d287c10d82ca7e7bdb65163c8f204"
+            },
+            "source": "composite",
+            "source-layer": "physical-label-0m28d9",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "scalerank",
+                    1
+                ],
+                [
+                    "==",
+                    "type",
+                    "water"
+                ]
+            ],
+            "layout": {
+                "visibility": "visible",
+                "text-font": [
+                    "Quintessential Regular"
+                ],
+                "text-field": "{name}",
+                "text-size": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            10
+                        ],
+                        [
+                            3,
+                            14
+                        ],
+                        [
+                            4,
+                            18
+                        ],
+                        [
+                            5,
+                            24
+                        ],
+                        [
+                            8,
+                            30
+                        ]
+                    ]
+                },
+                "text-letter-spacing": 0.4,
+                "text-line-height": 3
+            },
+            "paint": {
+                "text-color": "hsl(153, 47%, 29%)"
+            }
+        },
+        {
+            "id": "King's Landing",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "political-label-14pgfb",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "name",
+                    "King's Landing"
+                ],
+                [
+                    "==",
+                    "scalerank",
+                    1
+                ]
+            ],
+            "layout": {
+                "visibility": "visible",
+                "icon-image": "star-11",
+                "text-offset": [
+                    0.3,
+                    0
+                ],
+                "text-field": "{name}",
+                "text-anchor": "bottom-left",
+                "text-font": [
+                    "HolmenHeadlineOT Regular",
+                    "Arial Unicode MS Regular"
+                ],
+                "text-size": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            14
+                        ],
+                        [
+                            4,
+                            14
+                        ],
+                        [
+                            5,
+                            16
+                        ],
+                        [
+                            6,
+                            20
+                        ],
+                        [
+                            10,
+                            24
+                        ]
+                    ]
+                },
+                "icon-size": 0.75
+            },
+            "paint": {
+                "text-opacity": 1,
+                "icon-opacity": 1
+            }
+        },
+        {
+            "id": "fog-4775he",
+            "type": "fill",
+            "metadata": {
+                "mapbox:group": "e865301c13ea3ae85c8234fb2cf61189"
+            },
+            "source": "composite",
+            "source-layer": "fog-4775he",
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "fill-color": "hsl(171, 21%, 15%)",
+                "fill-outline-color": "hsla(0, 0%, 0%, 0)"
+            }
+        },
+        {
+            "id": "fog-4775he copy",
+            "type": "fill",
+            "metadata": {
+                "mapbox:group": "e865301c13ea3ae85c8234fb2cf61189"
+            },
+            "source": "composite",
+            "source-layer": "fog-4775he",
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "fill-color": "hsl(171, 10%, 25%)",
+                "fill-outline-color": "hsla(0, 0%, 0%, 0)",
+                "fill-pattern": "paper-texture",
+                "fill-opacity": 0.15
+            }
+        },
+        {
+            "id": "fog-4775he copy 1",
+            "type": "line",
+            "metadata": {
+                "mapbox:group": "e865301c13ea3ae85c8234fb2cf61189"
+            },
+            "source": "composite",
+            "source-layer": "fog-4775he",
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "line-color": "hsl(171, 10%, 25%)",
+                "line-dasharray": [
+                    4,
+                    6,
+                    2,
+                    4,
+                    5,
+                    4
+                ],
+                "line-offset": -0.5,
+                "line-width": 2,
+                "line-opacity": 0.41
+            }
+        },
+        {
+            "id": "fog-4775he copy 2",
+            "type": "line",
+            "metadata": {
+                "mapbox:group": "e865301c13ea3ae85c8234fb2cf61189"
+            },
+            "source": "composite",
+            "source-layer": "fog-4775he",
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "line-color": "hsl(171, 10%, 25%)",
+                "line-dasharray": [
+                    3,
+                    2,
+                    4,
+                    5,
+                    4
+                ],
+                "line-offset": -0.5,
+                "line-width": 3,
+                "line-opacity": 0.41
+            }
+        },
+        {
+            "id": "fog-4775he copy 3",
+            "type": "line",
+            "metadata": {
+                "mapbox:group": "e865301c13ea3ae85c8234fb2cf61189"
+            },
+            "source": "composite",
+            "source-layer": "fog-4775he",
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "line-color": "hsl(171, 10%, 25%)",
+                "line-dasharray": [
+                    1,
+                    3,
+                    2,
+                    4,
+                    3,
+                    5
+                ],
+                "line-offset": -0.5,
+                "line-width": 2,
+                "line-opacity": 0.41
+            }
+        },
+        {
+            "id": "fog-4775he copy 4",
+            "type": "line",
+            "metadata": {
+                "mapbox:group": "e865301c13ea3ae85c8234fb2cf61189"
+            },
+            "source": "composite",
+            "source-layer": "fog-4775he",
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "line-color": "hsl(171, 10%, 25%)",
+                "line-dasharray": [
+                    3,
+                    5,
+                    2,
+                    4,
+                    3,
+                    6
+                ],
+                "line-offset": -0.5,
+                "line-width": 5,
+                "line-opacity": 0.41
+            }
+        },
+        {
+            "id": "fog-4775he copy 5",
+            "type": "line",
+            "metadata": {
+                "mapbox:group": "e865301c13ea3ae85c8234fb2cf61189"
+            },
+            "source": "composite",
+            "source-layer": "fog-4775he",
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "line-color": "hsl(171, 10%, 25%)",
+                "line-dasharray": [
+                    2,
+                    5,
+                    7,
+                    5,
+                    3,
+                    4
+                ],
+                "line-offset": -0.5,
+                "line-width": 6,
+                "line-opacity": 0.41
+            }
+        },
+        {
+            "id": "logo",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "logo",
+            "filter": [
+                "==",
+                "id",
+                1
+            ],
+            "layout": {
+                "visibility": "visible",
+                "icon-size": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            0.2
+                        ],
+                        [
+                            1,
+                            0.2
+                        ],
+                        [
+                            3,
+                            0.7
+                        ],
+                        [
+                            5,
+                            1
+                        ]
+                    ]
+                },
+                "icon-image": "wheel"
+            },
+            "paint": {
+                "icon-translate": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            [
+                                -5,
+                                10
+                            ]
+                        ],
+                        [
+                            3,
+                            [
+                                0,
+                                50
+                            ]
+                        ],
+                        [
+                            5,
+                            [
+                                0,
+                                200
+                            ]
+                        ]
+                    ]
+                },
+                "icon-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            4.5,
+                            1
+                        ],
+                        [
+                            5,
+                            0
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "song-1",
+            "type": "symbol",
+            "metadata": {
+                "mapbox:group": "f7b7b08d2895d5162ee6658db8743939"
+            },
+            "source": "composite",
+            "source-layer": "logo",
+            "filter": [
+                "==",
+                "id",
+                2
+            ],
+            "layout": {
+                "visibility": "visible",
+                "icon-image": "doodoo-1",
+                "icon-size": 1,
+                "icon-allow-overlap": true,
+                "icon-ignore-placement": true,
+                "icon-offset": [
+                    -70,
+                    10
+                ]
+            },
+            "paint": {
+                "icon-translate": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            [
+                                -5,
+                                10
+                            ]
+                        ],
+                        [
+                            3,
+                            [
+                                0,
+                                50
+                            ]
+                        ],
+                        [
+                            5,
+                            [
+                                0,
+                                200
+                            ]
+                        ]
+                    ]
+                },
+                "icon-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            4.5,
+                            1
+                        ],
+                        [
+                            5,
+                            0
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "song-2",
+            "type": "symbol",
+            "metadata": {
+                "mapbox:group": "f7b7b08d2895d5162ee6658db8743939"
+            },
+            "source": "composite",
+            "source-layer": "logo",
+            "filter": [
+                "==",
+                "id",
+                3
+            ],
+            "layout": {
+                "visibility": "visible",
+                "icon-image": "doodoo-2",
+                "icon-size": 0.7,
+                "icon-allow-overlap": true,
+                "icon-ignore-placement": true,
+                "icon-offset": [
+                    -35,
+                    70
+                ],
+                "icon-rotate": 20
+            },
+            "paint": {
+                "icon-translate": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            [
+                                -5,
+                                10
+                            ]
+                        ],
+                        [
+                            3,
+                            [
+                                0,
+                                50
+                            ]
+                        ],
+                        [
+                            5,
+                            [
+                                0,
+                                200
+                            ]
+                        ]
+                    ]
+                },
+                "icon-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            4.5,
+                            1
+                        ],
+                        [
+                            5,
+                            0
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "song-3",
+            "type": "symbol",
+            "metadata": {
+                "mapbox:group": "f7b7b08d2895d5162ee6658db8743939"
+            },
+            "source": "composite",
+            "source-layer": "logo",
+            "filter": [
+                "==",
+                "id",
+                4
+            ],
+            "layout": {
+                "visibility": "visible",
+                "icon-image": "doodoo-3",
+                "icon-size": 0.8,
+                "icon-allow-overlap": true,
+                "icon-ignore-placement": true,
+                "icon-offset": [
+                    -10,
+                    45
+                ],
+                "icon-rotate": 0
+            },
+            "paint": {
+                "icon-translate": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            [
+                                -5,
+                                10
+                            ]
+                        ],
+                        [
+                            3,
+                            [
+                                0,
+                                50
+                            ]
+                        ],
+                        [
+                            5,
+                            [
+                                0,
+                                200
+                            ]
+                        ]
+                    ]
+                },
+                "icon-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            4.5,
+                            1
+                        ],
+                        [
+                            5,
+                            0
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "song-4",
+            "type": "symbol",
+            "metadata": {
+                "mapbox:group": "f7b7b08d2895d5162ee6658db8743939"
+            },
+            "source": "composite",
+            "source-layer": "logo",
+            "filter": [
+                "==",
+                "id",
+                5
+            ],
+            "layout": {
+                "visibility": "visible",
+                "icon-image": "doodoo-4",
+                "icon-size": 1,
+                "icon-allow-overlap": true,
+                "icon-ignore-placement": true,
+                "icon-offset": [
+                    25,
+                    45
+                ]
+            },
+            "paint": {
+                "icon-translate": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            0,
+                            [
+                                -5,
+                                10
+                            ]
+                        ],
+                        [
+                            3,
+                            [
+                                0,
+                                50
+                            ]
+                        ],
+                        [
+                            5,
+                            [
+                                0,
+                                200
+                            ]
+                        ]
+                    ]
+                },
+                "icon-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            4.5,
+                            1
+                        ],
+                        [
+                            5,
+                            0
+                        ]
+                    ]
+                }
+            }
+        }
+    ],
+    "created": "2017-08-26T20:28:23.785Z",
+    "id": "cj6trdcl7117f2rqn4xjr211y",
+    "modified": "2017-08-27T15:54:37.726Z",
+    "owner": "gthrones",
+    "visibility": "private",
+    "draft": false
+}
+</script>

@@ -19,6 +19,8 @@ twit-image: "http://dylanmoriarty.github.io/assets/graphics/blog/got/twitt.jpg"
 
 ---
 
+<img src="../assets/graphics/blog/got/twitt.jpg" class="cheatin" />
+
 <style>
   .full-bleed {
     position: relative;
@@ -41,6 +43,10 @@ twit-image: "http://dylanmoriarty.github.io/assets/graphics/blog/got/twitt.jpg"
     background-color: #efefef;
     padding: 1rem;
     z-index: 9999;
+  }
+
+  .cheatin {
+    display: none;
   }
 </style>
 

@@ -10,6 +10,7 @@ links:
 date: 2017-05-06
 display: 'yes'
 permalink: blog/foggy-spaces.html
+pinned: true
 
 scripts: 'svg-text'
 

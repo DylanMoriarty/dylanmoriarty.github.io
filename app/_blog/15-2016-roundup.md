@@ -10,7 +10,6 @@ links: <!-- <a href="http://www.missingmaps.org/" target="_blank"> Check out the
 date: 2017-1-10
 display: 'yes'
 permalink: blog/2016-in-review.html
-pinned: true
 
 ---
 

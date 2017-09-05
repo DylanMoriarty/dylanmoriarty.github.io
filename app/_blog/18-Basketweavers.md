@@ -92,7 +92,7 @@ Well, for many places in the world, it's surprisingly complete where it counts. 
 <div class= "full-bleed">
 	<div id="map-roads" class="mapstyle"></div>
 </div>
-<figcaption>These are major roads in OSM cropped to the United States, projected in a special version of albers that has Florida and Alaska positioned in the bottom left corner. Had I not cropped that data, these roads would indeed extend into Canada & Mexico. I'm also excluding tertiary & service roads, as well as footpaths, trails etc.</figcaption>
+<figcaption>These are major roads in OSM cropped to the United States, projected in a special version of albers that has Hawaii and Alaska positioned in the bottom left corner. Had I not cropped that data, these roads would indeed extend into Canada & Mexico. I'm also excluding tertiary & service roads, as well as footpaths, trails etc.</figcaption>
 
 <br>
 
@@ -196,9 +196,7 @@ For PokemonGO, folks created checks that looked for:
 - Is this contribution full of questionably overlapping features, such as seven overlapping parks?
 - Is this contribution made by someone who just joined, with less than 5 edits, and mapping major features like lakes?
 
-& to detect other vandalism, the same sort of checks are used for the rest of the database broadly speaking.
-
-But, even when checks don't catch vandalism, OSM is widely used and people are pretty quick to notice when something like the following shows up in their hometown;
+& to detect other vandalism, the same sort of checks are used for the rest of the database broadly speaking. Even when checks don't catch vandalism, OSM is widely used and people are pretty quick to notice when something like the following shows up in their hometown;
 
 <div class="images">
 	<img src="../assets/graphics/blog/bwo/osm_vandal.png">

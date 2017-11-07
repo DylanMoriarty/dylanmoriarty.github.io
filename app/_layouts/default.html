@@ -9,9 +9,15 @@
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
 	{% endif %}
 	{% if page.scripts contains 'Mapbox-GL' %}
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.18.0/mapbox-gl.js'></script>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.css' rel='stylesheet' />
 	{% endif %}
+	{% if page.scripts contains 'Mapbox-GL-2' %}
+	{% endif %}
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.41.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.41.0/mapbox-gl.css' rel='stylesheet' />
 	{% if page.scripts contains 'MyHand' %}
+	
 	<style>
 		@font-face {
 		    font-family: "myHand";

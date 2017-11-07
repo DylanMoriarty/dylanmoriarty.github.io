@@ -4,7 +4,7 @@ title:  Midnight Arrivial
 home: 'yes'
 type: maps
 description: Midnight Arrivial – Recreating city embers
-bannerimg: /banners/basketweave
+bannerimg: /banners/hb-midnight.jpg
 banner: hb-midnight.jpg
 links: 
 date: 2017-10-19
@@ -15,7 +15,7 @@ scripts: 'Mapbox-GL-2'
 
 twit-title: "Midnight Arrival"
 twit-descrip: "Recreating the embers of a city as seen from the sky"
-twit-image: "http://dylanmoriarty.github.io/assets/graphics/blog/fsp/cloudy.png"
+twit-image: "http://dylanmoriarty.github.io/assets/graphics/blog/mar/burningmatch.gif"
 
 ---
 

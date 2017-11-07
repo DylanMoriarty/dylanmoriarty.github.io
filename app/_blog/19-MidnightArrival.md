@@ -359,7 +359,7 @@ twit-image: "http://dylanmoriarty.github.io/assets/graphics/blog/fsp/cloudy.png"
 
 
  	// 	}
-		setInterval(function() {
+		// setInterval(function() {
 			// radiusStops = [70000]
 			// radiusValues = []
 
@@ -388,6 +388,7 @@ twit-image: "http://dylanmoriarty.github.io/assets/graphics/blog/fsp/cloudy.png"
 	  //   console.log(map.getPaintProperty('streetlights', 'circle-radius'))
    //    map.setPaintProperty('streetlights-glow-large', 'circle-radius', newRadius)
 			// }, 4000)
-		}
+		// }
+	}
 </script>
 

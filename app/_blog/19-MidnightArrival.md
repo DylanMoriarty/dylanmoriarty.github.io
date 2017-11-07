@@ -133,7 +133,7 @@ twit-image: "http://dylanmoriarty.github.io/assets/graphics/blog/mar/burningmatc
     position: absolute;
     top: 76%;
     left: 50%;
-    margin-left: -50px;
+    margin-left: -50px;f
     width: 0;
     height: 0;
     border-top: solid 50px black;
@@ -221,7 +221,7 @@ twit-image: "http://dylanmoriarty.github.io/assets/graphics/blog/mar/burningmatc
 
 	var map = new mapboxgl.Map({
     container: 'nightMap',
-    style: style,
+    style: 'mapbox://styles/got-map/cj5t6eayx4aje2rl81gr2t95b',
     zoom: 13,
     pitch: 45,
     bearing: 60,

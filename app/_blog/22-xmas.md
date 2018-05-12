@@ -3,12 +3,12 @@ layout: post
 title:  'Christmas Wishes'
 home: 'yes'
 type: maps
-description: reason for the season
+description: 2018 Christmas Wishlist
 bannerimg: /banners/christmas-list
-banner: christmas-list.jpg
+banner: hb-xmas-2017.jpg
 links: 
-date: 2017-08-27
-display: 'no'
+date: 2017-11-20
+display: 'yes'
 permalink: blog/christmas-wishes.html
 
 twit-title: "GoT Map"
@@ -165,11 +165,7 @@ twit-image: "http://dylanmoriarty.github.io/assets/graphics/blog/got/twitt.jpg"
 
 <div class="im-dreaming-of-a"></div>
 
-<p><h2>Hey family!</h2></p>
-
-<p>Here's a list of things that would make swell gifts this holiday season!</p>
-
-<p>Friendly reminder that if you buy anything off Amazon, to make sure you're do so through a 'smile' url. This donates 0.5% of the purchase to a group you specify. Not much, but there's no reason not to. You can <a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=201365340">read more about it here.</a></p>
+<p><h2>2017 Christmas gift wish list ~*</h2></p>
 
 <div id="Santas-Sack"></div>
 

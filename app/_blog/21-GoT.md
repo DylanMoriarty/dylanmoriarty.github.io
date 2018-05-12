@@ -3,7 +3,7 @@ layout: post
 title:  'Map of Thrones'
 home: 'yes'
 type: maps
-description: Map of Thrones!
+description: Map of Thrones
 bannerimg: /banners/gotmapbanner
 banner: hb-got.jpg
 links: 
@@ -71,7 +71,7 @@ twit-image: "http://dylanmoriarty.github.io/assets/graphics/blog/got/twitt.jpg"
   })
 
   map.on('load', function () {
-    map.addControl(new mapboxgl.Navigation({position: 'top-left'}))
+    // map.addControl(new mapboxgl.Navigation({position: 'top-left'}))
     singSong()
   })
 

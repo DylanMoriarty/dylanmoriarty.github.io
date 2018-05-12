@@ -8,7 +8,7 @@ bannerimg: /banners/hb-midnight.jpg
 banner: hb-midnight.jpg
 links: 
 date: 2017-10-19
-display: 'yes'
+display: 'no'
 permalink: blog/midnight-arrival.html
 
 scripts: 'Mapbox-GL-2'

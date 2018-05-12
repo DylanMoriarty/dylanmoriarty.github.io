@@ -20,3 +20,5 @@ collections:
     output: true
   cakes:
     output: true
+  musings:
+    output: true

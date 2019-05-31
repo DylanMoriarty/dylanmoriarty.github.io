@@ -14,6 +14,7 @@ pinned: true
 
 scripts: 'svg-text'
 
+twitter: "yes"
 twit-title: "Foggy Spaces"
 twit-descrip: "Mental maps of youth & places once called home"
 twit-image: "http://dylanmoriarty.github.io/assets/graphics/blog/fsp/twit-card.png"

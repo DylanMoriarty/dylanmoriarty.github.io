@@ -16,7 +16,7 @@ scripts: 'svg-text'
 
 twit-title: "Foggy Spaces"
 twit-descrip: "Mental maps of youth & places once called home"
-twit-image: "http://dylanmoriarty.github.io/assets/graphics/blog/fsp/cloudy.png"
+twit-image: "http://dylanmoriarty.github.io/assets/graphics/blog/fsp/twit-card.png"
 
 ---
 

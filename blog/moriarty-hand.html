@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<!-- Check for needed JS libraries.-->
+
+	
+	
+	
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.css' rel='stylesheet' />
+	
+	
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.41.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.41.0/mapbox-gl.css' rel='stylesheet' />
+	
+	
+	<style>
+		@font-face {
+		    font-family: "myHand";
+		    src: url("/assets/fonts/MyHand.woff") format('woff');
+		}
+		@font-face {
+		    font-family: "myHand_bold";
+		    src: url("/assets/fonts/MyHand_Bold.woff") format('woff');
+		}
+
+		.MyHand{
+			font-family: myHand, "Crimson Text", serif;	
+		}
+
+		.MyHand_b{
+			font-family: myHand_Bold, "Crimson Text", serif;
+		}
+	</style>
+	
+
+
+<html>
+
+	<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Dylan Moriarty</title>
+<link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,700" rel="stylesheet">
+
+<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type="text/css">
+ -->
+<title>Moriarty Hands</title>
+<meta name="description" content="Over a few days this past summer I took to drawing the world. Or, well, linework of it. More recently I cobbled together a font based off my own handwriting....">
+
+<link rel="canonical" href="/blog/moriarty-hand.html">
+<link rel="alternate" type="application/rss+xml" title="DylanMoriarty.github.io" href="/feed.xml">
+
+<link rel="stylesheet" href="/assets/styles/main-706d8a1a03.css">
+
+<script src="/assets/scripts/vendor-0d6388c26b.js"></script>
+<script src="/assets/scripts/bundle-692b84ce03.js"></script>
+
+<link rel="apple-touch-icon" sizes="57x57" href="/assets/graphics/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/graphics/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/graphics/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/graphics/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/graphics/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/graphics/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/graphics/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/graphics/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/graphics/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/assets/graphics/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/graphics/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/graphics/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/graphics/favicon/favicon-16x16.png">
+<link rel="manifest" href="/assets/graphics/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/assets/graphics/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff"> 
+
+<meta property="og:description" content="Dylan's online smorgasbord of maps, illustrations, & musings." />
+<meta property="og:url"content="dylanmoriarty.github.io" />
+
+<meta property="og:title" content="Moriarty Hands" />
+
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@DylanMoriarty">
+<meta name="twitter:creator" content="@DylanMoriarty">
+<meta name="twitter:title" content="Moriarty Hands">
+
+<meta name="twitter:description" content="Converting handdrawn and writing into georefernced vector linework & usable font">
+
+<meta name="twitter:image" content="http://dylanmoriarty.github.io/assets/graphics/blog/moh/banner.jpg">
+</head>
+
+
+	<body>
+
+		<div class = "site-entire">
+	<header class ="nav-down">
+		<div class ="nav-container">
+			<span class= "nav-home"><a href= "/"><i class="collecticons collecticons-dm"></i></a>
+			<a href= "https://github.com/DylanMoriarty" target="_blank"><i class="collecticons collecticons-github"></i></a>
+			<a href= "https://twitter.com/DylanMoriarty" target="_blank"><i class="collecticons collecticons-twitter"></i></a>
+			</span>
+			<!-- <a href="/days/"><h1>Days</h1></a>		 -->
+			<a href="/cake/"><i class="collecticons collecticons-bubble"></i> <h1>Toons</h1></a>
+			<a href="/tunes/"><i class="collecticons collecticons-music"></i> <h1>Tunes</h1>
+			<a href="/about/"><i class="collecticons collecticons-glass"></i> <h1>Contact</h1></a>		
+		</div>
+	</header>
+
+
+		<div class="welcomemat" id="welcomemat">
+			<div class="welcomeimagebox">
+				
+					<img class="welcomemat-center" src="/assets/graphics/blog/moh/banner.jpg"></img>
+				
+					<img class="tothetop" src="/assets/graphics/meta/cover.svg"></img>
+			</div>
+		</div>
+		<div class="title-container">
+			<h2 class="page-title">
+				
+					<a href="/">
+						<i class="collecticons collecticons-myhome"></i> /</a>Moriarty Hands
+			</h2>
+
+			<div class="page-subtitle">
+				
+					<a href="http://www.projectlinework.org/" target="_blank">Download Linework</a>  | <a href="/assets/data/MoriartyFont.zip" target="_blank">Download Font</a>
+				
+			</div>
+			<div class="welcomeillus">
+			</div>
+	</div>
+</div>
+
+		<div class="page-content">
+		  <div class="wrapper">
+		  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="post-content" itemprop="articleBody">
+    <p>Over a few days this past summer I took to drawing the world. Or, well, linework of it. More recently I cobbled together a font based off my own handwriting. Why? Read on.</p>
+
+<div class="full-bleed">
+	<div id="map"></div>
+</div>
+<p><br /></p>
+
+<style>
+	.full-bleed{
+		margin:2em 0 1em;
+		height: 350px;
+	}
+
+	#map{
+		width:100%;
+		height: 350px;
+		position:absolute;
+		left:0;
+		border: solid 1px #888;
+	}
+</style>
+
+<script>
+	mapboxgl.accessToken = 'pk.eyJ1IjoiZG1vcmlhcnR5IiwiYSI6Ikd3T29EOWMifQ.-DKJ4ernht84AZmc6Bk51Q';
+	var map = new mapboxgl.Map({
+	    container: 'map',
+	    style: 'mapbox://styles/dmoriarty/ciohfutz0000vaunt9niot97s',
+	    zoom: 1,
+	    center: [0, 0]
+	});
+
+	// Disables zoom functionality, allowing for users to not get stuck on it scrolling down the page.
+	// ------------------------------------
+	map.scrollZoom.disable();
+
+	// Adds Zoom controls for the map to make up for removed scroll functionality
+	// ------------------------------------
+	map.addControl(new mapboxgl.Navigation({position: 'top-left'})); 
+
+</script>
+
+<div class="Chapterbox">
+	<div class="ChapterboxHeader">
+		<div class="ChapterboxHeaderLine"></div>
+		<h1>I
+		</h1>
+		<div class="ChapterboxHeaderLine"></div>
+	</div>
+	<div class="ChapterboxTitle">Charmingly Inaccurate
+	</div>
+	<div class="ChapterboxFooterLine"></div>
+</div>
+
+<p>Almost all Cartographers like their data percise and accurate. Therefore almost everyone uses the same georeferenced linework as a base for their maps.</p>
+
+<p>Still, not all maps need such percision! As <span class="tooltip">
+	Daniel Huffman<i class="collecticons collecticons-circle-information"></i>
+	<span class="tooltiptext">
+		Daniel is a freelance Cartographer, lecturer, and all around smart guy. He runs <a href="https://somethingaboutmaps.wordpress.com" target="_blank">somethingaboutmaps</a>
+	</span>
+</span> puts it:</p>
+
+<blockquote>
+  <p>“[Project Linework is a] library of handcrafted vector linework for cartography, each designed in a unique aesthetic style. They are meant to break us away from default line paths that we so often rely on by providing more visually-interesting alternatives.”</p>
+</blockquote>
+
+<p>A great comparison are fonts. The root goals for a font are that it A) has clear, distinct letters, &amp; B) that it is consistent. We could very well just use <span style="font-family: Arial">Arial</span> for everything. But we don’t as we know type can be manipulated to better convey the mission; whether that be selling milk, promoting art, or just letting folks know casual Friday is coming up.</p>
+
+<p>In occasional cases, even geographic ones, precision can take a back seat to pushing a mood.</p>
+
+<div class="images"><img class="ibd" src="../assets/graphics/blog/moh/fam-map.jpg" /><figcaption>This pre-dates the linework, but is exactly the kind of map that benefits from the looser style.</figcaption></div>
+
+<div class="Chapterbox">
+	<div class="ChapterboxHeader">
+		<div class="ChapterboxHeaderLine"></div>
+		<h1>II
+		</h1>
+		<div class="ChapterboxHeaderLine"></div>
+	</div>
+	<div class="ChapterboxTitle">The Linework
+	</div>
+	<div class="ChapterboxFooterLine"></div>
+</div>
+
+<p>We wanted to make a linework that looked hand drawn, but not inaccurate to the point of it being useless. I first tried to eyeball it… which went disastrously. Next I tried tracing a print out of an accurate base but that proved too close. It just resembled shaky-cam NaturalEarthData.</p>
+
+<p>We determined the best way to get a nice balance was to use our print out of NaturalEarthData as a base and make markers around the boundaries- at tips of coasts or where country borders split. Then I’d eyeball the spaces in between doing it freehand.</p>
+
+<div class="images"><img class="" src="../assets/graphics/blog/moh/difference.png" /><figcaption>The <span style="color:red">red</span> outlines in this image are the accurate source, NaturalEarthData. The black is Moriarty Hand. With the overlap it's clear where I traced vs. where it was free-handed.</figcaption></div>
+
+<p>For example, for Florida I marked where the south-most tip was, where it bent to, and then drew in the rest. This put things in roughly the right place with enough flourishes and errors for it to truly look manmade.</p>
+
+<p>As for converting the sketch I did into a Shapefile, well, that’s something you would need to bug Daniel about. After we both cleaned up the scanned drawing, he took to actually georeferencing it in ArcGIS. As I understand it, it was very tedious and I can’t thank him enough for taking it on. Thanks Daniel!</p>
+
+<div class="Chapterbox">
+	<div class="ChapterboxHeader">
+		<div class="ChapterboxHeaderLine"></div>
+		<h1><span class="MyHand" style="font-size:1.5em; letter-spacing:5px">III</span>
+		</h1>
+		<div class="ChapterboxHeaderLine"></div>
+	</div>
+	<div class="ChapterboxTitle"><span class="MyHand" style="font-size:1.2em;">Making a Font</span>
+	</div>
+	<div class="ChapterboxFooterLine"></div>
+</div>
+
+<p>It always feels great when you want to do something and the first Google result provides a super easy method.</p>
+
+<p>In this case, I used <a href="http://www.myscriptfont.com/" target="_blank">http://www.myscriptfont.com/</a> to generate a font out of my handwriting. You just download their template, draw on it, re-upload it, and bang. You’ve got yourself a font.</p>
+
+<div class="images"><img class="" src="../assets/graphics/blog/moh/font.png" /><figcaption>Having a drawing tablet lowers the barrier on this even further.</figcaption></div>
+
+<p>It took a few tries to get something that looked <em>fairly</em> consistent in it’s weight &amp; heights. It could certainly use some further tweaking, but the unevenness is much more true to my actual handwriting. Here’s an example:</p>
+
+<div class="centerme"><span class="MyHand_b" style="font-size:1.6em">Ghost Rider</span></div>
+
+<p><span class="MyHand">When the motorcyclist Johnny Blaze finds that his father Barton Blaze has a terminal cancer, he accepts a pact with the Mephistopheles, giving his soul for the health of his beloved father. But the devil deceives him, and Barton dies in a motorcycle accident during an exhibition. Johnny leaves the carnival, his town, his friends and his girlfriend Roxanne. Years later Johnny Blaze becomes a famous motorcyclist, who risks his life in his shows, and he meets Roxanne again, now a TV reporter. However, Mephistopheles proposes Johnny to release his contract if he become the “Ghost Rider” and defeat his evil son Blackheart, who wants to possess one thousand evil souls and transform hell on earth.
+</span>
+<br />
+<br /></p>
+
+<p>The immediate reason of making this font was to help launch a part of this website that I could use to write letters to folks and still make them feel more endearing than a regular old email would. After making it though, it’s been fun to break out for miscellanious side projects.</p>
+
+<div class="Chapterbox">
+	<div class="ChapterboxHeader">
+		<div class="ChapterboxHeaderLine"></div>
+		<h1>IV
+		</h1>
+		<div class="ChapterboxHeaderLine"></div>
+	</div>
+	<div class="ChapterboxTitle">Putting it all together
+	</div>
+	<div class="ChapterboxFooterLine"></div>
+</div>
+
+<p>And with that, we have a sketchy georeferenced artwork that folks can use for their maps. We can project it, as well as layer other georeferenced data on top of it. I also have a font that’s unique to myself to boot.</p>
+
+<p>Feel free to use either of these for your projects. I’d love to see them in the wild.</p>
+
+<div class="centerme"><a href="http://www.projectlinework.org/" target="_blank">Download Linework</a>   &nbsp; | &nbsp;  <a href="/assets/data/MoriartyFont.zip" target="_blank">Download Font</a></div>
+
+<p>Enjoy!</p>
+
+  </div>
+  
+  </p>
+
+	<div class = "article-foot">
+		<a href="../"><i class="collecticons collecticons-myhome"></i>Homeward Bound</a>
+	</div>
+</article>
+		  </div>
+		</div>
+
+		</div>
+<footer id="footer">
+  <div class="wrapper">
+    <div class="centerme">©2014-18  Dylan Moriarty</div>
+  </div>
+</div>
+</footer>
+
+
+
+	
+
+	</body>
+</html>

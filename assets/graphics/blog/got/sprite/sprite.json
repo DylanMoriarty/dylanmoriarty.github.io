@@ -1,0 +1,128 @@
+{
+  "arya": {
+    "height": 163,
+    "pixelRatio": 1,
+    "width": 172,
+    "x": 297,
+    "y": 675
+  },
+  "bronn": {
+    "height": 163,
+    "pixelRatio": 1,
+    "width": 193,
+    "x": 469,
+    "y": 675
+  },
+  "castle": {
+    "height": 193,
+    "pixelRatio": 1,
+    "width": 203,
+    "x": 225,
+    "y": 234
+  },
+  "circle-11": {
+    "height": 11,
+    "pixelRatio": 1,
+    "width": 11,
+    "x": 928,
+    "y": 675
+  },
+  "dany": {
+    "height": 234,
+    "pixelRatio": 1,
+    "width": 237,
+    "x": 0,
+    "y": 0
+  },
+  "doodoo-1": {
+    "height": 24,
+    "pixelRatio": 1,
+    "width": 74,
+    "x": 428,
+    "y": 234
+  },
+  "doodoo-2": {
+    "height": 35,
+    "pixelRatio": 1,
+    "width": 72,
+    "x": 815,
+    "y": 675
+  },
+  "doodoo-3": {
+    "height": 24,
+    "pixelRatio": 1,
+    "width": 41,
+    "x": 887,
+    "y": 675
+  },
+  "doodoo-4": {
+    "height": 20,
+    "pixelRatio": 1,
+    "width": 41,
+    "x": 502,
+    "y": 234
+  },
+  "dragon": {
+    "height": 222,
+    "pixelRatio": 1,
+    "width": 225,
+    "x": 0,
+    "y": 234
+  },
+  "forest": {
+    "height": 149,
+    "pixelRatio": 1,
+    "width": 208,
+    "x": 461,
+    "y": 456
+  },
+  "mountains": {
+    "height": 141,
+    "pixelRatio": 1,
+    "width": 265,
+    "x": 669,
+    "y": 456
+  },
+  "olenna": {
+    "height": 208,
+    "pixelRatio": 1,
+    "width": 297,
+    "x": 0,
+    "y": 675
+  },
+  "paper-texture": {
+    "height": 153,
+    "pixelRatio": 1,
+    "width": 153,
+    "x": 662,
+    "y": 675
+  },
+  "star-11": {
+    "height": 11,
+    "pixelRatio": 1,
+    "width": 11,
+    "x": 934,
+    "y": 456
+  },
+  "stark": {
+    "height": 199,
+    "pixelRatio": 1,
+    "width": 207,
+    "x": 254,
+    "y": 456
+  },
+  "theon": {
+    "height": 224,
+    "pixelRatio": 1,
+    "width": 227,
+    "x": 237,
+    "y": 0
+  },
+  "wheel": {
+    "height": 219,
+    "pixelRatio": 1,
+    "width": 254,
+    "x": 0,
+    "y": 456
+  }
+}

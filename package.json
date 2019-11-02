@@ -44,7 +44,7 @@
     "collecticons-processor": "^2.0.0",
     "del": "^2.2.0",
     "envify": "^3.4.0",
-    "eslint": "^2.7.0",
+    "eslint": "^6.6.0",
     "eslint-config-standard": "^5.1.0",
     "eslint-plugin-promise": "^1.1.0",
     "eslint-plugin-react": "^3.16.1",
